@@ -24,7 +24,7 @@ receiver15_10_05_21 <- read_csv("receiver_data/Receiver15_10_05_21.csv")
 receiver16_10_05_21 <- read_csv("receiver_data/Receiver16_10_05_21.csv")
 receiver17_10_05_21 <- read_csv("receiver_data/Receiver17_10-05_21.csv")
 receiver19_10_05_21 <- read_csv("receiver_data/Receiver19_10_05_21.csv")
-silver_carp_release_points <- read_excel("silver_carp_release_points.xlsx")
+silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_points.xlsx")
 
 all_vemco_receivers <- read_excel("receiver_data/all_vemco_receivers.xlsx") %>% 
   separate(name, c("receiver", "station_name")) %>% 
@@ -64,7 +64,7 @@ all_data <- bind_rows(receiver303_10_22_21,
   left_join(all_vemco_receivers)
 
 
-active_tracking_individuals <- read_excel("active_tracking_points.xlsx") %>% 
+active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.xlsx") %>% 
   mutate(detected_by = as.character("active_tracking")) %>% 
   rownames_to_column()
 
@@ -79,11 +79,18 @@ max_dist <- rkm_tracker_date %>%
   distinct(transmitter_id, max_rkm, min_rkm) %>% 
   mutate(distance_max = max_rkm - min_rkm)
 
+ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
+  geom_point() +
+  labs(xlab=NULL)
+  # ?labs
+#i don't konw why i can't get the axis labels to go away
+
 ## find how people have tracked movement, look for descriptions of movement ##
 ## release point is 0 and movement bobs from there (covid data kinda looks like this)##
-max_dist %>% 
-  ggplot(aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
-  geom_point()
+
+#something like: starting point = rkm of release location. each next detection 
+# is subtracted from the previous one to give an idea of movement
+
 
 # write.csv(rkm_tracker_date,"rkm_tracker_date.csv")
 
