@@ -1,0 +1,914 @@
+"","date","station_name","transmitter_id","detected_by","receiver","latitude","longitude","street name","type","rkm"
+"1",2021-06-17,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"2",2021-06-17,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"3",2021-06-18,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"4",2021-06-18,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"5",2021-06-18,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"6",2021-06-19,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"7",2021-06-19,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"8",2021-06-19,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"9",2021-06-20,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"10",2021-06-20,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"11",2021-06-20,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"12",2021-06-20,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"13",2021-06-20,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"14",2021-06-21,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"15",2021-06-21,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"16",2021-06-21,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"17",2021-06-21,1,48483,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"18",2021-06-21,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"19",2021-06-22,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"20",2021-06-22,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"21",2021-06-22,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"22",2021-06-22,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"23",2021-06-23,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"24",2021-06-23,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"25",2021-06-23,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"26",2021-06-23,1,48477,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"27",2021-06-24,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"28",2021-06-24,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"29",2021-06-24,1,48477,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"30",2021-06-24,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"31",2021-06-24,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"32",2021-06-25,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"33",2021-06-25,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"34",2021-06-25,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"35",2021-06-26,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"36",2021-06-26,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"37",2021-06-27,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"38",2021-06-27,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"39",2021-06-27,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"40",2021-06-28,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"41",2021-06-28,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"42",2021-06-28,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"43",2021-06-29,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"44",2021-06-29,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"45",2021-06-29,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"46",2021-06-29,1,48482,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"47",2021-06-30,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"48",2021-06-30,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"49",2021-07-01,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"50",2021-07-01,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"51",2021-07-02,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"52",2021-07-02,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"53",2021-07-02,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"54",2021-07-02,1,48483,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"55",2021-07-03,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"56",2021-07-03,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"57",2021-07-04,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"58",2021-07-04,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"59",2021-07-04,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"60",2021-07-04,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"61",2021-07-05,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"62",2021-07-05,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"63",2021-07-05,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"64",2021-07-05,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"65",2021-07-06,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"66",2021-07-06,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"67",2021-07-06,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"68",2021-07-06,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"69",2021-07-07,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"70",2021-07-07,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"71",2021-07-07,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"72",2021-07-07,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"73",2021-07-08,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"74",2021-07-08,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"75",2021-07-08,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"76",2021-07-09,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"77",2021-07-09,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"78",2021-07-09,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"79",2021-07-10,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"80",2021-07-10,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"81",2021-07-10,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"82",2021-07-10,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"83",2021-07-11,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"84",2021-07-11,1,48479,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"85",2021-07-11,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"86",2021-07-11,1,48483,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"87",2021-07-12,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"88",2021-07-12,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"89",2021-07-12,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"90",2021-07-12,1,48483,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"91",2021-07-13,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"92",2021-07-13,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"93",2021-07-13,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"94",2021-07-14,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"95",2021-07-14,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"96",2021-07-14,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"97",2021-07-15,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"98",2021-07-15,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"99",2021-07-16,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"100",2021-07-16,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"101",2021-07-16,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"102",2021-07-17,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"103",2021-07-17,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"104",2021-07-18,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"105",2021-07-18,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"106",2021-07-18,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"107",2021-07-19,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"108",2021-07-19,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"109",2021-07-20,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"110",2021-07-20,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"111",2021-07-20,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"112",2021-07-21,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"113",2021-07-21,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"114",2021-07-22,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"115",2021-07-22,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"116",2021-07-23,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"117",2021-07-23,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"118",2021-07-23,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"119",2021-07-23,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"120",2021-07-24,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"121",2021-07-24,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"122",2021-07-24,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"123",2021-07-24,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"124",2021-07-25,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"125",2021-07-25,1,48488,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"126",2021-07-25,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"127",2021-07-26,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"128",2021-07-26,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"129",2021-07-26,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"130",2021-07-27,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"131",2021-07-27,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"132",2021-07-27,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"133",2021-07-28,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"134",2021-07-28,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"135",2021-07-28,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"136",2021-07-29,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"137",2021-07-29,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"138",2021-07-29,1,48483,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"139",2021-07-30,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"140",2021-07-30,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"141",2021-07-30,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"142",2021-07-31,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"143",2021-07-31,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"144",2021-07-31,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"145",2021-08-01,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"146",2021-08-01,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"147",2021-08-01,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"148",2021-08-02,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"149",2021-08-02,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"150",2021-08-02,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"151",2021-08-03,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"152",2021-08-03,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"153",2021-08-03,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"154",2021-08-04,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"155",2021-08-04,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"156",2021-08-04,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"157",2021-08-05,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"158",2021-08-05,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"159",2021-08-06,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"160",2021-08-06,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"161",2021-08-07,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"162",2021-08-07,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"163",2021-08-08,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"164",2021-08-08,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"165",2021-08-09,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"166",2021-08-09,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"167",2021-08-10,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"168",2021-08-10,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"169",2021-08-11,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"170",2021-08-11,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"171",2021-08-12,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"172",2021-08-12,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"173",2021-08-12,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"174",2021-08-13,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"175",2021-08-13,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"176",2021-08-13,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"177",2021-08-14,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"178",2021-08-14,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"179",2021-08-15,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"180",2021-08-15,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"181",2021-08-15,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"182",2021-08-16,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"183",2021-08-16,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"184",2021-08-16,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"185",2021-08-17,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"186",2021-08-17,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"187",2021-08-18,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"188",2021-08-18,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"189",2021-08-19,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"190",2021-08-19,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"191",2021-08-20,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"192",2021-08-20,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"193",2021-08-21,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"194",2021-08-21,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"195",2021-08-21,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"196",2021-08-22,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"197",2021-08-22,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"198",2021-08-22,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"199",2021-08-23,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"200",2021-08-23,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"201",2021-08-23,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"202",2021-08-24,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"203",2021-08-24,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"204",2021-08-24,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"205",2021-08-25,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"206",2021-08-25,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"207",2021-08-26,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"208",2021-08-26,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"209",2021-08-26,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"210",2021-08-27,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"211",2021-08-27,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"212",2021-08-28,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"213",2021-08-28,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"214",2021-08-28,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"215",2021-08-29,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"216",2021-08-29,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"217",2021-08-29,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"218",2021-08-30,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"219",2021-08-30,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"220",2021-08-30,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"221",2021-08-31,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"222",2021-08-31,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"223",2021-08-31,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"224",2021-09-01,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"225",2021-09-01,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"226",2021-09-01,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"227",2021-09-02,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"228",2021-09-02,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"229",2021-09-02,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"230",2021-09-03,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"231",2021-09-03,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"232",2021-09-03,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"233",2021-09-04,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"234",2021-09-04,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"235",2021-09-04,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"236",2021-09-05,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"237",2021-09-05,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"238",2021-09-05,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"239",2021-09-06,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"240",2021-09-06,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"241",2021-09-06,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"242",2021-09-07,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"243",2021-09-07,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"244",2021-09-07,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"245",2021-09-08,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"246",2021-09-08,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"247",2021-09-09,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"248",2021-09-09,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"249",2021-09-09,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"250",2021-09-10,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"251",2021-09-10,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"252",2021-09-10,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"253",2021-09-11,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"254",2021-09-11,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"255",2021-09-12,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"256",2021-09-12,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"257",2021-09-12,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"258",2021-09-13,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"259",2021-09-13,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"260",2021-09-14,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"261",2021-09-14,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"262",2021-09-15,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"263",2021-09-15,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"264",2021-09-15,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"265",2021-09-16,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"266",2021-09-16,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"267",2021-09-17,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"268",2021-09-17,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"269",2021-09-17,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"270",2021-09-18,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"271",2021-09-18,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"272",2021-09-18,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"273",2021-09-18,1,48485,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"274",2021-09-19,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"275",2021-09-19,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"276",2021-09-19,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"277",2021-09-19,1,48485,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"278",2021-09-20,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"279",2021-09-20,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"280",2021-09-20,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"281",2021-09-21,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"282",2021-09-21,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"283",2021-09-21,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"284",2021-09-22,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"285",2021-09-22,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"286",2021-09-22,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"287",2021-09-23,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"288",2021-09-23,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"289",2021-09-23,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"290",2021-09-24,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"291",2021-09-24,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"292",2021-09-24,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"293",2021-09-24,1,48485,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"294",2021-09-25,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"295",2021-09-25,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"296",2021-09-25,1,48485,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"297",2021-09-25,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"298",2021-09-26,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"299",2021-09-26,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"300",2021-09-26,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"301",2021-09-27,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"302",2021-09-27,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"303",2021-09-27,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"304",2021-09-28,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"305",2021-09-28,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"306",2021-09-28,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"307",2021-09-29,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"308",2021-09-29,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"309",2021-09-29,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"310",2021-09-30,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"311",2021-09-30,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"312",2021-09-30,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"313",2021-10-01,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"314",2021-10-01,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"315",2021-10-02,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"316",2021-10-02,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"317",2021-10-02,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"318",2021-10-03,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"319",2021-10-03,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"320",2021-10-03,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"321",2021-10-04,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"322",2021-10-04,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"323",2021-10-04,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"324",2021-10-05,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"325",2021-10-05,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"326",2021-10-05,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"327",2021-10-06,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"328",2021-10-06,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"329",2021-10-06,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"330",2021-10-07,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"331",2021-10-07,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"332",2021-10-08,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"333",2021-10-08,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"334",2021-10-08,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"335",2021-10-09,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"336",2021-10-09,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"337",2021-10-09,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"338",2021-10-10,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"339",2021-10-10,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"340",2021-10-10,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"341",2021-10-11,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"342",2021-10-11,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"343",2021-10-11,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"344",2021-10-12,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"345",2021-10-12,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"346",2021-10-12,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"347",2021-10-13,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"348",2021-10-13,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"349",2021-10-13,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"350",2021-10-14,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"351",2021-10-14,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"352",2021-10-14,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"353",2021-10-15,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"354",2021-10-15,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"355",2021-10-15,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"356",2021-10-16,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"357",2021-10-16,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"358",2021-10-16,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"359",2021-10-17,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"360",2021-10-17,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"361",2021-10-17,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"362",2021-10-18,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"363",2021-10-18,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"364",2021-10-18,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"365",2021-10-19,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"366",2021-10-19,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"367",2021-10-19,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"368",2021-10-20,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"369",2021-10-20,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"370",2021-10-20,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"371",2021-10-21,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"372",2021-10-21,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"373",2021-10-21,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"374",2021-10-22,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"375",2021-10-22,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"376",2021-10-22,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"377",2021-10-23,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"378",2021-10-23,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"379",2021-10-23,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"380",2021-10-24,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"381",2021-10-24,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"382",2021-10-24,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"383",2021-10-25,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"384",2021-10-25,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"385",2021-10-25,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"386",2021-10-26,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"387",2021-10-26,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"388",2021-10-26,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"389",2021-10-27,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"390",2021-10-27,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"391",2021-10-27,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"392",2021-10-28,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"393",2021-10-28,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"394",2021-10-28,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"395",2021-10-29,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"396",2021-10-29,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"397",2021-10-29,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"398",2021-10-30,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"399",2021-10-30,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"400",2021-10-30,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"401",2021-10-31,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"402",2021-10-31,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"403",2021-10-31,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"404",2021-11-01,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"405",2021-11-01,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"406",2021-11-01,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"407",2021-11-02,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"408",2021-11-02,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"409",2021-11-02,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"410",2021-11-03,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"411",2021-11-03,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"412",2021-11-03,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"413",2021-11-04,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"414",2021-11-04,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"415",2021-11-04,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"416",2021-11-05,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"417",2021-11-05,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"418",2021-11-05,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"419",2021-11-06,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"420",2021-11-06,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"421",2021-11-06,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"422",2021-11-07,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"423",2021-11-07,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"424",2021-11-07,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"425",2021-11-08,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"426",2021-11-08,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"427",2021-11-08,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"428",2021-11-09,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"429",2021-11-09,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"430",2021-11-09,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"431",2021-11-10,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"432",2021-11-10,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"433",2021-11-10,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"434",2021-11-11,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"435",2021-11-11,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"436",2021-11-11,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"437",2021-11-12,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"438",2021-11-12,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"439",2021-11-12,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"440",2021-11-13,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"441",2021-11-13,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"442",2021-11-13,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"443",2021-11-14,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"444",2021-11-14,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"445",2021-11-14,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"446",2021-11-15,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"447",2021-11-15,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"448",2021-11-15,1,48484,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"449",2021-11-16,1,48476,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"450",2021-11-16,1,48474,"stationary_receiver","receiver",42.880131,-97.279514,"hwy 50","Vr2W",1.4
+"451",2021-08-11,2,48484,"stationary_receiver","receiver",42.906536,-97.326597,"309th st","Vr2W",9
+"452",2021-06-18,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"453",2021-06-21,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"454",2021-06-22,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"455",2021-07-01,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"456",2021-07-02,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"457",2021-07-03,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"458",2021-07-04,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"459",2021-07-05,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"460",2021-07-06,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"461",2021-07-07,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"462",2021-07-08,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"463",2021-07-09,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"464",2021-07-10,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"465",2021-07-11,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"466",2021-07-12,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"467",2021-07-13,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"468",2021-07-14,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"469",2021-07-15,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"470",2021-07-16,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"471",2021-07-17,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"472",2021-07-18,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"473",2021-07-19,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"474",2021-07-20,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"475",2021-07-21,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"476",2021-07-22,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"477",2021-07-23,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"478",2021-07-24,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"479",2021-07-25,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"480",2021-07-26,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"481",2021-07-27,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"482",2021-07-28,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"483",2021-07-29,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"484",2021-07-30,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"485",2021-07-31,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"486",2021-08-01,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"487",2021-08-02,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"488",2021-08-03,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"489",2021-08-04,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"490",2021-08-05,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"491",2021-08-06,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"492",2021-08-07,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"493",2021-08-08,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"494",2021-08-09,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"495",2021-08-10,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"496",2021-08-11,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"497",2021-08-12,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"498",2021-08-13,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"499",2021-08-14,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"500",2021-08-15,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"501",2021-08-16,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"502",2021-08-17,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"503",2021-08-18,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"504",2021-08-19,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"505",2021-08-20,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"506",2021-08-21,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"507",2021-08-22,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"508",2021-08-23,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"509",2021-08-24,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"510",2021-08-25,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"511",2021-08-26,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"512",2021-08-27,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"513",2021-08-28,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"514",2021-08-29,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"515",2021-08-30,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"516",2021-08-31,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"517",2021-09-01,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"518",2021-09-02,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"519",2021-09-03,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"520",2021-09-04,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"521",2021-09-05,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"522",2021-09-06,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"523",2021-09-07,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"524",2021-09-08,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"525",2021-09-09,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"526",2021-09-10,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"527",2021-09-11,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"528",2021-09-12,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"529",2021-09-13,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"530",2021-09-14,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"531",2021-09-15,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"532",2021-09-16,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"533",2021-09-17,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"534",2021-09-18,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"535",2021-09-19,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"536",2021-09-20,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"537",2021-09-21,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"538",2021-09-22,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"539",2021-09-23,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"540",2021-09-24,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"541",2021-09-25,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"542",2021-09-26,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"543",2021-09-27,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"544",2021-09-28,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"545",2021-09-29,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"546",2021-09-30,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"547",2021-10-01,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"548",2021-10-02,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"549",2021-10-03,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"550",2021-10-04,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"551",2021-10-05,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"552",2021-10-06,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"553",2021-10-07,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"554",2021-10-08,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"555",2021-10-09,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"556",2021-10-10,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"557",2021-10-11,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"558",2021-10-12,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"559",2021-10-13,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"560",2021-10-14,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"561",2021-10-15,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"562",2021-10-16,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"563",2021-10-17,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"564",2021-10-18,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"565",2021-10-19,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"566",2021-10-20,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"567",2021-10-21,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"568",2021-10-22,3,48462,"stationary_receiver","receiver",43.05785,-97.39871,"hwy 81","Vr2W",40.4
+"569",2021-07-07,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"570",2021-07-08,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"571",2021-07-09,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"572",2021-07-10,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"573",2021-07-11,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"574",2021-07-12,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"575",2021-07-13,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"576",2021-07-14,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"577",2021-07-15,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"578",2021-07-16,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"579",2021-07-17,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"580",2021-07-18,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"581",2021-07-19,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"582",2021-07-20,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"583",2021-07-21,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"584",2021-07-22,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"585",2021-07-23,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"586",2021-07-24,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"587",2021-07-25,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"588",2021-07-26,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"589",2021-07-27,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"590",2021-07-28,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"591",2021-07-29,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"592",2021-07-30,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"593",2021-07-31,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"594",2021-08-01,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"595",2021-08-02,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"596",2021-08-03,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"597",2021-08-04,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"598",2021-08-05,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"599",2021-08-06,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"600",2021-08-07,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"601",2021-08-08,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"602",2021-08-09,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"603",2021-08-10,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"604",2021-08-11,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"605",2021-08-12,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"606",2021-08-13,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"607",2021-08-14,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"608",2021-08-15,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"609",2021-08-16,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"610",2021-08-17,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"611",2021-08-18,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"612",2021-08-19,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"613",2021-08-20,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"614",2021-08-21,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"615",2021-08-22,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"616",2021-08-23,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"617",2021-08-24,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"618",2021-08-25,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"619",2021-08-26,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"620",2021-08-27,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"621",2021-08-28,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"622",2021-08-29,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"623",2021-08-30,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"624",2021-08-31,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"625",2021-09-01,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"626",2021-09-02,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"627",2021-09-03,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"628",2021-09-04,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"629",2021-09-05,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"630",2021-09-06,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"631",2021-09-07,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"632",2021-09-08,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"633",2021-09-09,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"634",2021-09-10,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"635",2021-09-11,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"636",2021-09-12,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"637",2021-09-13,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"638",2021-09-14,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"639",2021-09-15,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"640",2021-09-16,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"641",2021-09-17,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"642",2021-09-18,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"643",2021-09-19,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"644",2021-09-20,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"645",2021-09-21,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"646",2021-09-22,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"647",2021-09-23,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"648",2021-09-24,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"649",2021-09-25,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"650",2021-09-26,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"651",2021-09-27,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"652",2021-09-28,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"653",2021-09-29,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"654",2021-09-30,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"655",2021-10-01,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"656",2021-10-02,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"657",2021-10-03,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"658",2021-10-04,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"659",2021-10-05,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"660",2021-10-06,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"661",2021-10-07,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"662",2021-10-08,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"663",2021-10-09,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"664",2021-10-10,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"665",2021-10-11,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"666",2021-10-12,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"667",2021-10-13,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"668",2021-10-14,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"669",2021-10-15,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"670",2021-10-16,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"671",2021-10-17,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"672",2021-10-18,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"673",2021-10-19,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"674",2021-10-20,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"675",2021-10-21,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"676",2021-10-22,4,48468,"stationary_receiver","receiver",43.082163,-97.432553,"297th st","Vr2W",79.3
+"677",2021-06-08,15,48732,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"678",2021-06-08,15,48725,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"679",2021-06-08,15,48726,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"680",2021-06-09,15,48726,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"681",2021-06-09,15,48732,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"682",2021-06-10,15,48732,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"683",2021-06-12,15,48725,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"684",2021-06-12,15,48463,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"685",2021-06-13,15,48463,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"686",2021-06-14,15,48463,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"687",2021-06-21,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"688",2021-07-01,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"689",2021-07-02,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"690",2021-07-03,15,48732,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"691",2021-07-03,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"692",2021-07-04,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"693",2021-07-06,15,48732,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"694",2021-07-06,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"695",2021-07-09,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"696",2021-07-10,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"697",2021-07-12,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"698",2021-07-13,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"699",2021-07-16,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"700",2021-07-17,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"701",2021-07-18,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"702",2021-07-19,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"703",2021-07-20,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"704",2021-07-21,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"705",2021-07-22,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"706",2021-07-23,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"707",2021-07-24,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"708",2021-07-25,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"709",2021-07-26,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"710",2021-07-28,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"711",2021-07-29,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"712",2021-07-31,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"713",2021-08-04,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"714",2021-08-06,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"715",2021-08-07,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"716",2021-08-08,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"717",2021-08-09,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"718",2021-08-10,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"719",2021-08-12,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"720",2021-08-14,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"721",2021-08-15,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"722",2021-08-25,15,48469,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"723",2021-09-28,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"724",2021-09-29,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"725",2021-09-30,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"726",2021-10-01,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"727",2021-10-03,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"728",2021-10-04,15,48727,"stationary_receiver","receiver",43.724949,-97.964255,"old mill rd",NA,232
+"729",2021-06-07,16,48729,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"730",2021-06-07,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"731",2021-06-07,16,48732,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"732",2021-06-08,16,48726,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"733",2021-06-08,16,48454,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"734",2021-06-08,16,48727,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"735",2021-06-08,16,48459,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"736",2021-06-08,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"737",2021-06-08,16,48472,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"738",2021-06-08,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"739",2021-06-08,16,48469,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"740",2021-06-08,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"741",2021-06-09,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"742",2021-06-09,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"743",2021-06-09,16,48727,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"744",2021-06-09,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"745",2021-06-09,16,48730,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"746",2021-06-09,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"747",2021-06-10,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"748",2021-06-10,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"749",2021-06-10,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"750",2021-06-10,16,48460,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"751",2021-06-10,16,48455,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"752",2021-06-11,16,48460,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"753",2021-06-11,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"754",2021-06-11,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"755",2021-06-11,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"756",2021-06-12,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"757",2021-06-12,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"758",2021-06-12,16,48463,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"759",2021-06-13,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"760",2021-06-13,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"761",2021-06-14,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"762",2021-06-14,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"763",2021-06-14,16,48463,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"764",2021-06-15,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"765",2021-06-15,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"766",2021-06-16,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"767",2021-06-16,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"768",2021-06-17,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"769",2021-06-17,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"770",2021-06-17,16,48472,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"771",2021-06-18,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"772",2021-06-18,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"773",2021-06-19,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"774",2021-06-19,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"775",2021-06-19,16,48730,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"776",2021-06-20,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"777",2021-06-20,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"778",2021-06-20,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"779",2021-06-20,16,48472,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"780",2021-06-21,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"781",2021-06-22,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"782",2021-06-23,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"783",2021-06-24,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"784",2021-06-25,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"785",2021-06-26,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"786",2021-06-27,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"787",2021-06-28,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"788",2021-06-29,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"789",2021-06-30,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"790",2021-07-01,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"791",2021-07-02,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"792",2021-07-02,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"793",2021-07-02,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"794",2021-07-03,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"795",2021-07-03,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"796",2021-07-03,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"797",2021-07-04,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"798",2021-07-05,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"799",2021-07-06,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"800",2021-07-06,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"801",2021-07-07,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"802",2021-07-07,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"803",2021-07-08,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"804",2021-07-09,16,48461,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"805",2021-07-12,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"806",2021-07-12,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"807",2021-07-13,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"808",2021-07-16,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"809",2021-07-17,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"810",2021-07-18,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"811",2021-07-19,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"812",2021-07-21,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"813",2021-07-22,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"814",2021-07-23,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"815",2021-07-25,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"816",2021-07-25,16,48460,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"817",2021-07-26,16,48460,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"818",2021-07-26,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"819",2021-07-29,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"820",2021-07-30,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"821",2021-08-04,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"822",2021-08-07,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"823",2021-08-07,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"824",2021-08-10,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"825",2021-08-10,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"826",2021-08-11,16,48731,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"827",2021-08-15,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"828",2021-08-16,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"829",2021-08-17,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"830",2021-08-17,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"831",2021-08-18,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"832",2021-08-18,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"833",2021-08-19,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"834",2021-08-21,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"835",2021-08-21,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"836",2021-08-21,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"837",2021-08-22,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"838",2021-08-22,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"839",2021-08-24,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"840",2021-08-24,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"841",2021-08-25,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"842",2021-08-30,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"843",2021-08-31,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"844",2021-08-31,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"845",2021-09-01,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"846",2021-09-01,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"847",2021-09-01,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"848",2021-09-01,16,48733,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"849",2021-09-02,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"850",2021-09-02,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"851",2021-09-02,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"852",2021-09-03,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"853",2021-09-03,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"854",2021-09-04,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"855",2021-09-04,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"856",2021-09-05,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"857",2021-09-06,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"858",2021-09-06,16,48733,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"859",2021-09-06,16,48725,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"860",2021-09-06,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"861",2021-09-06,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"862",2021-09-07,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"863",2021-09-07,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"864",2021-09-08,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"865",2021-09-09,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"866",2021-09-10,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"867",2021-09-13,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"868",2021-09-14,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"869",2021-09-15,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"870",2021-09-16,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"871",2021-09-17,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"872",2021-09-18,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"873",2021-09-18,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"874",2021-09-18,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"875",2021-09-18,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"876",2021-09-19,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"877",2021-09-19,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"878",2021-09-20,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"879",2021-09-20,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"880",2021-09-21,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"881",2021-09-21,16,48453,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"882",2021-09-21,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"883",2021-09-22,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"884",2021-09-23,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"885",2021-09-23,16,48453,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"886",2021-09-24,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"887",2021-09-24,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"888",2021-09-25,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"889",2021-09-26,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"890",2021-09-26,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"891",2021-09-26,16,48727,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"892",2021-09-26,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"893",2021-09-27,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"894",2021-09-27,16,48728,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"895",2021-09-27,16,48457,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"896",2021-09-27,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"897",2021-09-28,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"898",2021-09-28,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"899",2021-09-28,16,48730,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"900",2021-09-29,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"901",2021-09-29,16,48730,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"902",2021-09-30,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"903",2021-09-30,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"904",2021-10-01,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"905",2021-10-01,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"906",2021-10-01,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"907",2021-10-02,16,48466,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"908",2021-10-02,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"909",2021-10-02,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"910",2021-10-03,16,48456,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"911",2021-10-03,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"912",2021-10-04,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2
+"913",2021-10-05,16,48458,"stationary_receiver","receiver",43.760925,-97.988167,"E 54th st","Vr2W",238.2

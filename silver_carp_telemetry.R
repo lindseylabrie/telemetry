@@ -63,6 +63,7 @@ all_data <- bind_rows(receiver303_10_22_21,
   distinct(station_name,transmitter_id, date, detected_by) %>% 
   left_join(all_vemco_receivers)
 
+# write.csv(all_data, "all_data.csv")
 
 active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.xlsx") %>% 
   mutate(detected_by = as.character("active_tracking")) %>% 
@@ -70,7 +71,32 @@ active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.
 
 combined_data <- bind_rows(active_tracking_individuals,all_data,silver_carp_release_points)
 
-rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm)
+rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm)%>%
+  left_join(silver_carp_release_points %>% select(transmitter_id, rkm) %>% 
+              rename(start_rkm = rkm)) %>% 
+  mutate(distance = rkm-start_rkm)
+
+plot_to_save <- rkm_tracker_date %>% 
+  filter(transmitter_id %in% c(48453, 48455)) %>% 
+  ggplot(aes(color=distance, group=transmitter_id,x=date, y=distance))+
+  geom_line()+
+  geom_point() +
+  labs(y = "asdf",
+       x = "wwww",
+       color = "eeee") +
+  theme_classic()
+
+ggsave(plot_to_save, file = "plots/plot_to_save.jpg", dpi = 500, width = 5, height = 5,
+       units = "in")
+
+# need to make a column in original dataset containing release rkm for each individual
+start_rkms <- all_data %>% 
+  mutate()
+
+#then create a step between each interval of time representing travel distance
+tracking <- rkm_tracker_date 
+
+
 
 max_dist <- rkm_tracker_date %>% 
   group_by(transmitter_id) %>% 
@@ -81,8 +107,15 @@ max_dist <- rkm_tracker_date %>%
 
 ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
   geom_point() +
-  labs(xlab=NULL)
-  # ?labs
+  labs(x=NULL,
+       y="Maximum Distance Traveled (rkm)")
+
+
+
+
+rkm_tracker_date %>% 
+  mutate(distance_from_release = )
+
 #i don't konw why i can't get the axis labels to go away
 
 ## find how people have tracked movement, look for descriptions of movement ##
