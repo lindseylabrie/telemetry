@@ -92,6 +92,39 @@ All_Individuals <- rkm_tracker_date %>%
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 7, height = 5,
        units = "in")
 
+# Detections per day for 48452 through 48491
+DailyDetections452through491 <- rkm_tracker_date %>% 
+  # filter(transmitter_id %in% c(48453, 48455, 48456, 48457)) %>% 
+  ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
+  geom_line()+
+  geom_point() +
+  labs(y = "Telemetered Individual",
+       x = "Daily Detections") +
+  theme_linedraw()+
+  theme(legend.position="none")+
+  coord_cartesian(ylim=c(48452, 48491))+
+  scale_y_continuous(breaks=seq(48452, 48491, 1))+
+  # ylim(48452, 48491)+
+  ggtitle("James River",
+          subtitle = "Daily Detections, June - November 2021")
+ggsave(DailyDetections452through491, file = "plots/DailyDetections452through491.png", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+# Detections per day for 48724 through 48733
+rkm_tracker_date %>% 
+  ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
+  geom_line()+
+  geom_point(shape=20) +
+  coord_cartesian(ylim=c(48724, 48733))+
+  scale_y_continuous(breaks=seq(48724, 48733, 1))+
+  labs(y = "Telemetered Individuals",
+       x = "Daily Detections") +
+  theme_gray()+
+  theme(legend.position="none")+
+  ggtitle("James River",
+          subtitle = "Daily Detections, June - November 2021")
+
+
 ##Individs tagged near mitchell
 Mitchell_Individuals <- rkm_tracker_date %>% 
   filter(start_rkm < 243) %>% 
