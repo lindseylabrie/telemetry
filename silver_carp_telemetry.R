@@ -5,6 +5,7 @@ library(lubridate)
 library(janitor)
 library(readxl)
 library(ggplot2)
+library(ggbreak)
 
 receiver303_10_22_21 <- read_csv("receiver_data/Receiver303_10_22_21.csv")
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
@@ -92,38 +93,39 @@ All_Individuals <- rkm_tracker_date %>%
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 7, height = 5,
        units = "in")
 
-# Detections per day for 48452 through 48491
-DailyDetections452through491 <- rkm_tracker_date %>% 
-  # filter(transmitter_id %in% c(48453, 48455, 48456, 48457)) %>% 
+# Detections per day for all tags, with axis break
+AllDailyDetections <- rkm_tracker_date %>% 
   ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
-  geom_line()+
-  geom_point() +
+  geom_line(color="light blue")+
+  geom_point(shape=16) +
   labs(y = "Telemetered Individual",
-       x = "Daily Detections") +
-  theme_linedraw()+
+       x = "") +
+  theme_bw()+
   theme(legend.position="none")+
-  coord_cartesian(ylim=c(48452, 48491))+
-  scale_y_continuous(breaks=seq(48452, 48491, 1))+
+  coord_cartesian(ylim=c(48452, 48733))+
+  scale_y_break(c(48491, 48724), scales = 0.25) +
+  scale_y_continuous(breaks=seq(48452, 48733, 2))+
   # ylim(48452, 48491)+
   ggtitle("James River",
           subtitle = "Daily Detections, June - November 2021")
-ggsave(DailyDetections452through491, file = "plots/DailyDetections452through491.png", dpi = 750, width = 7, height = 6,
+ggsave(AllDailyDetections, file = "plots/AllDailyDetections.png", dpi = 750, width = 7, height = 6,
        units = "in")
 
 # Detections per day for 48724 through 48733
-rkm_tracker_date %>% 
+DailyDetections724through733 <- rkm_tracker_date %>% 
   ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
   geom_line()+
   geom_point(shape=20) +
   coord_cartesian(ylim=c(48724, 48733))+
   scale_y_continuous(breaks=seq(48724, 48733, 1))+
-  labs(y = "Telemetered Individuals",
-       x = "Daily Detections") +
+  labs(y = "Telemetered Individual",
+       x = "") +
   theme_gray()+
   theme(legend.position="none")+
   ggtitle("James River",
           subtitle = "Daily Detections, June - November 2021")
-
+ggsave(DailyDetections724through733, file = "plots/DailyDetections724through733.png", dpi = 750, width = 7, height = 6,
+       units = "in")
 
 ##Individs tagged near mitchell
 Mitchell_Individuals <- rkm_tracker_date %>% 
@@ -137,7 +139,7 @@ Mitchell_Individuals <- rkm_tracker_date %>%
   theme_gray()+
   theme(legend.position="none")+
   ggtitle("James River Silver Carp Movement",
-          subtitle = "Individuals Tagged Near Mitchel")
+          subtitle = "Individuals Tagged Near Mitchell")
 
 ggsave(Mitchell_Individuals, file = "plots/MitchellIndividuals.png", dpi = 750, width = 7, height = 5,
        units = "in")
