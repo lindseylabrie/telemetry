@@ -80,15 +80,20 @@ rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm)%>%
 
 ##all movement
 All_Individuals <- rkm_tracker_date %>% 
-  # filter(transmitter_id %in% c(48453, 48455, 48456, 48457)) %>% 
-  ggplot(aes(color=as.character(transmitter_id), group=transmitter_id,x=date, y=distance))+
-  geom_line()+
-  geom_point(shape=20) +
+  group_by(transmitter_id) %>% 
+  mutate(meandistance=mean(distance),
+         direction = case_when(meandistance<0~"downstream",
+                               meandistance==0~"stationary",
+                               meandistance>0~"upstream")) %>% 
+  ggplot(aes(color=direction, group=transmitter_id,x=date, y=distance))+
+  geom_line(alpha=0.3)+
+  geom_point(shape=20, alpha=0.3) +
   labs(y = "Distance Traveled, rkm",
        x = "") +
-  theme_gray()+
-  theme(legend.position="none")+
-  ggtitle("James River Silver Carp Movement",
+  theme_classic()+
+  geom_hline(yintercept = 0, size=0.75)+
+  ylim(-35,35)+
+  ggtitle("Most Carp Moved Downstream",
           subtitle = "June - November 2021")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 7, height = 5,
        units = "in")
@@ -131,13 +136,18 @@ ggsave(DailyDetections724through733, file = "plots/DailyDetections724through733.
 Mitchell_Individuals <- rkm_tracker_date %>% 
   filter(start_rkm < 243) %>% 
   filter(start_rkm > 236) %>%
-  ggplot(aes(color=as.character(transmitter_id), group=transmitter_id,x=date, y=distance))+
+  group_by(transmitter_id) %>% 
+  mutate(meandistance=mean(distance),
+         direction = case_when(meandistance<0~"downstream",
+                               meandistance==0~"stationary",
+                               meandistance>0~"upstream")) %>% 
+  ggplot(aes(color=direction, group=transmitter_id,x=date, y=distance))+
   geom_line()+
   geom_point(shape=20) +
   labs(y = "Distance Traveled, rkm",
        x = "") +
   theme_gray()+
-  theme(legend.position="none")+
+  ylim(-8,8)+
   ggtitle("James River Silver Carp Movement",
           subtitle = "Individuals Tagged Near Mitchell")
 
