@@ -136,9 +136,8 @@ All_Individuals <- rkm_tracker_date %>%
        color = "Direction") +
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
-  ylim(-45,45)+
-  ggtitle("Most Carp Detected Moving Downstream",
-          subtitle = "June - November 2021")
+  ylim(-30,45)+
+  ggtitle("Most Carp Detected Moving Downstream")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
 
@@ -156,7 +155,7 @@ AllDailyDetections <- rkm_tracker_date %>%
   scale_y_continuous(breaks=seq(48452, 48733, 2))+
   # ylim(48452, 48491)+
   ggtitle("James River",
-          subtitle = "Daily Detections, June - November 2021")
+          subtitle = "Daily Detections, June 2021 - May 2022")
 ggsave(AllDailyDetections, file = "plots/AllDailyDetections.png", dpi = 750, width = 7, height = 6,
        units = "in")
 
@@ -172,7 +171,7 @@ DailyDetections724through733 <- rkm_tracker_date %>%
   theme_gray()+
   theme(legend.position="none")+
   ggtitle("James River",
-          subtitle = "Daily Detections, June - November 2021")
+          subtitle = "Daily Detections, June 2021 - May 2022")
 ggsave(DailyDetections724through733, file = "plots/DailyDetections724through733.png", dpi = 750, width = 7, height = 6,
        units = "in")
 
