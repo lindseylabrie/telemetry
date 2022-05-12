@@ -270,13 +270,13 @@ MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -
        y="Maximum Distance Traveled (rkm)",
        title = "Silver Carp Movement in the James River")+
   geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
-  theme_linedraw()+
+  theme_bw()+
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(),
     axis.ticks = element_blank())
   
-ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 5, height = 3,
+ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 4.5, height = 3,
        units = "in")
 
 
