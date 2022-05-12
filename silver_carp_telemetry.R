@@ -86,16 +86,17 @@ All_Individuals <- rkm_tracker_date %>%
                                meandistance==0~"stationary",
                                meandistance>0~"upstream")) %>% 
   ggplot(aes(color=direction, group=transmitter_id,x=date, y=distance))+
-  geom_line(alpha=0.3)+
-  geom_point(shape=20, alpha=0.3) +
+  geom_line(alpha=0.8)+
+  geom_point(shape=20, alpha=0.8) +
   labs(y = "Distance Traveled, rkm",
-       x = "") +
+       x = "",
+       color = "Direction") +
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
   ylim(-35,35)+
-  ggtitle("Most Carp Moved Downstream",
+  ggtitle("Most Carp Detected Moving Downstream",
           subtitle = "June - November 2021")
-ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 7, height = 5,
+ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
 
 # Detections per day for all tags, with axis break
