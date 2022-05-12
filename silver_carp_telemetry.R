@@ -31,20 +31,39 @@ silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_poin
 
 # Summer 2022 Data
 
-receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")
-receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
-receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")
-receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")
-receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv")
-receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")
-receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv")
-receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")
+receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") %>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
+receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")%>% clean_names() %>% 
+  mutate(station_name = as.numeric(station_name))
 
 all_vemco_receivers <- read_excel("receiver_data/all_vemco_receivers.xlsx") %>% 
   separate(name, c("receiver", "station_name")) %>% 
   mutate(station_name = as.numeric(station_name), 
          latitude = as.numeric(latitude), 
          longitude = as.numeric(longitude))
+
+# summer_22_data <-bind_rows(receiver1_5_11_22,
+#                            receiver2_5_11_22,
+#                            receiver3_5_10_22,
+#                            receiver7_5_10_22,
+#                            receiver17_5_10_22,
+#                            receiver18_5_10_22,
+#                            receiver19_5_10_22,
+#                            receiver20_5_10_22) %>% 
+#   clean_names %>% 
+#   mutate(station_name = as.numeric(station_name))
 
 
 all_data <- bind_rows(receiver303_10_22_21,
@@ -117,7 +136,7 @@ All_Individuals <- rkm_tracker_date %>%
        color = "Direction") +
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
-  ylim(-35,35)+
+  ylim(-45,45)+
   ggtitle("Most Carp Detected Moving Downstream",
           subtitle = "June - November 2021")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
@@ -285,9 +304,8 @@ ggplot(rkm_tracker_date, aes(x=date, y=rkm, group=transmitter_id, color=as.chara
                     caption = "Grey horizontal lines represent stationary receiver locations")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)+
   guides(color="none")+
-  labs(x=NULL)
-# +
-#   facet_wrap(vars(transmitter_id))
+  labs(x=NULL)+
+  facet_wrap(vars(transmitter_id))
 
 #### Individual Fish Plots ####
 
