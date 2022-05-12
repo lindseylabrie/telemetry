@@ -7,6 +7,8 @@ library(readxl)
 library(ggplot2)
 library(ggbreak)
 
+# Fall 2021 Data
+
 receiver303_10_22_21 <- read_csv("receiver_data/Receiver303_10_22_21.csv")
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
 receiver2_11_16_21 <- read_csv("receiver_data/Receiver2_11_16_21.csv")
@@ -26,6 +28,17 @@ receiver16_10_05_21 <- read_csv("receiver_data/Receiver16_10_05_21.csv")
 receiver17_10_05_21 <- read_csv("receiver_data/Receiver17_10-05_21.csv")
 receiver19_10_05_21 <- read_csv("receiver_data/Receiver19_10_05_21.csv")
 silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_points.xlsx")
+
+# Summer 2022 Data
+
+receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")
+receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
+receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")
+receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")
+receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv")
+receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")
+receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv")
+receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")
 
 all_vemco_receivers <- read_excel("receiver_data/all_vemco_receivers.xlsx") %>% 
   separate(name, c("receiver", "station_name")) %>% 
@@ -51,10 +64,19 @@ all_data <- bind_rows(receiver303_10_22_21,
                       receiver15_10_05_21,
                       receiver16_10_05_21,
                       receiver17_10_05_21,
-                      receiver19_10_05_21) %>%
+                      receiver19_10_05_21,
+                      receiver1_5_11_22,
+                      receiver2_5_11_22,
+                      receiver3_5_10_22,
+                      receiver7_5_10_22,
+                      receiver17_5_10_22,
+                      receiver18_5_10_22,
+                      receiver19_5_10_22,
+                      receiver20_5_10_22) %>%
   clean_names %>% 
   separate(transmitter, c("freq1", "freq2", "transmitter_id")) %>% 
-  mutate(transmitter_id = as.numeric(transmitter_id)) %>% 
+  mutate(transmitter_id = as.numeric(transmitter_id),
+         station_name = as.numeric(station_name)) %>% 
  # mutate() %>% 
   filter(transmitter_id < 49000) %>% 
   filter(transmitter_id > 48000) %>% 
@@ -63,6 +85,8 @@ all_data <- bind_rows(receiver303_10_22_21,
   select(date, station_name,transmitter_id, detected_by) %>% 
   distinct(station_name,transmitter_id, date, detected_by) %>% 
   left_join(all_vemco_receivers)
+
+# need to fix this, can't figure out how to make `Station Name` all characters
 
 # write.csv(all_data, "all_data.csv")
 
