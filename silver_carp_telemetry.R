@@ -31,23 +31,27 @@ silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_poin
 
 # Summer 2022 Data
 
-receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") %>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")%>% clean_names() %>% 
-  mutate(station_name = as.numeric(station_name))
-
+receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")%>% clean_names()
+receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")%>% clean_names()
+receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")%>% clean_names() 
+receiver303_5_13_22 <- read_csv("receiver_data/Receiver303_5_13_22.csv")%>% clean_names() 
+receiver4_5_18_22 <- read_csv("receiver_data/Receiver4_5_18_22.csv")%>% clean_names() 
+receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")%>% clean_names() 
+receiver6_5_16_22 <- read_csv("receiver_data/Receiver6_5_16_22.csv")%>% clean_names() 
+receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")%>% clean_names() 
+# receiver 8 was removed because of silting last fall
+receiver9_5_17_22 <- read_csv("receiver_data/Receiver9_5_17_22.csv")%>% clean_names() 
+receiver10_5_17_22 <- read_csv("receiver_data/Receiver10_5_17_22.csv")%>% clean_names() 
+# receiver 11 (in stream) has not been accessed yet
+receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")%>% clean_names() 
+# receiver 13 has not been accessed yet
+receiver14_6_1_22 <- read_csv("receiver_data/Receiver14_6_1_22.csv")%>% clean_names() 
+receiver15_6_1_22 <- read_csv("receiver_data/Receiver15_6_1_22.csv")%>% clean_names() 
+# receiver 16 has not been accessed yet
+receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") %>% clean_names() 
+receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")%>% clean_names() 
+receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv") %>% mutate(`Station Name` = 19)
+receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")%>% clean_names() 
 all_vemco_receivers <- read_excel("receiver_data/all_vemco_receivers.xlsx") %>% 
   separate(name, c("receiver", "station_name")) %>% 
   mutate(station_name = as.numeric(station_name), 
@@ -87,7 +91,19 @@ all_data <- bind_rows(receiver303_10_22_21,
                       receiver1_5_11_22,
                       receiver2_5_11_22,
                       receiver3_5_10_22,
+                      receiver303_5_13_22,
+                      receiver4_5_18_22,
+                      receiver5_5_16_22,
+                      receiver6_5_16_22,
                       receiver7_5_10_22,
+                      receiver9_5_17_22,
+                      receiver10_5_17_22,
+                      # 11 not yet downloaded
+                      receiver12_6_1_22,
+                      # 13 not yet downloaded
+                      receiver14_6_1_22,
+                      receiver15_6_1_22,
+                      # 16 not yet downloaded
                       receiver17_5_10_22,
                       receiver18_5_10_22,
                       receiver19_5_10_22,
@@ -115,7 +131,7 @@ active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.
 
 combined_data <- bind_rows(active_tracking_individuals,all_data,silver_carp_release_points)
 
-rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm)%>%
+rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm) %>%
   left_join(silver_carp_release_points %>% select(transmitter_id, rkm) %>% 
               rename(start_rkm = rkm)) %>% 
   mutate(distance = rkm-start_rkm)
@@ -280,6 +296,8 @@ ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 4.5,
        units = "in")
 
 
+ggplot(receiver14_6_1_22, aes(x=date_and_time_utc, y=transmitter))+geom_point()
+ggplot(receiver15_6_1_22, aes(x=date_and_time_utc, y=transmitter))+geom_point()
 
 # rkm_tracker_date %>% 
 #   mutate(distance_from_release = )
