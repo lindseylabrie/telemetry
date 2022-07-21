@@ -73,7 +73,8 @@ receiver11 <- receiver11_10_14_21
 # Receiver 12
 receiver12_10_14_21 <- read_csv("receiver_data/Receiver12_10_14_21.csv")
 receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")
-receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22)
+receiver12_7_11_22 <- read_csv("receiver_data/Receiver12_7_11_22.csv")
+receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22,receiver12_7_11_22)
 
 # Receiver 13
 receiver13_10_14_21 <- read_csv("receiver_data/Receiver13_10_14_21.csv")
@@ -83,7 +84,9 @@ receiver13 <- receiver13_10_14_21
 # Receiver 14
 receiver14_10_14_21 <- read_csv("receiver_data/Receiver14_10_14_21.csv")
 receiver14_6_1_22 <- read_csv("receiver_data/Receiver14_6_1_22.csv")
-receiver14 <- bind_rows(receiver14_10_14_21,receiver14_6_1_22)
+receiver14_6_29_22 <- read_csv("receiver_data/Receiver14_6_29_22.csv")
+receiver14_7_5_22 <- read_csv("receiver_data/Receiver14_7_5_22.csv")
+receiver14 <- bind_rows(receiver14_10_14_21,receiver14_6_1_22,receiver14_6_29_22,receiver14_7_5_22)
 
 # Receiver 15
 receiver15_10_05_21 <- read_csv("receiver_data/Receiver15_10_05_21.csv")
@@ -131,8 +134,8 @@ all_data <- bind_rows(receiver1,
                       receiver7,
                       # receiver8, no data
                       receiver303,
-                      # receiver9,
-                      # receiver10,
+                      receiver9,
+                      receiver10,
                       receiver11,
                       receiver12,
                       receiver13,
@@ -144,16 +147,14 @@ all_data <- bind_rows(receiver1,
                       receiver19,
                       receiver20) %>%
   clean_names %>% 
-  separate(transmitter, c("freq1", "freq2", "transmitter_id")) %>% 
-  mutate(transmitter_id = as.numeric(transmitter_id),
-         station_name = as.numeric(station_name)) %>% 
- # mutate() %>% 
-  filter(transmitter_id < 49000) %>% 
-  filter(transmitter_id > 48000) %>% 
+  mutate(transmitter_id = as.numeric(str_sub(transmitter, -5, -1))) %>% 
+  filter(!is.na(transmitter_id)) %>%
+  filter(transmitter_id < 49000 & transmitter_id >48000) %>% 
   mutate(date = ymd(as.Date(date_and_time_utc)),
          detected_by = as.character("stationary_receiver")) %>%  
   select(date, station_name,transmitter_id, detected_by) %>% 
-  distinct(station_name,transmitter_id, date, detected_by) %>% 
+  group_by(date, station_name, transmitter_id, detected_by) %>% 
+  count() %>% 
   left_join(all_vemco_receivers)
 
 # write.csv(all_data, "all_data.csv")
@@ -186,9 +187,14 @@ All_Individuals <- rkm_tracker_date %>%
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
   # ylim(-30,45)+
-  ggtitle("Most Carp Detected Moving Downstream")
+  ggtitle("Silver Carp Movement Patterns")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
+#### What's the best way to display this with the one fish going -159 rkm over a span of 3 days?
+# I think something "fishy" is going on, maybe has to do with one of the receivers having the 
+# wrong rkm written down?
+
+
 
 # Detections per day for all tags, with axis break
 AllDailyDetections <- rkm_tracker_date %>% 
@@ -357,8 +363,8 @@ ggplot(rkm_tracker_date, aes(x=date, y=rkm, group=transmitter_id, color=as.chara
                     caption = "Grey horizontal lines represent stationary receiver locations")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)+
   guides(color="none")+
-  labs(x=NULL)+
-  facet_wrap(vars(transmitter_id))
+  labs(x=NULL)
+  # facet_wrap(vars(transmitter_id))
 
 #### Individual Fish Plots ####
 
