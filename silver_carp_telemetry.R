@@ -7,107 +7,142 @@ library(readxl)
 library(ggplot2)
 library(ggbreak)
 
-# Fall 2021 Data
+# Data
 
+# Receiver 303
 receiver303_10_22_21 <- read_csv("receiver_data/Receiver303_10_22_21.csv")
+receiver303_5_13_22 <- read_csv("receiver_data/Receiver303_5_13_22.csv")
+receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22)
+
+# Receiver 1
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
+receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")
+receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22)
+
+# Receiver 2
+
 receiver2_11_16_21 <- read_csv("receiver_data/Receiver2_11_16_21.csv")
+receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
+receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22)
+
+# Receiver 3
 receiver3_10_22_21 <- read_csv("receiver_data/Receiver3_10_22_21.csv")
+receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")
+receiver3 <- bind_rows(receiver3_10_22_21, receiver3_5_10_22)
+
+# Receiver 4
 receiver4_10_22_21 <- read_csv("receiver_data/Receiver4_10_22_21.csv")
+receiver4_5_18_22 <- read_csv("receiver_data/Receiver4_5_18_22.csv")
+receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22)
+
+# Receiver 5
+receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")
+receiver5 <- receiver5_5_16_22
+
+# Receiver 6
 receiver6_10_22_21 <- read_csv("receiver_data/Receiver6_10_22_21.csv")
+receiver6_5_16_22 <- read_csv("receiver_data/Receiver6_5_16_22.csv")
+receiver6 <- bind_rows(receiver6_10_22_21, receiver6_5_16_22)
+
+
+# Receiver 7
 receiver7_10_22_21 <- read_csv("receiver_data/Receiver7_10_22_21.csv")
+receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")
+receiver7 <- bind_rows(receiver7_5_10_22, receiver7_10_22_21)
+
+# Receiver 8
+# receiver 8 was removed and switched to in-stream because of silting in fall 2021
 receiver8_10_22_21 <- read_csv("receiver_data/Receiver8_10_22_21.csv")
-receiver9_10_22_21 <- read_csv("receiver_data/Receiver9_10_22_21.csv")
-receiver10_10_22_21 <- read_csv("receiver_data/Receiver10_10_22_21.csv")
+receiver8 <- receiver8_10_22_21 
+
+# Receiver 9 ########### Problem here ######################
+receiver9_10_22_21 <- read_csv("receiver_data/Receiver9_10_22_21.csv") # no data
+receiver9_5_17_22 <- read_csv("receiver_data/Receiver9_5_17_22.csv")
+receiver9 <- receiver9_5_17_22
+
+# Receiver 10 ########### Problem here ######################
+receiver10_10_22_21 <- read_csv("receiver_data/Receiver10_10_22_21.csv") # no data
+receiver10_5_17_22 <- read_csv("receiver_data/Receiver10_5_17_22.csv")
+receiver10 <- receiver10_5_17_22
+
+# Receiver 11
 receiver11_10_14_21 <- read_csv("receiver_data/Receiver11_10_14_21.csv")
+# receiver 11 (in stream) has not been accessed yet for spring 2022
+receiver11 <- receiver11_10_14_21
+
+# Receiver 12
 receiver12_10_14_21 <- read_csv("receiver_data/Receiver12_10_14_21.csv")
+receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")
+receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22)
+
+# Receiver 13
 receiver13_10_14_21 <- read_csv("receiver_data/Receiver13_10_14_21.csv")
+# receiver 13 has not been accessed yet for spring 2022
+receiver13 <- receiver13_10_14_21
+
+# Receiver 14
 receiver14_10_14_21 <- read_csv("receiver_data/Receiver14_10_14_21.csv")
+receiver14_6_1_22 <- read_csv("receiver_data/Receiver14_6_1_22.csv")
+receiver14 <- bind_rows(receiver14_10_14_21,receiver14_6_1_22)
+
+# Receiver 15
 receiver15_10_05_21 <- read_csv("receiver_data/Receiver15_10_05_21.csv")
+receiver15_6_1_22 <- read_csv("receiver_data/Receiver15_6_1_22.csv")
+receiver15 <- bind_rows(receiver15_10_05_21,receiver15_6_1_22)
+
+# Receiver 16
 receiver16_10_05_21 <- read_csv("receiver_data/Receiver16_10_05_21.csv")
+# receiver 16 has not been accessed yet for spring 2022
+receiver16 <- receiver16_10_05_21
+
+# Receiver 17
 receiver17_10_05_21 <- read_csv("receiver_data/Receiver17_10-05_21.csv")
+receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") 
+receiver17 <- bind_rows(receiver17_10_05_21,receiver17_5_10_22)
+
+# Receiver 18
+receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")
+receiver18 <- receiver18_5_10_22
+
+# Receiver 19
 receiver19_10_05_21 <- read_csv("receiver_data/Receiver19_10_05_21.csv")
+receiver19 <- receiver19_10_05_21
+
+# Receiver 20
+receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")
+receiver20 <- receiver20_5_10_22
+
+# silver carp release points, from June 2021
 silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_points.xlsx")
 
-# Summer 2022 Data
-
-receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")%>% clean_names()
-receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")%>% clean_names()
-receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")%>% clean_names() 
-receiver303_5_13_22 <- read_csv("receiver_data/Receiver303_5_13_22.csv")%>% clean_names() 
-receiver4_5_18_22 <- read_csv("receiver_data/Receiver4_5_18_22.csv")%>% clean_names() 
-receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")%>% clean_names() 
-receiver6_5_16_22 <- read_csv("receiver_data/Receiver6_5_16_22.csv")%>% clean_names() 
-receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")%>% clean_names() 
-# receiver 8 was removed because of silting last fall
-receiver9_5_17_22 <- read_csv("receiver_data/Receiver9_5_17_22.csv")%>% clean_names() 
-receiver10_5_17_22 <- read_csv("receiver_data/Receiver10_5_17_22.csv")%>% clean_names() 
-# receiver 11 (in stream) has not been accessed yet
-receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")%>% clean_names() 
-# receiver 13 has not been accessed yet
-receiver14_6_1_22 <- read_csv("receiver_data/Receiver14_6_1_22.csv")%>% clean_names() 
-receiver15_6_1_22 <- read_csv("receiver_data/Receiver15_6_1_22.csv")%>% clean_names() 
-# receiver 16 has not been accessed yet
-receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") %>% clean_names() 
-receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")%>% clean_names() 
-receiver19_5_10_22 <- read_csv("receiver_data/Receiver19_5_10_22.csv") %>% mutate(`Station Name` = 19)
-receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")%>% clean_names() 
+# receiver locations
 all_vemco_receivers <- read_excel("receiver_data/all_vemco_receivers.xlsx") %>% 
   separate(name, c("receiver", "station_name")) %>% 
   mutate(station_name = as.numeric(station_name), 
          latitude = as.numeric(latitude), 
          longitude = as.numeric(longitude))
 
-# summer_22_data <-bind_rows(receiver1_5_11_22,
-#                            receiver2_5_11_22,
-#                            receiver3_5_10_22,
-#                            receiver7_5_10_22,
-#                            receiver17_5_10_22,
-#                            receiver18_5_10_22,
-#                            receiver19_5_10_22,
-#                            receiver20_5_10_22) %>% 
-#   clean_names %>% 
-#   mutate(station_name = as.numeric(station_name))
-
-
-all_data <- bind_rows(receiver303_10_22_21,
-                      receiver1_11_16_21,
-                      receiver2_11_16_21,
-                      receiver3_10_22_21,
-                      receiver4_10_22_21,
-                      receiver6_10_22_21,
-                      receiver7_10_22_21,
-                      # # Receiver8_10_22_21, no data, it was stuck in the mud
-                      # # Receiver9_10_22_21, no data
-                      # # Receiver10_10_22_21, no data
-                      receiver11_10_14_21,
-                      receiver12_10_14_21,
-                      receiver13_10_14_21,
-                      receiver14_10_14_21,
-                      receiver15_10_05_21,
-                      receiver16_10_05_21,
-                      receiver17_10_05_21,
-                      receiver19_10_05_21,
-                      receiver1_5_11_22,
-                      receiver2_5_11_22,
-                      receiver3_5_10_22,
-                      receiver303_5_13_22,
-                      receiver4_5_18_22,
-                      receiver5_5_16_22,
-                      receiver6_5_16_22,
-                      receiver7_5_10_22,
-                      receiver9_5_17_22,
-                      receiver10_5_17_22,
-                      # 11 not yet downloaded
-                      receiver12_6_1_22,
-                      # 13 not yet downloaded
-                      receiver14_6_1_22,
-                      receiver15_6_1_22,
-                      # 16 not yet downloaded
-                      receiver17_5_10_22,
-                      receiver18_5_10_22,
-                      receiver19_5_10_22,
-                      receiver20_5_10_22) %>%
+all_data <- bind_rows(receiver1, 
+                      receiver2, 
+                      receiver3, 
+                      receiver4, 
+                      receiver5,
+                      receiver6,
+                      receiver7,
+                      # receiver8, no data
+                      receiver303,
+                      # receiver9,
+                      # receiver10,
+                      receiver11,
+                      receiver12,
+                      receiver13,
+                      receiver14,
+                      receiver15,
+                      receiver16,
+                      receiver17,
+                      receiver18,
+                      receiver19,
+                      receiver20) %>%
   clean_names %>% 
   separate(transmitter, c("freq1", "freq2", "transmitter_id")) %>% 
   mutate(transmitter_id = as.numeric(transmitter_id),
@@ -120,8 +155,6 @@ all_data <- bind_rows(receiver303_10_22_21,
   select(date, station_name,transmitter_id, detected_by) %>% 
   distinct(station_name,transmitter_id, date, detected_by) %>% 
   left_join(all_vemco_receivers)
-
-# need to fix this, can't figure out how to make `Station Name` all characters
 
 # write.csv(all_data, "all_data.csv")
 
@@ -152,7 +185,7 @@ All_Individuals <- rkm_tracker_date %>%
        color = "Direction") +
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
-  ylim(-30,45)+
+  # ylim(-30,45)+
   ggtitle("Most Carp Detected Moving Downstream")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
@@ -170,10 +203,36 @@ AllDailyDetections <- rkm_tracker_date %>%
   scale_y_break(c(48491, 48724), scales = 0.25) +
   scale_y_continuous(breaks=seq(48452, 48733, 2))+
   # ylim(48452, 48491)+
-  ggtitle("James River",
+  ggtitle("Silver Carp",
           subtitle = "Daily Detections, June 2021 - May 2022")
 ggsave(AllDailyDetections, file = "plots/AllDailyDetections.png", dpi = 750, width = 7, height = 6,
        units = "in")
+
+##Maximum distance traveled by all individuals
+max_dist <- rkm_tracker_date %>% 
+  group_by(transmitter_id) %>% 
+  mutate(max_rkm = max(rkm),
+         min_rkm = min(rkm)) %>% 
+  distinct(transmitter_id, max_rkm, min_rkm) %>% 
+  mutate(distance_max = max_rkm - min_rkm)
+
+mean(max_dist$distance_max)
+
+MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
+  geom_point() +
+  labs(x="Tagged Individuals",
+       y="Maximum Distance Traveled (rkm)",
+       title = "Silver Carp Movement in the James River")+
+  geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
+  theme_bw()+
+  theme(
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(),
+    axis.ticks = element_blank())
+
+ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 4.5, height = 3,
+       units = "in")
+
 
 # Detections per day for 48724 through 48733
 DailyDetections724through733 <- rkm_tracker_date %>% 
@@ -270,30 +329,7 @@ ggsave(QuestionablyAlive, file = "plots/QuestionablyAlive.png", dpi = 750, width
 
 
 
-##Maximum distance traveled by all individuals
-max_dist <- rkm_tracker_date %>% 
-  group_by(transmitter_id) %>% 
-  mutate(max_rkm = max(rkm),
-         min_rkm = min(rkm)) %>% 
-  distinct(transmitter_id, max_rkm, min_rkm) %>% 
-  mutate(distance_max = max_rkm - min_rkm)
 
-mean(max_dist$distance_max)
-
-MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
-  geom_point() +
-  labs(x="Tagged Individuals",
-       y="Maximum Distance Traveled (rkm)",
-       title = "Silver Carp Movement in the James River")+
-  geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
-  theme_bw()+
-  theme(
-    axis.text.x = element_blank(),
-    axis.text.y = element_text(),
-    axis.ticks = element_blank())
-  
-ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 4.5, height = 3,
-       units = "in")
 
 
 ggplot(receiver14_6_1_22, aes(x=date_and_time_utc, y=transmitter))+geom_point()
