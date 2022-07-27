@@ -187,7 +187,7 @@ All_Individuals <- rkm_tracker_date %>%
   theme_classic()+
   geom_hline(yintercept = 0, size=0.75)+
   # ylim(-30,45)+
-  ggtitle("Silver Carp Movement Patterns")
+  ggtitle("Silver Carp Movement Over Time")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
 #### What's the best way to display this with the one fish going -159 rkm over a span of 3 days?
@@ -226,9 +226,9 @@ mean(max_dist$distance_max)
 
 MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
   geom_point() +
-  labs(x="Tagged Individuals",
-       y="Maximum Distance Traveled (rkm)",
-       title = "Silver Carp Movement in the James River")+
+  labs(x="",
+       y="Maximum Total Distance Traveled (rkm)",
+       title = "Maximum Silver Carp Movement per Individual")+
   geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
   theme_bw()+
   theme(
