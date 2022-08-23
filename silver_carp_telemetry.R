@@ -17,23 +17,29 @@ receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22)
 # Receiver 1
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
 receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")
-receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22)
+receiver1_8_17_22 <- read_csv("receiver_data/Receiver1_8_17_22.csv") 
+# this says date is a character, how do I get it to be a dttm?
+receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22,receiver1_8_17_22)
 
 # Receiver 2
 
 receiver2_11_16_21 <- read_csv("receiver_data/Receiver2_11_16_21.csv")
 receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
-receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22)
+receiver2_8_17_22 <- read_csv("receiver_data/Receiver2_8_17_22.csv")
+# this says date is a character, how do I get it to be a dttm?
+receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22, receiver2_8_17_22)
 
 # Receiver 3
 receiver3_10_22_21 <- read_csv("receiver_data/Receiver3_10_22_21.csv")
 receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")
-receiver3 <- bind_rows(receiver3_10_22_21, receiver3_5_10_22)
+receiver3_8_8_22 <- read_csv("receiver_data/Receiver3_8_8_22.csv")
+receiver3 <- bind_rows(receiver3_10_22_21, receiver3_5_10_22,receiver3_8_8_22)
 
 # Receiver 4
 receiver4_10_22_21 <- read_csv("receiver_data/Receiver4_10_22_21.csv")
 receiver4_5_18_22 <- read_csv("receiver_data/Receiver4_5_18_22.csv")
-receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22)
+receiver4_8_8_22 <- read_csv("receiver_data/Receiver4_8_8_22.csv")
+receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22, receiver4_8_8_22)
 
 # Receiver 5
 receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")
@@ -42,13 +48,15 @@ receiver5 <- receiver5_5_16_22
 # Receiver 6
 receiver6_10_22_21 <- read_csv("receiver_data/Receiver6_10_22_21.csv")
 receiver6_5_16_22 <- read_csv("receiver_data/Receiver6_5_16_22.csv")
-receiver6 <- bind_rows(receiver6_10_22_21, receiver6_5_16_22)
+receiver6_8_8_22 <- read_csv("receiver_data/Receiver6_8_8_22.csv")
+receiver6 <- bind_rows(receiver6_10_22_21, receiver6_5_16_22,receiver6_8_8_22)
 
 
 # Receiver 7
 receiver7_10_22_21 <- read_csv("receiver_data/Receiver7_10_22_21.csv")
 receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")
-receiver7 <- bind_rows(receiver7_5_10_22, receiver7_10_22_21)
+receiver7_8_8_22 <- read_csv("receiver_data/Receiver7_8_8_22.csv")
+receiver7 <- bind_rows(receiver7_5_10_22, receiver7_10_22_21,receiver7_8_8_22)
 
 # Receiver 8
 # receiver 8 was removed and switched to in-stream because of silting in fall 2021
@@ -58,12 +66,14 @@ receiver8 <- receiver8_10_22_21
 # Receiver 9 ########### Problem here ######################
 receiver9_10_22_21 <- read_csv("receiver_data/Receiver9_10_22_21.csv") # no data
 receiver9_5_17_22 <- read_csv("receiver_data/Receiver9_5_17_22.csv")
-receiver9 <- receiver9_5_17_22
+receiver9_8_8_22 <- read_csv("receiver_data/Receiver9_8_8_22.csv")
+receiver9 <- bind_rows(receiver9_5_17_22,receiver9_8_8_22)
 
 # Receiver 10 ########### Problem here ######################
 receiver10_10_22_21 <- read_csv("receiver_data/Receiver10_10_22_21.csv") # no data
 receiver10_5_17_22 <- read_csv("receiver_data/Receiver10_5_17_22.csv")
-receiver10 <- receiver10_5_17_22
+receiver10_8_8_22 <- read_csv("receiver_data/Receiver10_8_8_22.csv")
+receiver10 <- bind_rows(receiver10_5_17_22,receiver10_8_8_22)
 
 # Receiver 11
 receiver11_10_14_21 <- read_csv("receiver_data/Receiver11_10_14_21.csv")
@@ -74,7 +84,12 @@ receiver11 <- receiver11_10_14_21
 receiver12_10_14_21 <- read_csv("receiver_data/Receiver12_10_14_21.csv")
 receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")
 receiver12_7_11_22 <- read_csv("receiver_data/Receiver12_7_11_22.csv")
-receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22,receiver12_7_11_22)
+receiver12_8_4_22 <- read_csv("receiver_data/Receiver12_8_4_22.csv") 
+receiver12_8_18_22 <- read_csv("receiver_data/Receiver12_8_18_22.csv")
+receiver12_8_22_22 <- read_csv("receiver_data/Receiver12_8_22_22.csv")
+# these say date is a character, how do I get it to be a dttm?
+receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22,receiver12_7_11_22,receiver12_8_4_22,
+                        receiver12_8_18_22,receiver12_8_22_22)
 
 # Receiver 13
 receiver13_10_14_21 <- read_csv("receiver_data/Receiver13_10_14_21.csv")
@@ -165,7 +180,7 @@ active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.
 
 combined_data <- bind_rows(active_tracking_individuals,all_data,silver_carp_release_points)
 
-rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm) %>%
+rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm,station_name) %>%
   left_join(silver_carp_release_points %>% select(transmitter_id, rkm) %>% 
               rename(start_rkm = rkm)) %>% 
   mutate(distance = rkm-start_rkm)
