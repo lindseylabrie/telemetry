@@ -12,12 +12,15 @@ library(ggbreak)
 # Receiver 303
 receiver303_10_22_21 <- read_csv("receiver_data/Receiver303_10_22_21.csv")
 receiver303_5_13_22 <- read_csv("receiver_data/Receiver303_5_13_22.csv")
-receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22)
+receiver303_8_25_22 <- read_csv("receiver_data/Receiver303_8_25_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22,receiver303_8_25_22)
 
 # Receiver 1
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
-receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv")
-receiver1_8_17_22 <- read_csv("receiver_data/Receiver1_8_17_22.csv") 
+receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv") 
+receiver1_8_17_22 <- read_csv("receiver_data/Receiver1_8_17_22.csv") %>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
 # this says date is a character, how do I get it to be a dttm?
 receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22,receiver1_8_17_22)
 
@@ -25,7 +28,8 @@ receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22,receiver1_8_17_22)
 
 receiver2_11_16_21 <- read_csv("receiver_data/Receiver2_11_16_21.csv")
 receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
-receiver2_8_17_22 <- read_csv("receiver_data/Receiver2_8_17_22.csv")
+receiver2_8_17_22 <- read_csv("receiver_data/Receiver2_8_17_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
 # this says date is a character, how do I get it to be a dttm?
 receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22, receiver2_8_17_22)
 
@@ -43,7 +47,9 @@ receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22, receiver4_8_8_22)
 
 # Receiver 5
 receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")
-receiver5 <- receiver5_5_16_22
+receiver5_8_25_22 <- read_csv("receiver_data/Receiver5_8_25_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver5 <- bind_rows(receiver5_5_16_22,receiver5_8_25_22)
 
 # Receiver 6
 receiver6_10_22_21 <- read_csv("receiver_data/Receiver6_10_22_21.csv")
@@ -77,24 +83,31 @@ receiver10 <- bind_rows(receiver10_5_17_22,receiver10_8_8_22)
 
 # Receiver 11
 receiver11_10_14_21 <- read_csv("receiver_data/Receiver11_10_14_21.csv")
-# receiver 11 (in stream) has not been accessed yet for spring 2022
+# receiver 11 (in stream) has not been accessed yet for spring 2022, sent off to innovasea
 receiver11 <- receiver11_10_14_21
 
 # Receiver 12
-receiver12_10_14_21 <- read_csv("receiver_data/Receiver12_10_14_21.csv")
+receiver12_10_14_21 <- read_csv("receiver_data/Receiver12_10_14_21.csv") # no carp on this one
 receiver12_6_1_22 <- read_csv("receiver_data/Receiver12_6_1_22.csv")
 receiver12_7_11_22 <- read_csv("receiver_data/Receiver12_7_11_22.csv")
-receiver12_8_4_22 <- read_csv("receiver_data/Receiver12_8_4_22.csv") 
-receiver12_8_18_22 <- read_csv("receiver_data/Receiver12_8_18_22.csv")
-receiver12_8_22_22 <- read_csv("receiver_data/Receiver12_8_22_22.csv")
-# these say date is a character, how do I get it to be a dttm?
+receiver12_8_4_22 <- read_csv("receiver_data/Receiver12_8_4_22.csv") %>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))%>% 
+  select(-Time)
+receiver12_8_18_22 <- read_csv("receiver_data/Receiver12_8_18_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`)) %>% 
+  select(-Time)
+receiver12_8_22_22 <- read_csv("receiver_data/Receiver12_8_22_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+
 receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22,receiver12_7_11_22,receiver12_8_4_22,
                         receiver12_8_18_22,receiver12_8_22_22)
 
 # Receiver 13
 receiver13_10_14_21 <- read_csv("receiver_data/Receiver13_10_14_21.csv")
-# receiver 13 has not been accessed yet for spring 2022
-receiver13 <- receiver13_10_14_21
+receiver13_8_25_22 <- read_csv("receiver_data/Receiver13_8_25_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+
+receiver13 <- bind_rows(receiver13_10_14_21,receiver13_8_25_22)
 
 # Receiver 14
 receiver14_10_14_21 <- read_csv("receiver_data/Receiver14_10_14_21.csv")
@@ -110,8 +123,9 @@ receiver15 <- bind_rows(receiver15_10_05_21,receiver15_6_1_22)
 
 # Receiver 16
 receiver16_10_05_21 <- read_csv("receiver_data/Receiver16_10_05_21.csv")
-# receiver 16 has not been accessed yet for spring 2022
-receiver16 <- receiver16_10_05_21
+receiver16_8_25_22 <- read_csv("receiver_data/Receiver16_8_25_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver16 <- bind_rows(receiver16_10_05_21,receiver16_8_25_22)
 
 # Receiver 17
 receiver17_10_05_21 <- read_csv("receiver_data/Receiver17_10-05_21.csv")
