@@ -660,137 +660,182 @@ plot_48479 <-ggplot(id_48479, aes(x=date, y=rkm))+
 ggsave(plot_48479, file = "individual_movement/48479.png", dpi = 750, width = 7, height = 5,
        units = "in")
 
-## 48480 ## 0.3 km upstream
+## 48480 ##
 id_48480 <- subset(rkm_tracker_date, transmitter_id == 48480)
-ggplot(id_48480, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48480 <-ggplot(id_48480, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48480")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48480, file = "individual_movement/48480.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48481 ## NDAR
 id_48481 <- subset(rkm_tracker_date, transmitter_id == 48481)
-ggplot(id_48481, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48481 <-ggplot(id_48481, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48481")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48481, file = "individual_movement/48481.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48482 ## 3.9 km total distance 
+## 48482 ##  
 id_48482 <- subset(rkm_tracker_date, transmitter_id == 48482)
-ggplot(id_48482, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48482 <-ggplot(id_48482, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48482")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48482, file = "individual_movement/48482.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48483 ## 4.4 km total
+## 48483 ##
 id_48483 <- subset(rkm_tracker_date, transmitter_id == 48483)
-ggplot(id_48483, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48483 <-ggplot(id_48483, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48483")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48483, file = "individual_movement/48483.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48484 ## 20.5 total km
+## 48484 ## 
 id_48484 <- subset(rkm_tracker_date, transmitter_id == 48484)
-ggplot(id_48484, aes(x=date, y=rkm))+
+plot_48484 <-ggplot(id_48484, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48484")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48484, file = "individual_movement/48484.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48485 ## 4.1 total km 
 id_48485 <- subset(rkm_tracker_date, transmitter_id == 48485)
-ggplot(id_48485, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48485 <-ggplot(id_48485, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48485")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48485, file = "individual_movement/48485.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48486 ## 4.9 total km, probably moved out into MO river
+
+## 48486 ##
 id_48486 <- subset(rkm_tracker_date, transmitter_id == 48486)
-ggplot(id_48486, aes(x=date, y=rkm))+
-  geom_point()+geom_line()+labs(title="Fish ID # 48486", subtitle="Presumed to have moved into Missouri River")+
+plot_48486 <-ggplot(id_48486, aes(x=date, y=rkm))+
+  geom_point()+geom_line()+labs(title="Fish ID # 48486")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48486, file = "individual_movement/48486.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48487 ## NDAR
+## 48487 ##
 id_48487 <- subset(rkm_tracker_date, transmitter_id == 48487)
-ggplot(id_48487, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48487 <-ggplot(id_48487, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48487")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
-  
-## 48488 ## lots of movement
+ggsave(plot_48487, file = "individual_movement/48487.png", dpi = 750, width = 7, height = 5,
+       units = "in")
+
+## 48488 ##
 id_48488 <- subset(rkm_tracker_date, transmitter_id == 48488)
-ggplot(id_48488, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48488 <-ggplot(id_48488, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48488")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48488, file = "individual_movement/48488.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48489 ## 0.7 km upstream
+## 48489 ## 
 id_48489 <- subset(rkm_tracker_date, transmitter_id == 48489)
-ggplot(id_48489, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48489 <- ggplot(id_48489, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48489")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48489, file = "individual_movement/48489.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48490 ## 0.4 km downstream
+## 48490 ##
 id_48490 <- subset(rkm_tracker_date, transmitter_id == 48490)
-ggplot(id_48490, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48490 <- ggplot(id_48490, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48490")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48490, file = "individual_movement/48490.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48491 ## good movement
+## 48491 ## 
 id_48491 <- subset(rkm_tracker_date, transmitter_id == 48491)
-ggplot(id_48491, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48491 <- ggplot(id_48491, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48491")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48491, file = "individual_movement/48491.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48724 ## 0.1 km downstream
+## 48724 ##
 id_48724 <- subset(rkm_tracker_date, transmitter_id == 48724)
-ggplot(id_48724, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48724 <-ggplot(id_48724, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48724")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48724, file = "individual_movement/48724.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48725 ## 13.1 km total 
+## 48725 ## 
 id_48725 <- subset(rkm_tracker_date, transmitter_id == 48725)
-ggplot(id_48725, aes(x=date, y=rkm))+
+plot_48725 <-ggplot(id_48725, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48725")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48725, file = "individual_movement/48725.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48726 ## 19.3 total km
+## 48726 ##
 id_48726 <- subset(rkm_tracker_date, transmitter_id == 48726)
-ggplot(id_48726, aes(x=date, y=rkm))+
+plot_48726 <-ggplot(id_48726, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48726")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48726, file = "individual_movement/48726.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48727 ## 7.6 km total
 id_48727 <- subset(rkm_tracker_date, transmitter_id == 48727)
-ggplot(id_48727, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48727 <-ggplot(id_48727, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48727")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48727, file = "individual_movement/48727.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48728 ## interesting movement
+## 48728 ##
 id_48728 <- subset(rkm_tracker_date, transmitter_id == 48728)
-ggplot(id_48728, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48728 <-ggplot(id_48728, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48728")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48728, file = "individual_movement/48728.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48729 ## 0.7 km on day of tagging
+## 48729 ##
 id_48729 <- subset(rkm_tracker_date, transmitter_id == 48729)
-ggplot(id_48729, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48729 <-ggplot(id_48729, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48729")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48729, file = "individual_movement/48729.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48730 ## interesting movement, went very far in one day 
+## 48730 ##  
 id_48730 <- subset(rkm_tracker_date, transmitter_id == 48730)
-ggplot(id_48730, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48730 <-ggplot(id_48730, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48730")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48730, file = "individual_movement/48730.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48731 ## 4.3 km downstream
 id_48731 <- subset(rkm_tracker_date, transmitter_id == 48731)
-ggplot(id_48731, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48731 <-ggplot(id_48731, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48731")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48731, file = "individual_movement/48731.png", dpi = 750, width = 7, height = 5,
+       units = "in")
   
 ## 48732 ## 
 id_48732 <- subset(rkm_tracker_date, transmitter_id == 48732)
-ggplot(id_48732, aes(x=date, y=rkm))+
+plot_48732 <- ggplot(id_48732, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48732")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48732, file = "individual_movement/48732.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48733 ## 4.3 km downstream
+## 48733 ## 
 id_48733 <- subset(rkm_tracker_date, transmitter_id == 48733)
-ggplot(id_48733, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48733 <- ggplot(id_48733, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48733")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48733, file = "individual_movement/48733.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 # email Alison for tips
 
