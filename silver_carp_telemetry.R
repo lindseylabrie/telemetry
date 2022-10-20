@@ -14,15 +14,18 @@ receiver303_10_22_21 <- read_csv("receiver_data/Receiver303_10_22_21.csv")
 receiver303_5_13_22 <- read_csv("receiver_data/Receiver303_5_13_22.csv")
 receiver303_8_25_22 <- read_csv("receiver_data/Receiver303_8_25_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22,receiver303_8_25_22)
+receiver303_10_12_22 <- read_csv("receiver_data/Receiver303_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver303 <- bind_rows(receiver303_10_22_21, receiver303_5_13_22,receiver303_8_25_22,receiver303_10_12_22)
 
 # Receiver 1
 receiver1_11_16_21 <- read_csv("receiver_data/Receiver1_11_16_21.csv") 
 receiver1_5_11_22 <- read_csv("receiver_data/Receiver1_5_11_22.csv") 
 receiver1_8_17_22 <- read_csv("receiver_data/Receiver1_8_17_22.csv") %>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-# this says date is a character, how do I get it to be a dttm?
-receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22,receiver1_8_17_22)
+receiver1_10_13_22 <- read_csv("receiver_data/Receiver1_10_13_2022.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver1 <- bind_rows(receiver1_11_16_21,receiver1_5_11_22,receiver1_8_17_22,receiver1_10_13_22)
 
 # Receiver 2
 
@@ -30,56 +33,70 @@ receiver2_11_16_21 <- read_csv("receiver_data/Receiver2_11_16_21.csv")
 receiver2_5_11_22 <- read_csv("receiver_data/Receiver2_5_11_22.csv")
 receiver2_8_17_22 <- read_csv("receiver_data/Receiver2_8_17_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-# this says date is a character, how do I get it to be a dttm?
-receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22, receiver2_8_17_22)
+receiver2_10_13_22 <- read_csv("receiver_data/Receiver2_10_13_2022.csv")
+receiver2 <- bind_rows(receiver2_11_16_21, receiver2_5_11_22, receiver2_8_17_22, receiver2_10_13_22)
 
 # Receiver 3
 receiver3_10_22_21 <- read_csv("receiver_data/Receiver3_10_22_21.csv")
 receiver3_5_10_22 <- read_csv("receiver_data/Receiver3_5_10_22.csv")
 receiver3_8_8_22 <- read_csv("receiver_data/Receiver3_8_8_22.csv")
-receiver3 <- bind_rows(receiver3_10_22_21, receiver3_5_10_22,receiver3_8_8_22)
+receiver3_10_12_22 <- read_csv("receiver_data/Receiver3_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver3 <- bind_rows(receiver3_10_22_21, receiver3_5_10_22,receiver3_8_8_22,receiver3_10_12_22)
 
 # Receiver 4
 receiver4_10_22_21 <- read_csv("receiver_data/Receiver4_10_22_21.csv")
 receiver4_5_18_22 <- read_csv("receiver_data/Receiver4_5_18_22.csv")
 receiver4_8_8_22 <- read_csv("receiver_data/Receiver4_8_8_22.csv")
-receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22, receiver4_8_8_22)
+receiver4_10_12_22 <- read_csv("receiver_data/Receiver4_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver4 <- bind_rows(receiver4_10_22_21, receiver4_5_18_22, receiver4_8_8_22,receiver4_10_12_22)
 
 # Receiver 5
 receiver5_5_16_22 <- read_csv("receiver_data/Receiver5_5_16_22.csv")
 receiver5_8_25_22 <- read_csv("receiver_data/Receiver5_8_25_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-receiver5 <- bind_rows(receiver5_5_16_22,receiver5_8_25_22)
+receiver5_10_12_22 <- read_csv("receiver_data/Receiver5_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver5 <- bind_rows(receiver5_5_16_22,receiver5_8_25_22,receiver5_10_12_22)
 
 # Receiver 6
 receiver6_10_22_21 <- read_csv("receiver_data/Receiver6_10_22_21.csv")
 receiver6_5_16_22 <- read_csv("receiver_data/Receiver6_5_16_22.csv")
 receiver6_8_8_22 <- read_csv("receiver_data/Receiver6_8_8_22.csv")
-receiver6 <- bind_rows(receiver6_10_22_21, receiver6_5_16_22,receiver6_8_8_22)
+receiver6_10_12_22 <- read_csv("receiver_data/Receiver6_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver6 <- bind_rows(receiver6_10_22_21, receiver6_5_16_22,receiver6_8_8_22,receiver6_10_12_22)
 
 
 # Receiver 7
 receiver7_10_22_21 <- read_csv("receiver_data/Receiver7_10_22_21.csv")
 receiver7_5_10_22 <- read_csv("receiver_data/Receiver7_5_10_22.csv")
 receiver7_8_8_22 <- read_csv("receiver_data/Receiver7_8_8_22.csv")
-receiver7 <- bind_rows(receiver7_5_10_22, receiver7_10_22_21,receiver7_8_8_22)
+receiver7_10_12_22 <- read_csv("receiver_data/Receiver7_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver7 <- bind_rows(receiver7_5_10_22, receiver7_10_22_21,receiver7_8_8_22,receiver7_10_12_22)
 
 # Receiver 8
 # receiver 8 was removed and switched to in-stream because of silting in fall 2021
 receiver8_10_22_21 <- read_csv("receiver_data/Receiver8_10_22_21.csv")
 receiver8 <- receiver8_10_22_21 
 
-# Receiver 9 ########### Problem here ######################
+# Receiver 9
 receiver9_10_22_21 <- read_csv("receiver_data/Receiver9_10_22_21.csv") # no data
 receiver9_5_17_22 <- read_csv("receiver_data/Receiver9_5_17_22.csv")
 receiver9_8_8_22 <- read_csv("receiver_data/Receiver9_8_8_22.csv")
-receiver9 <- bind_rows(receiver9_5_17_22,receiver9_8_8_22)
+receiver9_10_12_22 <- read_csv("receiver_data/Receiver9_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver9 <- bind_rows(receiver9_5_17_22,receiver9_8_8_22,receiver9_10_12_22)
 
-# Receiver 10 ########### Problem here ######################
+# Receiver 10
 receiver10_10_22_21 <- read_csv("receiver_data/Receiver10_10_22_21.csv") # no data
 receiver10_5_17_22 <- read_csv("receiver_data/Receiver10_5_17_22.csv")
 receiver10_8_8_22 <- read_csv("receiver_data/Receiver10_8_8_22.csv")
-receiver10 <- bind_rows(receiver10_5_17_22,receiver10_8_8_22)
+receiver10_10_12_22 <- read_csv("receiver_data/Receiver10_10_12_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver10 <- bind_rows(receiver10_5_17_22,receiver10_8_8_22,receiver10_10_12_22)
 
 # Receiver 11
 receiver11_10_14_21 <- read_csv("receiver_data/Receiver11_10_14_21.csv")
@@ -98,15 +115,17 @@ receiver12_8_18_22 <- read_csv("receiver_data/Receiver12_8_18_22.csv")%>%
   select(-Time)
 receiver12_8_22_22 <- read_csv("receiver_data/Receiver12_8_22_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver12_10_10_22 <- read_csv("receiver_data/Receiver12_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
 
 receiver12 <- bind_rows(receiver12_10_14_21,receiver12_6_1_22,receiver12_7_11_22,receiver12_8_4_22,
-                        receiver12_8_18_22,receiver12_8_22_22)
+                        receiver12_8_18_22,receiver12_8_22_22,receiver12_10_10_22)
 
 # Receiver 13
 receiver13_10_14_21 <- read_csv("receiver_data/Receiver13_10_14_21.csv")
 receiver13_8_25_22 <- read_csv("receiver_data/Receiver13_8_25_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-
+receiver13_10_10_22 <- read_csv("receiver_data/Receiver13_10_10_22.csv") # nodata
 receiver13 <- bind_rows(receiver13_10_14_21,receiver13_8_25_22)
 
 # Receiver 14
@@ -114,35 +133,49 @@ receiver14_10_14_21 <- read_csv("receiver_data/Receiver14_10_14_21.csv")
 receiver14_6_1_22 <- read_csv("receiver_data/Receiver14_6_1_22.csv")
 receiver14_6_29_22 <- read_csv("receiver_data/Receiver14_6_29_22.csv")
 receiver14_7_5_22 <- read_csv("receiver_data/Receiver14_7_5_22.csv")
-receiver14 <- bind_rows(receiver14_10_14_21,receiver14_6_1_22,receiver14_6_29_22,receiver14_7_5_22)
+receiver14_10_10_22 <- read_csv("receiver_data/Receiver14_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver14 <- bind_rows(receiver14_10_14_21,receiver14_6_1_22,receiver14_6_29_22,receiver14_7_5_22,receiver14_10_10_22)
 
 # Receiver 15
 receiver15_10_05_21 <- read_csv("receiver_data/Receiver15_10_05_21.csv")
 receiver15_6_1_22 <- read_csv("receiver_data/Receiver15_6_1_22.csv")
-receiver15 <- bind_rows(receiver15_10_05_21,receiver15_6_1_22)
+receiver15_10_10_22 <- read_csv("receiver_data/Receiver15_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver15 <- bind_rows(receiver15_10_05_21,receiver15_6_1_22,receiver15_10_10_22)
 
 # Receiver 16
 receiver16_10_05_21 <- read_csv("receiver_data/Receiver16_10_05_21.csv")
 receiver16_8_25_22 <- read_csv("receiver_data/Receiver16_8_25_22.csv")%>% 
   mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
-receiver16 <- bind_rows(receiver16_10_05_21,receiver16_8_25_22)
+receiver16_10_10_22 <- read_csv("receiver_data/Receiver16_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver16 <- bind_rows(receiver16_10_05_21,receiver16_8_25_22,receiver16_10_10_22)
 
 # Receiver 17
 receiver17_10_05_21 <- read_csv("receiver_data/Receiver17_10-05_21.csv")
 receiver17_5_10_22 <- read_csv("receiver_data/Receiver17_5_10_22.csv") 
-receiver17 <- bind_rows(receiver17_10_05_21,receiver17_5_10_22)
+receiver17_10_10_22 <- read_csv("receiver_data/Receiver17_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver17 <- bind_rows(receiver17_10_05_21,receiver17_5_10_22,receiver17_10_10_22)
 
 # Receiver 18
 receiver18_5_10_22 <- read_csv("receiver_data/Receiver18_5_10_22.csv")
-receiver18 <- receiver18_5_10_22
+receiver18_10_10_22 <- read_csv("receiver_data/Receiver18_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver18 <- bind_rows(receiver18_5_10_22,receiver18_10_10_22)
 
 # Receiver 19
 receiver19_10_05_21 <- read_csv("receiver_data/Receiver19_10_05_21.csv")
-receiver19 <- receiver19_10_05_21
+receiver19_10_10_22 <- read_csv("receiver_data/Receiver19_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver19 <- bind_rows(receiver19_10_05_21, receiver19_10_10_22)
 
 # Receiver 20
 receiver20_5_10_22 <- read_csv("receiver_data/Receiver20_5_10_22.csv")
-receiver20 <- receiver20_5_10_22
+receiver20_10_10_22 <- read_csv("receiver_data/Receiver20_10_10_22.csv")%>% 
+  mutate(`Date and Time (UTC)` = mdy_hm(`Date and Time (UTC)`))
+receiver20 <- bind_rows(receiver20_5_10_22,receiver20_10_10_22)
 
 # silver carp release points, from June 2021
 silver_carp_release_points <- read_excel("tracking_data/silver_carp_release_points.xlsx")
@@ -186,7 +219,7 @@ all_data <- bind_rows(receiver1,
   count() %>% 
   left_join(all_vemco_receivers)
 
-# write.csv(all_data, "all_data.csv")
+write.csv(all_data, "all_data.csv")
 
 active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.xlsx") %>% 
   mutate(detected_by = as.character("active_tracking")) %>% 
@@ -399,174 +432,233 @@ ggplot(rkm_tracker_date, aes(x=date, y=rkm, group=transmitter_id, color=as.chara
 
 ## 48452 ## Not detected after release
 id_48452 <- subset(rkm_tracker_date, transmitter_id == 48452)
-ggplot(id_48452, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48452 <- ggplot(id_48452, aes(x=date, y=rkm))+
   geom_point()+labs(title="ID # 48452")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48452, file = "individual_movement/48452.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48453 ##
 id_48453 <- subset(rkm_tracker_date, transmitter_id == 48453)
-ggplot(id_48453, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48453 <- ggplot(id_48453, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48453")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48453, file = "individual_movement/48453.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48454 ## total detected distance traveled = 0.7 km downstream
 id_48454 <- subset(rkm_tracker_date, transmitter_id == 48454)
-ggplot(id_48454, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48454 <- ggplot(id_48454, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48454")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48454, file = "individual_movement/48454.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 
 ## 48455 ## total detected distance traveled = 1.7 km upstream
 id_48455 <- subset(rkm_tracker_date, transmitter_id == 48455)
-ggplot(id_48455, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48455 <- ggplot(id_48455, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48455")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48455, file = "individual_movement/48455.png", dpi = 750, width = 7, height = 5,
+       units = "in")
+
 
 ## 48456 ## total detected distance traveled = 0.7 km upstream
 id_48456 <- subset(rkm_tracker_date, transmitter_id == 48456)
-ggplot(id_48456, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48456 <- ggplot(id_48456, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48456")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48456, file = "individual_movement/48456.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48457 ## 1.5 km total movement
 id_48457 <- subset(rkm_tracker_date, transmitter_id == 48457)
-ggplot(id_48457, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48457 <- ggplot(id_48457, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48457")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48457, file = "individual_movement/48457.png", dpi = 750, width = 7, height = 5,
+       units = "in")
+
 
 ## 48458 ## detected but no movement
 id_48458 <- subset(rkm_tracker_date, transmitter_id == 48458)
-ggplot(id_48458, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48458 <- ggplot(id_48458, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48458")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48458, file = "individual_movement/48458.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48459 ## 1.2 km ds on day of release, but not detected after release date
 id_48459 <- subset(rkm_tracker_date, transmitter_id == 48459)
-ggplot(id_48459, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48459 <- ggplot(id_48459, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48459")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48459, file = "individual_movement/48459.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48460 ## 0.7 km downstream
+## 48460 ## 
 id_48460 <- subset(rkm_tracker_date, transmitter_id == 48460)
-ggplot(id_48460, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48460 <- ggplot(id_48460, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48460")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48460, file = "individual_movement/48460.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48461 ## detected but no movement
+
+## 48461 ## 
 id_48461 <- subset(rkm_tracker_date, transmitter_id == 48461)
-ggplot(id_48461, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48461 <- ggplot(id_48461, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48461")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48461, file = "individual_movement/48461.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48462 ## very good movement
+## 48462 ## 
 id_48462 <- subset(rkm_tracker_date, transmitter_id == 48462)
-ggplot(id_48462, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48462 <- ggplot(id_48462, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48462")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48462, file = "individual_movement/48462.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48463 ## 23.9 km total movement
 id_48463 <- subset(rkm_tracker_date, transmitter_id == 48463)
-ggplot(id_48463, aes(x=date, y=rkm ))+
+plot_48463 <-ggplot(id_48463, aes(x=date, y=rkm ))+
   geom_point()+geom_line()+labs(title="Fish ID # 48463",)+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48463, file = "individual_movement/48463.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48464 ## 0.4 km downstream
 id_48464 <- subset(rkm_tracker_date, transmitter_id == 48464)
-ggplot(id_48464, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48464 <-ggplot(id_48464, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48464")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48464, file = "individual_movement/48464.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48465 ## NDAR
+## 48465 ##
 id_48465 <- subset(rkm_tracker_date, transmitter_id == 48465)
-ggplot(id_48465, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48465 <-ggplot(id_48465, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48465")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48465, file = "individual_movement/48465.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48466 ## 2.2 km total movement
+## 48466 ## 
 id_48466 <- subset(rkm_tracker_date, transmitter_id == 48466)
-ggplot(id_48466, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48466 <-ggplot(id_48466, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48466")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48466, file = "individual_movement/48466.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48467 ## NDAR
 id_48467 <- subset(rkm_tracker_date, transmitter_id == 48467)
-ggplot(id_48465, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48467 <-ggplot(id_48465, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48467")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48467, file = "individual_movement/48467.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48468 #####  33 km total movement, 28 days to go 31.35 km upstream
+## 48468 ##
 id_48468 <- subset(rkm_tracker_date, transmitter_id == 48468)
-ggplot(id_48468, aes(x=date, y=rkm))+
+plot_48468 <-ggplot(id_48468, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48468")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48468, file = "individual_movement/48468.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48469 ## 6.2 km downstream
+## 48469 ##
 id_48469 <- subset(rkm_tracker_date, transmitter_id == 48469)
-ggplot(id_48469, aes(x=date, y=rkm))+
+plot_48469 <-ggplot(id_48469, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48469")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48469, file = "individual_movement/48469.png", dpi = 750, width = 7, height = 5,
+       units = "in")
+
 
 ## 48470 ## NDAR
 id_48470 <- subset(rkm_tracker_date, transmitter_id == 48470)
-ggplot(id_48470, aes(x=date, y=rkm ))+
+plot_48470 <-ggplot(id_48470, aes(x=date, y=rkm ))+
   geom_point()+geom_line()+labs(title="ID # 48470")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48470, file = "individual_movement/48470.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48471 ## 0.7 km upstream
+## 48471 ## 
 id_48471 <- subset(rkm_tracker_date, transmitter_id == 48471)
-ggplot(id_48471, aes(x=date, y=rkm))+
+plot_48471 <-ggplot(id_48471, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48471")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
-  
+ggsave(plot_48471, file = "individual_movement/48471.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48472 ## 0.3 km upstream
+## 48472 ##
 id_48472 <- subset(rkm_tracker_date, transmitter_id == 48472)
-ggplot(id_48472, aes(x=date, y=rkm))+
+plot_48472 <- ggplot(id_48472, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48472")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48472, file = "individual_movement/48472.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48473 ## NDAR
 id_48473 <- subset(rkm_tracker_date, transmitter_id == 48473)
-ggplot(id_48473, aes(x=date, y=rkm))+
+plot_48473 <-ggplot(id_48473, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48473")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48473, file = "individual_movement/48473.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48474 ## 0.2 km total
+
+## 48474 ## 
 id_48474 <- subset(rkm_tracker_date, transmitter_id == 48474)
-ggplot(id_48474, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
-  geom_line()+labs(title="ID # 48474")+
+plot_48474 <-ggplot(id_48474, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48474")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48474, file = "individual_movement/48474.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48475 ## 0.6 km downstream
+## 48475 ##
 id_48475 <- subset(rkm_tracker_date, transmitter_id == 48475)
-ggplot(id_48475, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48475 <-ggplot(id_48475, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48475")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48475, file = "individual_movement/48475.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48476 #### detected every day but no movement, probably dead
 id_48476 <- subset(rkm_tracker_date, transmitter_id == 48476)
-ggplot(id_48476, aes(x=date, y=rkm))+
+plot_48476 <-ggplot(id_48476, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48476", subtitle="Presumed dead")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48476, file = "individual_movement/48476.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48477 ## 2.6 km downstream, probably swam into MO River
 id_48477 <- subset(rkm_tracker_date, transmitter_id == 48477)
-ggplot(id_48477, aes(x=date, y=rkm))+
+plot_48477 <-ggplot(id_48477, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 48477", subtitle="Presumed to have moved into the Missouri River")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48477, file = "individual_movement/48477.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48478 ## interesting movement
+## 48478 ## 
 id_48478 <- subset(rkm_tracker_date, transmitter_id == 48478)
-ggplot(id_48478, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48478 <-ggplot(id_48478, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48478")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48478, file = "individual_movement/48478.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
-## 48479 ## 2.8 km total
+## 48479 ##
 id_48479 <- subset(rkm_tracker_date, transmitter_id == 48479)
-ggplot(id_48479, aes(x=date, y=rkm, color=as.character(transmitter_id)))+
+plot_48479 <-ggplot(id_48479, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48479")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+ggsave(plot_48479, file = "individual_movement/48479.png", dpi = 750, width = 7, height = 5,
+       units = "in")
 
 ## 48480 ## 0.3 km upstream
 id_48480 <- subset(rkm_tracker_date, transmitter_id == 48480)
