@@ -420,12 +420,16 @@ ggplot(receiver15_6_1_22, aes(x=date_and_time_utc, y=transmitter))+geom_point()
 # work on making distance plots using rkm tracker date file
 
 ### Plot of all fish data ####
-ggplot(rkm_tracker_date, aes(x=date, y=rkm, group=transmitter_id, color=as.character(transmitter_id)))+
-  geom_line()+ labs(title="James River Silver Carp Detections", subtitle ="June - November 2021.", 
+
+All_Fish <- ggplot(rkm_tracker_date, aes(x=date, y=rkm, group=transmitter_id, color=as.character(transmitter_id)))+
+  geom_line()+ labs(title="James River Silver Carp Detections", subtitle ="June 2021 - October 2022.", 
                     caption = "Grey horizontal lines represent stationary receiver locations")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)+
   guides(color="none")+
   labs(x=NULL)
+
+ggsave(All_Fish, file = "plots/All_Fish.png", dpi = 750, width = 7, height = 5,
+       units = "in")
   # facet_wrap(vars(transmitter_id))
 
 #### Individual Fish Plots ####
