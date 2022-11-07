@@ -240,13 +240,14 @@ All_Individuals <- rkm_tracker_date %>%
          direction = case_when(meandistance<0~"downstream",
                                meandistance==0~"stationary",
                                meandistance>0~"upstream")) %>% 
-  ggplot(aes(color=direction, group=transmitter_id,x=date, y=distance))+
+  ggplot(aes(color=as.character(transmitter_id), group=transmitter_id,x=date, y=distance))+
   geom_line(alpha=0.8)+
   geom_point(shape=20, alpha=0.8) +
   labs(y = "Distance Traveled, rkm",
        x = "",
        color = "Direction") +
   theme_classic()+
+  theme(legend.position="none")+
   geom_hline(yintercept = 0, size=0.75)+
   # ylim(-30,45)+
   ggtitle("Silver Carp Movement Over Time")
