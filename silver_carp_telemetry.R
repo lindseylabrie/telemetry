@@ -221,6 +221,8 @@ all_data <- bind_rows(receiver1,
 
 write.csv(all_data, "all_data.csv")
 
+all_data <-read_csv("all_data.csv")
+
 active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.xlsx") %>% 
   mutate(detected_by = as.character("active_tracking")) %>% 
   rownames_to_column()
@@ -299,7 +301,32 @@ MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -
 ggsave(MaxDistancePlot,file="plots/MaxDistancePlot.jpg", dpi = 750, width = 4.5, height = 3,
        units = "in")
 
+## absolute movement
 
+
+abs_mvmt <-rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(transmitter_id, date) %>% 
+  group_by(transmitter_id) %>% 
+  mutate(total_movement = abs(rkm - lag(rkm,1))) %>% 
+  group_by(transmitter_id) %>% 
+  summarise(total_movement=sum(total_movement, na.rm = T))
+
+
+TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
+  geom_point() +
+  labs(x="",
+       y="Minimum Total Distance Traveled (rkm)",
+       title = "Minimum Silver Carp Movement per Individual")+
+  geom_hline(data=abs_mvmt,aes(yintercept=mean(total_movement)), color="purple")+
+  theme_bw()+
+  theme(
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(),
+    axis.ticks = element_blank())
+
+mean(abs_mvmt$total_movement)
+
+ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 4.5, height = 3,
+       units = "in")
 # Detections per day for 48724 through 48733
 DailyDetections724through733 <- rkm_tracker_date %>% 
   ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
