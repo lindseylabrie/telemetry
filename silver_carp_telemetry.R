@@ -253,9 +253,6 @@ All_Individuals <- rkm_tracker_date %>%
   ggtitle("Silver Carp Movement Over Time")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
-#### What's the best way to display this with the one fish going -159 rkm over a span of 3 days?
-# I think something "fishy" is going on, maybe has to do with one of the receivers having the 
-# wrong rkm written down?
 
 
 
