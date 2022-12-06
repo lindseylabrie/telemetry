@@ -245,14 +245,13 @@ All_Individuals <- rkm_tracker_date %>%
   ggplot(aes(color=as.character(transmitter_id), group=transmitter_id,x=date, y=distance))+
   geom_line(alpha=0.8)+
   geom_point(shape=20, alpha=0.8) +
-  labs(y = "Distance Traveled, rkm",
-       x = "",
-       color = "Direction") +
+  labs(y = "Minimum Distance Traveled, rkm",
+       x = "") +
   theme_classic()+
   theme(legend.position="none")+
   geom_hline(yintercept = 0, size=0.75)+
   # ylim(-30,45)+
-  ggtitle("Silver Carp Movement Over Time")
+  ggtitle("Telemetered Silver Carp Movement Over Time")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
 
@@ -781,6 +780,7 @@ ggsave(plot_48490, file = "individual_movement/48490.png", dpi = 750, width = 7,
 ## 48491 ## 
 id_48491 <- subset(rkm_tracker_date, transmitter_id == 48491)
 plot_48491 <- ggplot(id_48491, aes(x=date, y=rkm))+
+  ylim(0,375)+
   geom_point()+geom_line()+labs(title="ID # 48491")+
   geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
 ggsave(plot_48491, file = "individual_movement/48491.png", dpi = 750, width = 7, height = 5,
@@ -822,7 +822,8 @@ ggsave(plot_48727, file = "individual_movement/48727.png", dpi = 750, width = 7,
 id_48728 <- subset(rkm_tracker_date, transmitter_id == 48728)
 plot_48728 <-ggplot(id_48728, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="ID # 48728")+
-  geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
+  geom_hline(yintercept=0)
+  # geom_hline(data=all_vemco_receivers, aes(yintercept=rkm),size=0.2, alpha=0.5)
 ggsave(plot_48728, file = "individual_movement/48728.png", dpi = 750, width = 7, height = 5,
        units = "in")
 
