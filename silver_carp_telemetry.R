@@ -884,26 +884,29 @@ ggsave(plot_48733, file = "individual_movement/48733.png", dpi = 750, width = 7,
 
 
 ## USFWS Fish ####
-GPFWCO_silver_carp <- read_excel("2021_GPFWCO_silver_carp_implant_data.xlsx")
+GPFWCO_silver_carp <- read_excel("USFWS/2021 GPFWCO silver carp telemetry implant data.xlsx")
 
-GPFWCO_data <- bind_rows(receiver303_10_22_21,
-                      receiver1_11_16_21,
-                      receiver2_11_16_21,
-                      receiver3_10_22_21,
-                      receiver4_10_22_21,
-                      receiver6_10_22_21,
-                      receiver7_10_22_21,
-                      # # Receiver8_10_22_21, no data, it was stuck in the mud
-                      # # Receiver9_10_22_21, no data
-                      # # Receiver10_10_22_21, no data
-                      receiver11_10_14_21,
-                      receiver12_10_14_21,
-                      receiver13_10_14_21,
-                      receiver14_10_14_21,
-                      receiver15_10_05_21,
-                      receiver16_10_05_21,
-                      receiver17_10_05_21,
-                      receiver19_10_05_21) %>%
+GPFWCO_data <- bind_rows(receiver1, 
+                         receiver2, 
+                         receiver3, 
+                         receiver4, 
+                         receiver5,
+                         receiver6,
+                         receiver7,
+                         # receiver8, no data
+                         receiver303,
+                         receiver9,
+                         receiver10,
+                         receiver11,
+                         receiver12,
+                         receiver13,
+                         receiver14,
+                         receiver15,
+                         receiver16,
+                         receiver17,
+                         receiver18,
+                         receiver19,
+                         receiver20) %>%
   clean_names %>% 
   separate(transmitter, c("freq1", "freq2", "transmitter_id")) %>% 
   mutate(transmitter_id = as.numeric(transmitter_id)) %>% 
@@ -918,26 +921,19 @@ GPFWCO_data <- bind_rows(receiver303_10_22_21,
 
 GPFWCO_rkm_tracker_date <- GPFWCO_data %>% select(date, transmitter_id,rkm)
 
+write.csv(GPFWCO_rkm_tracker_date, "GPFWCO James River Detections 2021 and 2022.csv")
+
+
 id_51768 <- subset(GPFWCO_rkm_tracker_date, transmitter_id == 51768)
 ggplot(id_51768, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 51768", subtitle="Originally Tagged in Vermillion River")+
   geom_hline(yintercept=1.4, size=0.2, alpha=0.5)+
   geom_hline(yintercept=9, size=0.2, alpha=0.5)+
   geom_hline(yintercept=11.6, size=0.2, alpha=0.5)
-  # + geom_hline(yintercept=40.4, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=79.3, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=89, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=105, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=117, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=143, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=157.5, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=170.2, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=206.7, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=213, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=224.7, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=232, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=238.2, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=277.8, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=295.8, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=302.5, size=0.2, alpha=0.5)+
-  # geom_hline(yintercept=356.4, size=0.2, alpha=0.5)
+  
+id_51701 <- subset(GPFWCO_rkm_tracker_date, transmitter_id == 51701)
+ggplot(id_51701, aes(x=date, y=rkm))+
+  geom_point()+geom_line()+labs(title="Fish ID # 51768", subtitle="Originally Tagged in Vermillion River")+
+  geom_hline(yintercept=1.4, size=0.2, alpha=0.5)+
+  geom_hline(yintercept=9, size=0.2, alpha=0.5)+
+  geom_hline(yintercept=11.6, size=0.2, alpha=0.5)
