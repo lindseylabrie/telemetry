@@ -922,10 +922,10 @@ GPFWCO_data <- bind_rows(receiver1,
 GPFWCO_rkm_tracker_date <- GPFWCO_data %>% select(date, transmitter_id,rkm)
 
 write.csv(GPFWCO_rkm_tracker_date, "GPFWCO James River Detections 2021 and 2022 simplified.csv")
-write_xlsx(GPFWCO_data, "GPFWCO James River Silver Carp Detections 2021 and 2022")
+write_xlsx(GPFWCO_data, "USFWS/GPFWCO James River Silver Carp Detections 2021 and 2022.xlsx")
 
 install.packages("xlsx")
-library(xlsx)
+library(writexl)
 id_51768 <- subset(GPFWCO_rkm_tracker_date, transmitter_id == 51768)
 ggplot(id_51768, aes(x=date, y=rkm))+
   geom_point()+geom_line()+labs(title="Fish ID # 51768", subtitle="Originally Tagged in Vermillion River")+
