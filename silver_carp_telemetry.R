@@ -220,6 +220,7 @@ all_data <- bind_rows(receiver1,
   left_join(all_vemco_receivers)
 
 write.csv(all_data, "all_data.csv")
+write.csv(rkm_tracker_date, "rkm_tracker_date.csv")
 
 all_data <-read_csv("all_data.csv")
 
@@ -238,19 +239,19 @@ rkm_tracker_date <- combined_data %>% select(date, transmitter_id,rkm,station_na
 ##all movement
 All_Individuals <- rkm_tracker_date %>% 
   group_by(transmitter_id) %>% 
-  mutate(meandistance=mean(distance),
-         direction = case_when(meandistance<0~"downstream",
-                               meandistance==0~"stationary",
-                               meandistance>0~"upstream")) %>% 
-  ggplot(aes(color=as.character(transmitter_id), group=transmitter_id,x=date, y=distance))+
+  mutate(color = case_when(transmitter_id==48456~"limegreen",
+                           transmitter_id==48478~"lightblue",
+                           transmitter_id==48491~"pink",
+                           transmitter_id==48727~"purple",
+                           transmitter_id==48728~"red")) %>% 
+  ggplot(aes(color=as.character(color), group=transmitter_id,x=date, y=distance))+
   geom_line(alpha=0.8)+
-  geom_point(shape=20, alpha=0.8) +
+  geom_point(shape=20, size=0.5, alpha=0.8) +
   labs(y = "Minimum Distance Traveled, rkm",
        x = "") +
   theme_classic()+
   theme(legend.position="none")+
-  geom_hline(yintercept = 0, size=0.75)+
-  # ylim(-30,45)+
+  ylim(-475,200)+
   ggtitle("Telemetered Silver Carp Movement Over Time")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
