@@ -1,4 +1,4 @@
-
+library(Matrix)
 library(readr)
 library(tidyverse)
 library(lubridate)
@@ -263,7 +263,7 @@ AllDailyDetections <- rkm_tracker_date %>%
   ggplot(aes(x=date, y=transmitter_id, group=transmitter_id))+
   geom_line(color="light blue")+
   geom_point(shape=16) +
-  labs(y = "Telemetered Individual",
+  labs(y = "Telemetered Individual ID #",
        x = "") +
   theme_bw()+
   theme(legend.position="none")+
@@ -272,7 +272,7 @@ AllDailyDetections <- rkm_tracker_date %>%
   scale_y_continuous(breaks=seq(48452, 48733, 2))+
   # ylim(48452, 48491)+
   ggtitle("Silver Carp Daily Detections",
-          subtitle = "June 2021 - July 2022")
+          subtitle = "June 2021 - October 2022")
 ggsave(AllDailyDetections, file = "plots/AllDailyDetections.png", dpi = 750, width = 7, height = 6,
        units = "in")
 
