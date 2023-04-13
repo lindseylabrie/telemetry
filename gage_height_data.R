@@ -132,6 +132,7 @@ Vermillion <- FlowsVermillion %>% mutate(name = "Vermillion River at Vermillion,
 SiouxFalls <- FlowsSiouxFalls %>% mutate(name = "Big Sioux River at Sioux Falls, SD")
 All <- bind_rows(Huron, Yankton, Scotland, Mitchell)
  
+# Scotland data
 DischargeScotland <- ggplot(data=Scotland, aes(x=Date, y=Flow, color=name,group=name))+
   geom_line() +
   theme_minimal()+
@@ -153,8 +154,49 @@ GageHeightScotland <- ggplot(data=Scotland, aes(x=Date, y=GH, color=name,group=n
 ggsave(GageHeightScotland, file="plots/GageHeightScotland.jpg", dpi = 750, width = 7, height = 6,
        units = "in")
 
-# make another graph for temp data
+write_csv(Scotland, "environmental_data/scotland.csv")
 
+# mitchell data
+DischargeMitchell <- ggplot(data=Mitchell, aes(x=Date, y=Flow, color=name,group=name))+
+  geom_line() +
+  theme_minimal()+
+  labs(color="Gage Station",
+       title = "James River Discharge at Mitchell, SD",
+       x="June 2021 - Jan 2023",
+       y="Mean Daily Discharge, CFS")
+ggsave(DischargeMitchell, file="plots/DischargeMitchell.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+GageHeightMitchell <- ggplot(data=Mitchell, aes(x=Date, y=GH, color=name,group=name))+
+  geom_line() +
+  theme_minimal()+
+  labs(color="Gage Station",
+       title= "James River Gage Height at Mitchell, SD",
+       x="June 2021 - Jan 2022",
+       y="Mean Daily Gage Height, ft")+
+  theme(legend.position = "none")
+ggsave(GageHeightMitchell, file="plots/GageHeightMitchell.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+
+
+
+# make another graph for temp data
+# use the hwy 50 temp data sheet
+
+James_Temp <- read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names()
+
+JamesTemp <- ggplot(data=James_Temp, aes(x=date_time_gmt_05_00, y=temp_f))+
+  # geom_point() +
+  geom_smooth() +
+  theme_minimal()+
+  labs(title= "James River Average Temperature at Yankton, SD",
+       x="June 2021 - October 2022",
+       y="Temperature (deg F)")+
+  theme(legend.position = "none")
+
+ggsave(GageHeightMitchell, file="plots/GageHeightMitchell.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
 
 
     

@@ -1,0 +1,611 @@
+agency_cd,site_no,Date,Flow,Flow_cd,GH,GH_cd,name
+USGS,06478500,2021-06-01,268,A,4.79,A,James River Near Scotland
+USGS,06478500,2021-06-02,250,A,4.74,A,James River Near Scotland
+USGS,06478500,2021-06-03,231,A,4.69,A,James River Near Scotland
+USGS,06478500,2021-06-04,215,A,4.64,A,James River Near Scotland
+USGS,06478500,2021-06-05,199,A,4.59,A,James River Near Scotland
+USGS,06478500,2021-06-06,156,A,4.44,A,James River Near Scotland
+USGS,06478500,2021-06-07,170,A,4.49,A,James River Near Scotland
+USGS,06478500,2021-06-08,175,A,4.51,A,James River Near Scotland
+USGS,06478500,2021-06-09,170,A,4.49,A,James River Near Scotland
+USGS,06478500,2021-06-10,167,A,4.47,A,James River Near Scotland
+USGS,06478500,2021-06-11,192,A,4.55,A,James River Near Scotland
+USGS,06478500,2021-06-12,189,A,4.54,A,James River Near Scotland
+USGS,06478500,2021-06-13,173,A,4.49,A,James River Near Scotland
+USGS,06478500,2021-06-14,161,A,4.44,A,James River Near Scotland
+USGS,06478500,2021-06-15,147,A,4.39,A,James River Near Scotland
+USGS,06478500,2021-06-16,131,A,4.32,A,James River Near Scotland
+USGS,06478500,2021-06-17,120,A,4.27,A,James River Near Scotland
+USGS,06478500,2021-06-18,116,A,4.25,A,James River Near Scotland
+USGS,06478500,2021-06-19,110,A,4.23,A,James River Near Scotland
+USGS,06478500,2021-06-20,103,A,4.18,A,James River Near Scotland
+USGS,06478500,2021-06-21,101,A,4.17,A,James River Near Scotland
+USGS,06478500,2021-06-22,94.7,A,4.13,A,James River Near Scotland
+USGS,06478500,2021-06-23,84.7,A,4.06,A,James River Near Scotland
+USGS,06478500,2021-06-24,79.4,A,4.02,A,James River Near Scotland
+USGS,06478500,2021-06-25,77.3,A,4,A,James River Near Scotland
+USGS,06478500,2021-06-26,77,A,4,A,James River Near Scotland
+USGS,06478500,2021-06-27,74.5,A,3.98,A,James River Near Scotland
+USGS,06478500,2021-06-28,75.6,A,3.99,A,James River Near Scotland
+USGS,06478500,2021-06-29,75.4,A,3.99,A,James River Near Scotland
+USGS,06478500,2021-06-30,69.4,A,3.94,A,James River Near Scotland
+USGS,06478500,2021-07-01,66.4,A,3.91,A,James River Near Scotland
+USGS,06478500,2021-07-02,63.1,A,3.88,A,James River Near Scotland
+USGS,06478500,2021-07-03,59.9,A,3.85,A,James River Near Scotland
+USGS,06478500,2021-07-04,56.4,A,3.81,A,James River Near Scotland
+USGS,06478500,2021-07-05,53.9,A,3.78,A,James River Near Scotland
+USGS,06478500,2021-07-06,115,A,4.23,A,James River Near Scotland
+USGS,06478500,2021-07-07,99.7,A,4.19,A,James River Near Scotland
+USGS,06478500,2021-07-08,74.6,A,4,A,James River Near Scotland
+USGS,06478500,2021-07-09,67.5,A,3.93,A,James River Near Scotland
+USGS,06478500,2021-07-10,68.1,A,3.94,A,James River Near Scotland
+USGS,06478500,2021-07-11,84.4,A,4.09,A,James River Near Scotland
+USGS,06478500,2021-07-12,78.6,A,4.04,A,James River Near Scotland
+USGS,06478500,2021-07-13,71.5,A,3.97,A,James River Near Scotland
+USGS,06478500,2021-07-14,77.9,A,4.03,A,James River Near Scotland
+USGS,06478500,2021-07-15,88,A,4.11,A,James River Near Scotland
+USGS,06478500,2021-07-16,103,A,4.22,A,James River Near Scotland
+USGS,06478500,2021-07-17,125,A,4.34,A,James River Near Scotland
+USGS,06478500,2021-07-18,119,A,4.31,A,James River Near Scotland
+USGS,06478500,2021-07-19,107,A,4.25,A,James River Near Scotland
+USGS,06478500,2021-07-20,98.5,A,4.19,A,James River Near Scotland
+USGS,06478500,2021-07-21,90.9,A,4.14,A,James River Near Scotland
+USGS,06478500,2021-07-22,84,A,4.08,A,James River Near Scotland
+USGS,06478500,2021-07-23,77.8,A,4.03,A,James River Near Scotland
+USGS,06478500,2021-07-24,75.2,A,4.01,A,James River Near Scotland
+USGS,06478500,2021-07-25,70.5,A,3.96,A,James River Near Scotland
+USGS,06478500,2021-07-26,65,A,3.91,A,James River Near Scotland
+USGS,06478500,2021-07-27,59.3,A,3.85,A,James River Near Scotland
+USGS,06478500,2021-07-28,56.9,A,3.82,A,James River Near Scotland
+USGS,06478500,2021-07-29,55.8,A,3.81,A,James River Near Scotland
+USGS,06478500,2021-07-30,55,A,3.8,A,James River Near Scotland
+USGS,06478500,2021-07-31,56.7,A,3.82,A,James River Near Scotland
+USGS,06478500,2021-08-01,58.9,A,3.85,A,James River Near Scotland
+USGS,06478500,2021-08-02,60.6,A,3.87,A,James River Near Scotland
+USGS,06478500,2021-08-03,64.4,A,3.9,A,James River Near Scotland
+USGS,06478500,2021-08-04,67.8,A,3.94,A,James River Near Scotland
+USGS,06478500,2021-08-05,70.1,A,3.96,A,James River Near Scotland
+USGS,06478500,2021-08-06,71.5,A,3.97,A,James River Near Scotland
+USGS,06478500,2021-08-07,68,A,3.94,A,James River Near Scotland
+USGS,06478500,2021-08-08,63.3,A,3.89,A,James River Near Scotland
+USGS,06478500,2021-08-09,58.8,A,3.85,A,James River Near Scotland
+USGS,06478500,2021-08-10,52.9,A,3.78,A,James River Near Scotland
+USGS,06478500,2021-08-11,50.8,A,3.75,A,James River Near Scotland
+USGS,06478500,2021-08-12,48.3,A,3.72,A,James River Near Scotland
+USGS,06478500,2021-08-13,45.9,A,3.69,A,James River Near Scotland
+USGS,06478500,2021-08-14,44.7,A,3.68,A,James River Near Scotland
+USGS,06478500,2021-08-15,43.3,A,3.65,A,James River Near Scotland
+USGS,06478500,2021-08-16,41.4,A,3.62,A,James River Near Scotland
+USGS,06478500,2021-08-17,38.7,A,3.58,A,James River Near Scotland
+USGS,06478500,2021-08-18,38.5,A,3.58,A,James River Near Scotland
+USGS,06478500,2021-08-19,37.5,A,3.56,A,James River Near Scotland
+USGS,06478500,2021-08-20,36.6,A,3.54,A,James River Near Scotland
+USGS,06478500,2021-08-21,36.5,A,3.54,A,James River Near Scotland
+USGS,06478500,2021-08-22,37.3,A,3.56,A,James River Near Scotland
+USGS,06478500,2021-08-23,36.4,A,3.54,A,James River Near Scotland
+USGS,06478500,2021-08-24,36.6,A,3.54,A,James River Near Scotland
+USGS,06478500,2021-08-25,36.2,A,3.54,A,James River Near Scotland
+USGS,06478500,2021-08-26,36.8,A,3.55,A,James River Near Scotland
+USGS,06478500,2021-08-27,45.3,A,3.68,A,James River Near Scotland
+USGS,06478500,2021-08-28,48.8,A,3.71,A,James River Near Scotland
+USGS,06478500,2021-08-29,52.6,A,3.75,A,James River Near Scotland
+USGS,06478500,2021-08-30,51.7,A,3.73,A,James River Near Scotland
+USGS,06478500,2021-08-31,71.6,A,3.93,A,James River Near Scotland
+USGS,06478500,2021-09-01,94.4,A,4.12,A,James River Near Scotland
+USGS,06478500,2021-09-02,90.8,A,4.08,A,James River Near Scotland
+USGS,06478500,2021-09-03,94.5,A,4.1,A,James River Near Scotland
+USGS,06478500,2021-09-04,107,A,4.18,A,James River Near Scotland
+USGS,06478500,2021-09-05,107,A,4.18,A,James River Near Scotland
+USGS,06478500,2021-09-06,101,A,4.14,A,James River Near Scotland
+USGS,06478500,2021-09-07,94,A,4.09,A,James River Near Scotland
+USGS,06478500,2021-09-08,89.4,A,4.06,A,James River Near Scotland
+USGS,06478500,2021-09-09,88.5,A,4.05,A,James River Near Scotland
+USGS,06478500,2021-09-10,89.4,A,4.06,A,James River Near Scotland
+USGS,06478500,2021-09-11,91.6,A,4.07,A,James River Near Scotland
+USGS,06478500,2021-09-12,93.1,A,4.08,A,James River Near Scotland
+USGS,06478500,2021-09-13,91.1,A,4.07,A,James River Near Scotland
+USGS,06478500,2021-09-14,88.8,A,4.05,A,James River Near Scotland
+USGS,06478500,2021-09-15,85,A,4.02,A,James River Near Scotland
+USGS,06478500,2021-09-16,80,A,3.98,A,James River Near Scotland
+USGS,06478500,2021-09-17,82.1,A,4,A,James River Near Scotland
+USGS,06478500,2021-09-18,82.6,A,4,A,James River Near Scotland
+USGS,06478500,2021-09-19,83.4,A,4.01,A,James River Near Scotland
+USGS,06478500,2021-09-20,83.1,A,4.01,A,James River Near Scotland
+USGS,06478500,2021-09-21,88.8,A,4.05,A,James River Near Scotland
+USGS,06478500,2021-09-22,94.1,A,4.09,A,James River Near Scotland
+USGS,06478500,2021-09-23,91.6,A,4.07,A,James River Near Scotland
+USGS,06478500,2021-09-24,89.3,A,4.05,A,James River Near Scotland
+USGS,06478500,2021-09-25,89.1,A,4.05,A,James River Near Scotland
+USGS,06478500,2021-09-26,86.4,A,4.03,A,James River Near Scotland
+USGS,06478500,2021-09-27,82.4,A,4,A,James River Near Scotland
+USGS,06478500,2021-09-28,81.3,A,3.99,A,James River Near Scotland
+USGS,06478500,2021-09-29,80.8,A,3.99,A,James River Near Scotland
+USGS,06478500,2021-09-30,80.7,A,3.99,A,James River Near Scotland
+USGS,06478500,2021-10-01,87.1,A,4.04,A,James River Near Scotland
+USGS,06478500,2021-10-02,91.8,A,4.07,A,James River Near Scotland
+USGS,06478500,2021-10-03,95.4,A,4.1,A,James River Near Scotland
+USGS,06478500,2021-10-04,95.1,A,4.1,A,James River Near Scotland
+USGS,06478500,2021-10-05,94.4,A,4.09,A,James River Near Scotland
+USGS,06478500,2021-10-06,96,A,4.1,A,James River Near Scotland
+USGS,06478500,2021-10-07,99,A,4.12,A,James River Near Scotland
+USGS,06478500,2021-10-08,102,A,4.15,A,James River Near Scotland
+USGS,06478500,2021-10-09,106,A,4.17,A,James River Near Scotland
+USGS,06478500,2021-10-10,106,A,4.17,A,James River Near Scotland
+USGS,06478500,2021-10-11,108,A,4.19,A,James River Near Scotland
+USGS,06478500,2021-10-12,102,A,4.15,A,James River Near Scotland
+USGS,06478500,2021-10-13,101,A,4.14,A,James River Near Scotland
+USGS,06478500,2021-10-14,100,A,4.13,A,James River Near Scotland
+USGS,06478500,2021-10-15,103,A,4.15,A,James River Near Scotland
+USGS,06478500,2021-10-16,108,A,4.19,A,James River Near Scotland
+USGS,06478500,2021-10-17,111,A,4.2,A,James River Near Scotland
+USGS,06478500,2021-10-18,110,A,4.2,A,James River Near Scotland
+USGS,06478500,2021-10-19,108,A,4.19,A,James River Near Scotland
+USGS,06478500,2021-10-20,110,A,4.2,A,James River Near Scotland
+USGS,06478500,2021-10-21,123,A,4.26,A,James River Near Scotland
+USGS,06478500,2021-10-22,117,A,4.23,A,James River Near Scotland
+USGS,06478500,2021-10-23,114,A,4.22,A,James River Near Scotland
+USGS,06478500,2021-10-24,124,A,4.27,A,James River Near Scotland
+USGS,06478500,2021-10-25,132,A,4.3,A,James River Near Scotland
+USGS,06478500,2021-10-26,127,A,4.28,A,James River Near Scotland
+USGS,06478500,2021-10-27,140,A,4.33,A,James River Near Scotland
+USGS,06478500,2021-10-28,180,A,4.48,A,James River Near Scotland
+USGS,06478500,2021-10-29,188,A,4.51,A,James River Near Scotland
+USGS,06478500,2021-10-30,199,A,4.54,A,James River Near Scotland
+USGS,06478500,2021-10-31,222,A,4.61,A,James River Near Scotland
+USGS,06478500,2021-11-01,221,A,4.61,A,James River Near Scotland
+USGS,06478500,2021-11-02,219,A,4.6,A,James River Near Scotland
+USGS,06478500,2021-11-03,225,A,4.62,A,James River Near Scotland
+USGS,06478500,2021-11-04,234,A,4.64,A,James River Near Scotland
+USGS,06478500,2021-11-05,235,A,4.65,A,James River Near Scotland
+USGS,06478500,2021-11-06,245,A,4.67,A,James River Near Scotland
+USGS,06478500,2021-11-07,247,A,4.68,A,James River Near Scotland
+USGS,06478500,2021-11-08,253,A,4.69,A,James River Near Scotland
+USGS,06478500,2021-11-09,255,A,4.7,A,James River Near Scotland
+USGS,06478500,2021-11-10,261,A,4.71,A,James River Near Scotland
+USGS,06478500,2021-11-11,289,A,4.78,A,James River Near Scotland
+USGS,06478500,2021-11-12,344,A,4.91,A,James River Near Scotland
+USGS,06478500,2021-11-13,351,A,4.92,A,James River Near Scotland
+USGS,06478500,2021-11-14,384,A,4.99,A,James River Near Scotland
+USGS,06478500,2021-11-15,404,A,5.03,A,James River Near Scotland
+USGS,06478500,2021-11-16,426,A,5.07,A,James River Near Scotland
+USGS,06478500,2021-11-17,460,A,5.13,A,James River Near Scotland
+USGS,06478500,2021-11-18,457,A,5.12,A,James River Near Scotland
+USGS,06478500,2021-11-19,425,A,5.07,A,James River Near Scotland
+USGS,06478500,2021-11-20,405,A,5.03,A,James River Near Scotland
+USGS,06478500,2021-11-21,393,A,5.01,A,James River Near Scotland
+USGS,06478500,2021-11-22,391,A,5,A,James River Near Scotland
+USGS,06478500,2021-11-23,394,A,5.01,A,James River Near Scotland
+USGS,06478500,2021-11-24,399,A,5.02,A,James River Near Scotland
+USGS,06478500,2021-11-25,401,A,5.02,A,James River Near Scotland
+USGS,06478500,2021-11-26,388,A,5,A,James River Near Scotland
+USGS,06478500,2021-11-27,392,A,5,A,James River Near Scotland
+USGS,06478500,2021-11-28,362,A,4.95,A,James River Near Scotland
+USGS,06478500,2021-11-29,341,A,4.9,A,James River Near Scotland
+USGS,06478500,2021-11-30,355,A,4.93,A,James River Near Scotland
+USGS,06478500,2021-12-01,365,A,4.95,A,James River Near Scotland
+USGS,06478500,2021-12-02,375,A,4.97,A,James River Near Scotland
+USGS,06478500,2021-12-03,361,A,4.94,A,James River Near Scotland
+USGS,06478500,2021-12-04,350,A,4.92,A,James River Near Scotland
+USGS,06478500,2021-12-05,337,A e,4.91,A,James River Near Scotland
+USGS,06478500,2021-12-06,340,A e,5.02,A,James River Near Scotland
+USGS,06478500,2021-12-07,237,A e,4.75,A,James River Near Scotland
+USGS,06478500,2021-12-08,337,A e,5,A,James River Near Scotland
+USGS,06478500,2021-12-09,380,A e,5.17,A,James River Near Scotland
+USGS,06478500,2021-12-10,268,A e,4.82,A,James River Near Scotland
+USGS,06478500,2021-12-11,216,A e,4.71,A,James River Near Scotland
+USGS,06478500,2021-12-12,357,A e,5.04,A,James River Near Scotland
+USGS,06478500,2021-12-13,413,A e,5.19,A,James River Near Scotland
+USGS,06478500,2021-12-14,413,A e,5.14,A,James River Near Scotland
+USGS,06478500,2021-12-15,397,A e,5.1,A,James River Near Scotland
+USGS,06478500,2021-12-16,216,A e,4.81,A,James River Near Scotland
+USGS,06478500,2021-12-17,253,A e,4.86,A,James River Near Scotland
+USGS,06478500,2021-12-18,252,A e,4.86,A,James River Near Scotland
+USGS,06478500,2021-12-19,180,A e,4.64,A,James River Near Scotland
+USGS,06478500,2021-12-20,214,A e,4.73,A,James River Near Scotland
+USGS,06478500,2021-12-21,218,A e,4.69,A,James River Near Scotland
+USGS,06478500,2021-12-22,230,A e,4.72,A,James River Near Scotland
+USGS,06478500,2021-12-23,229,A e,4.69,A,James River Near Scotland
+USGS,06478500,2021-12-24,221,A e,4.66,A,James River Near Scotland
+USGS,06478500,2021-12-25,200,A e,4.59,A,James River Near Scotland
+USGS,06478500,2021-12-26,187,A e,4.55,A,James River Near Scotland
+USGS,06478500,2021-12-27,177,A e,4.54,A,James River Near Scotland
+USGS,06478500,2021-12-28,177,A e,4.53,A,James River Near Scotland
+USGS,06478500,2021-12-29,161,A e,4.46,A,James River Near Scotland
+USGS,06478500,2021-12-30,165,A e,4.48,A,James River Near Scotland
+USGS,06478500,2021-12-31,157,A e,4.49,A,James River Near Scotland
+USGS,06478500,2022-01-01,124,A e,4.33,A,James River Near Scotland
+USGS,06478500,2022-01-02,132,A e,4.37,A,James River Near Scotland
+USGS,06478500,2022-01-03,134,A e,4.35,A,James River Near Scotland
+USGS,06478500,2022-01-04,127,A e,4.35,A,James River Near Scotland
+USGS,06478500,2022-01-05,111,A e,4.27,A,James River Near Scotland
+USGS,06478500,2022-01-06,103,A e,4.2,A,James River Near Scotland
+USGS,06478500,2022-01-07,105,A e,4.25,A,James River Near Scotland
+USGS,06478500,2022-01-08,106,A e,4.24,A,James River Near Scotland
+USGS,06478500,2022-01-09,105,A e,4.23,A,James River Near Scotland
+USGS,06478500,2022-01-10,105,A e,4.23,A,James River Near Scotland
+USGS,06478500,2022-01-11,105,A e,4.22,A,James River Near Scotland
+USGS,06478500,2022-01-12,106,A e,4.23,A,James River Near Scotland
+USGS,06478500,2022-01-13,107,A e,4.26,A,James River Near Scotland
+USGS,06478500,2022-01-14,110,A e,4.28,A,James River Near Scotland
+USGS,06478500,2022-01-15,111,A e,4.28,A,James River Near Scotland
+USGS,06478500,2022-01-16,111,A e,4.27,A,James River Near Scotland
+USGS,06478500,2022-01-17,112,A e,4.29,A,James River Near Scotland
+USGS,06478500,2022-01-18,112,A e,4.33,A,James River Near Scotland
+USGS,06478500,2022-01-19,112,A e,4.34,A,James River Near Scotland
+USGS,06478500,2022-01-20,110,A e,4.28,A,James River Near Scotland
+USGS,06478500,2022-01-21,109,A e,4.3,A,James River Near Scotland
+USGS,06478500,2022-01-22,107,A e,4.26,A,James River Near Scotland
+USGS,06478500,2022-01-23,106,A e,4.25,A,James River Near Scotland
+USGS,06478500,2022-01-24,104,A e,4.26,A,James River Near Scotland
+USGS,06478500,2022-01-25,102,A e,4.25,A,James River Near Scotland
+USGS,06478500,2022-01-26,101,A e,4.22,A,James River Near Scotland
+USGS,06478500,2022-01-27,101,A e,4.2,A,James River Near Scotland
+USGS,06478500,2022-01-28,101,A e,4.2,A,James River Near Scotland
+USGS,06478500,2022-01-29,100,A e,4.19,A,James River Near Scotland
+USGS,06478500,2022-01-30,100,A e,4.19,A,James River Near Scotland
+USGS,06478500,2022-01-31,100,A e,4.2,A,James River Near Scotland
+USGS,06478500,2022-02-01,100,A e,4.21,A,James River Near Scotland
+USGS,06478500,2022-02-02,98.1,A e,4.2,A,James River Near Scotland
+USGS,06478500,2022-02-03,95.6,A e,4.17,A,James River Near Scotland
+USGS,06478500,2022-02-04,92.4,A e,4.15,A,James River Near Scotland
+USGS,06478500,2022-02-05,88.5,A e,4.14,A,James River Near Scotland
+USGS,06478500,2022-02-06,89,A e,4.15,A,James River Near Scotland
+USGS,06478500,2022-02-07,91,A e,4.18,A,James River Near Scotland
+USGS,06478500,2022-02-08,95.4,A e,4.22,A,James River Near Scotland
+USGS,06478500,2022-02-09,99.7,A e,4.26,A,James River Near Scotland
+USGS,06478500,2022-02-10,100,A e,4.28,A,James River Near Scotland
+USGS,06478500,2022-02-11,80.2,A e,4.31,A,James River Near Scotland
+USGS,06478500,2022-02-12,70.7,A e,4.15,A,James River Near Scotland
+USGS,06478500,2022-02-13,77.5,A e,4.19,A,James River Near Scotland
+USGS,06478500,2022-02-14,84,A e,4.29,A,James River Near Scotland
+USGS,06478500,2022-02-15,85,A e,4.28,A,James River Near Scotland
+USGS,06478500,2022-02-16,79.9,A e,4.31,A,James River Near Scotland
+USGS,06478500,2022-02-17,71.8,A e,4.21,A,James River Near Scotland
+USGS,06478500,2022-02-18,76.4,A e,4.27,A,James River Near Scotland
+USGS,06478500,2022-02-19,75.7,A e,4.22,A,James River Near Scotland
+USGS,06478500,2022-02-20,67.7,A e,4.25,A,James River Near Scotland
+USGS,06478500,2022-02-21,44.3,A e,4.13,A,James River Near Scotland
+USGS,06478500,2022-02-22,39.7,A e,3.92,A,James River Near Scotland
+USGS,06478500,2022-02-23,50.2,A e,4.12,A,James River Near Scotland
+USGS,06478500,2022-02-24,63.2,A e,4.17,A,James River Near Scotland
+USGS,06478500,2022-02-25,63.8,A e,4.11,A,James River Near Scotland
+USGS,06478500,2022-02-26,64.5,A e,4.09,A,James River Near Scotland
+USGS,06478500,2022-02-27,65.5,A e,4.07,A,James River Near Scotland
+USGS,06478500,2022-02-28,69,A e,4.1,A,James River Near Scotland
+USGS,06478500,2022-03-01,75.1,A e,4.19,A,James River Near Scotland
+USGS,06478500,2022-03-02,80,A e,4.29,A,James River Near Scotland
+USGS,06478500,2022-03-03,69.4,A e,4.31,A,James River Near Scotland
+USGS,06478500,2022-03-04,50.4,A e,4.25,A,James River Near Scotland
+USGS,06478500,2022-03-05,39.2,A e,4.21,A,James River Near Scotland
+USGS,06478500,2022-03-06,36.9,A e,3.95,A,James River Near Scotland
+USGS,06478500,2022-03-07,46,A e,4.36,A,James River Near Scotland
+USGS,06478500,2022-03-08,58.9,A e,4.34,A,James River Near Scotland
+USGS,06478500,2022-03-09,60.2,A e,4.29,A,James River Near Scotland
+USGS,06478500,2022-03-10,50.6,A e,4.24,A,James River Near Scotland
+USGS,06478500,2022-03-11,42.7,A e,4.16,A,James River Near Scotland
+USGS,06478500,2022-03-12,53.4,A e,4.19,A,James River Near Scotland
+USGS,06478500,2022-03-13,76.8,A e,4.3,A,James River Near Scotland
+USGS,06478500,2022-03-14,95.4,A e,4.33,A,James River Near Scotland
+USGS,06478500,2022-03-15,102,A e,4.31,A,James River Near Scotland
+USGS,06478500,2022-03-16,106,A e,4.31,A,James River Near Scotland
+USGS,06478500,2022-03-17,116,A e,4.37,A,James River Near Scotland
+USGS,06478500,2022-03-18,130,A e,4.43,A,James River Near Scotland
+USGS,06478500,2022-03-19,141,A e,4.47,A,James River Near Scotland
+USGS,06478500,2022-03-20,149,A e,4.51,A,James River Near Scotland
+USGS,06478500,2022-03-21,153,A e,4.5,A,James River Near Scotland
+USGS,06478500,2022-03-22,173,A e,4.53,A,James River Near Scotland
+USGS,06478500,2022-03-23,165,A,4.51,A,James River Near Scotland
+USGS,06478500,2022-03-24,155,A,4.47,A,James River Near Scotland
+USGS,06478500,2022-03-25,137,A,4.4,A,James River Near Scotland
+USGS,06478500,2022-03-26,132,A,4.38,A,James River Near Scotland
+USGS,06478500,2022-03-27,120,A,4.33,A,James River Near Scotland
+USGS,06478500,2022-03-28,116,A,4.31,A,James River Near Scotland
+USGS,06478500,2022-03-29,111,A,4.28,A,James River Near Scotland
+USGS,06478500,2022-03-30,130,A,4.38,A,James River Near Scotland
+USGS,06478500,2022-03-31,167,A,4.52,A,James River Near Scotland
+USGS,06478500,2022-04-01,225,A,4.7,A,James River Near Scotland
+USGS,06478500,2022-04-02,341,A,4.99,A,James River Near Scotland
+USGS,06478500,2022-04-03,510,A,5.3,A,James River Near Scotland
+USGS,06478500,2022-04-04,672,A,5.55,A,James River Near Scotland
+USGS,06478500,2022-04-05,689,A,5.57,A,James River Near Scotland
+USGS,06478500,2022-04-06,728,A,5.63,A,James River Near Scotland
+USGS,06478500,2022-04-07,796,A,5.74,A,James River Near Scotland
+USGS,06478500,2022-04-08,848,A,5.82,A,James River Near Scotland
+USGS,06478500,2022-04-09,801,A,5.74,A,James River Near Scotland
+USGS,06478500,2022-04-10,798,A,5.74,A,James River Near Scotland
+USGS,06478500,2022-04-11,811,A,5.76,A,James River Near Scotland
+USGS,06478500,2022-04-12,764,A,5.69,A,James River Near Scotland
+USGS,06478500,2022-04-13,711,A,5.62,A,James River Near Scotland
+USGS,06478500,2022-04-14,744,A,5.66,A,James River Near Scotland
+USGS,06478500,2022-04-15,780,A,5.71,A,James River Near Scotland
+USGS,06478500,2022-04-16,794,A,5.74,A,James River Near Scotland
+USGS,06478500,2022-04-17,818,A,5.77,A,James River Near Scotland
+USGS,06478500,2022-04-18,853,A,5.83,A,James River Near Scotland
+USGS,06478500,2022-04-19,863,A,5.85,A,James River Near Scotland
+USGS,06478500,2022-04-20,842,A,5.81,A,James River Near Scotland
+USGS,06478500,2022-04-21,874,A,5.87,A,James River Near Scotland
+USGS,06478500,2022-04-22,923,A,5.95,A,James River Near Scotland
+USGS,06478500,2022-04-23,941,A,5.98,A,James River Near Scotland
+USGS,06478500,2022-04-24,974,A,6.04,A,James River Near Scotland
+USGS,06478500,2022-04-25,1060,A,6.2,A,James River Near Scotland
+USGS,06478500,2022-04-26,1090,A,6.26,A,James River Near Scotland
+USGS,06478500,2022-04-27,1110,A,6.29,A,James River Near Scotland
+USGS,06478500,2022-04-28,1180,A,6.44,A,James River Near Scotland
+USGS,06478500,2022-04-29,1250,A,6.57,A,James River Near Scotland
+USGS,06478500,2022-04-30,1280,A,6.64,A,James River Near Scotland
+USGS,06478500,2022-05-01,1350,A,6.78,A,James River Near Scotland
+USGS,06478500,2022-05-02,1430,A,6.95,A,James River Near Scotland
+USGS,06478500,2022-05-03,1440,A,6.97,A,James River Near Scotland
+USGS,06478500,2022-05-04,1430,A,6.97,A,James River Near Scotland
+USGS,06478500,2022-05-05,1430,A,6.97,A,James River Near Scotland
+USGS,06478500,2022-05-06,1410,A,6.93,A,James River Near Scotland
+USGS,06478500,2022-05-07,1390,A,6.89,A,James River Near Scotland
+USGS,06478500,2022-05-08,1390,A,6.89,A,James River Near Scotland
+USGS,06478500,2022-05-09,1410,A,6.94,A,James River Near Scotland
+USGS,06478500,2022-05-10,1450,A,7.01,A,James River Near Scotland
+USGS,06478500,2022-05-11,1520,A,7.21,A,James River Near Scotland
+USGS,06478500,2022-05-12,1610,A,7.44,A,James River Near Scotland
+USGS,06478500,2022-05-13,1690,A,7.66,A,James River Near Scotland
+USGS,06478500,2022-05-14,1750,A,7.84,A,James River Near Scotland
+USGS,06478500,2022-05-15,1800,A,7.98,A,James River Near Scotland
+USGS,06478500,2022-05-16,1840,A,8.09,A,James River Near Scotland
+USGS,06478500,2022-05-17,1880,A,8.21,A,James River Near Scotland
+USGS,06478500,2022-05-18,1940,A,8.35,A,James River Near Scotland
+USGS,06478500,2022-05-19,2000,A,8.5,A,James River Near Scotland
+USGS,06478500,2022-05-20,2060,A,8.66,A,James River Near Scotland
+USGS,06478500,2022-05-21,2120,A,8.83,A,James River Near Scotland
+USGS,06478500,2022-05-22,2180,A,8.97,A,James River Near Scotland
+USGS,06478500,2022-05-23,2230,A,9.1,A,James River Near Scotland
+USGS,06478500,2022-05-24,2280,A,9.2,A,James River Near Scotland
+USGS,06478500,2022-05-25,2330,A,9.32,A,James River Near Scotland
+USGS,06478500,2022-05-26,2360,A,9.39,A,James River Near Scotland
+USGS,06478500,2022-05-27,2390,A,9.43,A,James River Near Scotland
+USGS,06478500,2022-05-28,2410,A,9.47,A,James River Near Scotland
+USGS,06478500,2022-05-29,2460,A,9.58,A,James River Near Scotland
+USGS,06478500,2022-05-30,2550,A,9.77,A,James River Near Scotland
+USGS,06478500,2022-05-31,2620,A,9.93,A,James River Near Scotland
+USGS,06478500,2022-06-01,2700,A,10.09,A,James River Near Scotland
+USGS,06478500,2022-06-02,2770,A,10.2,A,James River Near Scotland
+USGS,06478500,2022-06-03,2840,A,10.32,A,James River Near Scotland
+USGS,06478500,2022-06-04,2920,A,10.46,A,James River Near Scotland
+USGS,06478500,2022-06-05,2980,A,10.56,A,James River Near Scotland
+USGS,06478500,2022-06-06,3050,A,10.67,A,James River Near Scotland
+USGS,06478500,2022-06-07,3130,A,10.8,A,James River Near Scotland
+USGS,06478500,2022-06-08,3240,A,10.97,A,James River Near Scotland
+USGS,06478500,2022-06-09,3360,A,11.14,A,James River Near Scotland
+USGS,06478500,2022-06-10,3510,A,11.36,A,James River Near Scotland
+USGS,06478500,2022-06-11,3660,A,11.57,A,James River Near Scotland
+USGS,06478500,2022-06-12,3810,A,11.77,A,James River Near Scotland
+USGS,06478500,2022-06-13,3920,A,11.92,A,James River Near Scotland
+USGS,06478500,2022-06-14,4020,A,12.04,A,James River Near Scotland
+USGS,06478500,2022-06-15,4200,A,12.23,A,James River Near Scotland
+USGS,06478500,2022-06-16,4300,A,12.35,A,James River Near Scotland
+USGS,06478500,2022-06-17,4370,A,12.42,A,James River Near Scotland
+USGS,06478500,2022-06-18,4410,A,12.45,A,James River Near Scotland
+USGS,06478500,2022-06-19,4390,A,12.43,A,James River Near Scotland
+USGS,06478500,2022-06-20,4360,A,12.39,A,James River Near Scotland
+USGS,06478500,2022-06-21,4350,A,12.38,A,James River Near Scotland
+USGS,06478500,2022-06-22,4290,A,12.31,A,James River Near Scotland
+USGS,06478500,2022-06-23,4230,A,12.24,A,James River Near Scotland
+USGS,06478500,2022-06-24,4150,A,12.14,A,James River Near Scotland
+USGS,06478500,2022-06-25,4040,A,12.01,A,James River Near Scotland
+USGS,06478500,2022-06-26,3940,A,11.89,A,James River Near Scotland
+USGS,06478500,2022-06-27,3840,A e,NA,NA,James River Near Scotland
+USGS,06478500,2022-06-28,3730,A e,NA,NA,James River Near Scotland
+USGS,06478500,2022-06-29,3630,A,NA,NA,James River Near Scotland
+USGS,06478500,2022-06-30,3510,A,11.25,A,James River Near Scotland
+USGS,06478500,2022-07-01,3400,A,11.08,A,James River Near Scotland
+USGS,06478500,2022-07-02,3300,A,10.93,A,James River Near Scotland
+USGS,06478500,2022-07-03,3190,A,10.75,A,James River Near Scotland
+USGS,06478500,2022-07-04,3100,A,10.59,A,James River Near Scotland
+USGS,06478500,2022-07-05,3040,A,10.48,A,James River Near Scotland
+USGS,06478500,2022-07-06,3020,A,10.46,A,James River Near Scotland
+USGS,06478500,2022-07-07,2980,A,10.37,A,James River Near Scotland
+USGS,06478500,2022-07-08,2940,A,10.31,A,James River Near Scotland
+USGS,06478500,2022-07-09,2920,A,10.27,A,James River Near Scotland
+USGS,06478500,2022-07-10,2890,A,10.22,A,James River Near Scotland
+USGS,06478500,2022-07-11,2880,A,10.21,A,James River Near Scotland
+USGS,06478500,2022-07-12,2880,A,10.21,A,James River Near Scotland
+USGS,06478500,2022-07-13,2890,A,10.21,A,James River Near Scotland
+USGS,06478500,2022-07-14,2890,A,10.22,A,James River Near Scotland
+USGS,06478500,2022-07-15,2890,A,10.22,A,James River Near Scotland
+USGS,06478500,2022-07-16,2920,A,10.28,A,James River Near Scotland
+USGS,06478500,2022-07-17,2980,A,10.38,A,James River Near Scotland
+USGS,06478500,2022-07-18,3030,A,10.46,A,James River Near Scotland
+USGS,06478500,2022-07-19,3050,A,10.5,A,James River Near Scotland
+USGS,06478500,2022-07-20,3090,A,10.57,A,James River Near Scotland
+USGS,06478500,2022-07-21,3120,A,10.62,A,James River Near Scotland
+USGS,06478500,2022-07-22,3170,A,10.7,A,James River Near Scotland
+USGS,06478500,2022-07-23,3220,A,10.79,A,James River Near Scotland
+USGS,06478500,2022-07-24,3280,A,10.89,A,James River Near Scotland
+USGS,06478500,2022-07-25,3330,A,10.97,A,James River Near Scotland
+USGS,06478500,2022-07-26,3380,A,11.05,A,James River Near Scotland
+USGS,06478500,2022-07-27,3420,A,11.11,A,James River Near Scotland
+USGS,06478500,2022-07-28,3430,A,11.12,A,James River Near Scotland
+USGS,06478500,2022-07-29,3410,A,11.09,A,James River Near Scotland
+USGS,06478500,2022-07-30,3370,A,11.03,A,James River Near Scotland
+USGS,06478500,2022-07-31,3280,A,10.9,A,James River Near Scotland
+USGS,06478500,2022-08-01,3200,A,10.76,A,James River Near Scotland
+USGS,06478500,2022-08-02,3090,A,10.57,A,James River Near Scotland
+USGS,06478500,2022-08-03,2980,A,10.39,A,James River Near Scotland
+USGS,06478500,2022-08-04,2880,A,10.21,A,James River Near Scotland
+USGS,06478500,2022-08-05,2770,A,10.01,A,James River Near Scotland
+USGS,06478500,2022-08-06,2670,A,9.82,A,James River Near Scotland
+USGS,06478500,2022-08-07,2620,A,9.71,A,James River Near Scotland
+USGS,06478500,2022-08-08,2580,A,9.61,A,James River Near Scotland
+USGS,06478500,2022-08-09,2540,A,9.53,A,James River Near Scotland
+USGS,06478500,2022-08-10,2490,A,9.41,A,James River Near Scotland
+USGS,06478500,2022-08-11,2420,A,9.27,A,James River Near Scotland
+USGS,06478500,2022-08-12,2350,A,9.09,A,James River Near Scotland
+USGS,06478500,2022-08-13,2280,A,8.94,A,James River Near Scotland
+USGS,06478500,2022-08-14,2230,A,8.82,A,James River Near Scotland
+USGS,06478500,2022-08-15,2220,A,8.79,A,James River Near Scotland
+USGS,06478500,2022-08-16,2200,A,8.76,A,James River Near Scotland
+USGS,06478500,2022-08-17,2180,A,8.69,A,James River Near Scotland
+USGS,06478500,2022-08-18,2150,A,8.62,A,James River Near Scotland
+USGS,06478500,2022-08-19,2130,A,8.58,A,James River Near Scotland
+USGS,06478500,2022-08-20,2110,A,8.53,A,James River Near Scotland
+USGS,06478500,2022-08-21,2080,A,8.46,A,James River Near Scotland
+USGS,06478500,2022-08-22,2060,A,8.39,A,James River Near Scotland
+USGS,06478500,2022-08-23,2030,A,8.32,A,James River Near Scotland
+USGS,06478500,2022-08-24,2010,A,8.28,A,James River Near Scotland
+USGS,06478500,2022-08-25,1990,A,8.22,A,James River Near Scotland
+USGS,06478500,2022-08-26,1960,A,8.15,A,James River Near Scotland
+USGS,06478500,2022-08-27,1930,A,8.06,A,James River Near Scotland
+USGS,06478500,2022-08-28,1890,A,7.97,A,James River Near Scotland
+USGS,06478500,2022-08-29,1870,A,7.91,A,James River Near Scotland
+USGS,06478500,2022-08-30,1840,A,7.84,A,James River Near Scotland
+USGS,06478500,2022-08-31,1820,A,7.77,A,James River Near Scotland
+USGS,06478500,2022-09-01,1800,A,7.73,A,James River Near Scotland
+USGS,06478500,2022-09-02,1780,A,7.69,A,James River Near Scotland
+USGS,06478500,2022-09-03,1770,A,7.64,A,James River Near Scotland
+USGS,06478500,2022-09-04,1740,A,7.58,A,James River Near Scotland
+USGS,06478500,2022-09-05,1710,A,7.51,A,James River Near Scotland
+USGS,06478500,2022-09-06,1690,A,7.45,A,James River Near Scotland
+USGS,06478500,2022-09-07,1690,A,7.46,A,James River Near Scotland
+USGS,06478500,2022-09-08,1700,A,7.48,A,James River Near Scotland
+USGS,06478500,2022-09-09,1670,A,7.39,A,James River Near Scotland
+USGS,06478500,2022-09-10,1660,A,7.37,A,James River Near Scotland
+USGS,06478500,2022-09-11,1640,A,7.32,A,James River Near Scotland
+USGS,06478500,2022-09-12,1630,A,7.28,A,James River Near Scotland
+USGS,06478500,2022-09-13,1610,A,7.24,A,James River Near Scotland
+USGS,06478500,2022-09-14,1590,A,7.19,A,James River Near Scotland
+USGS,06478500,2022-09-15,1570,A,7.13,A,James River Near Scotland
+USGS,06478500,2022-09-16,1600,A,7.22,A,James River Near Scotland
+USGS,06478500,2022-09-17,1580,A,7.16,A,James River Near Scotland
+USGS,06478500,2022-09-18,1550,A,7.09,A,James River Near Scotland
+USGS,06478500,2022-09-19,1540,A,7.05,A,James River Near Scotland
+USGS,06478500,2022-09-20,1520,A,7.01,A,James River Near Scotland
+USGS,06478500,2022-09-21,1500,A,6.96,A,James River Near Scotland
+USGS,06478500,2022-09-22,1480,A,6.91,A,James River Near Scotland
+USGS,06478500,2022-09-23,1440,A,6.82,A,James River Near Scotland
+USGS,06478500,2022-09-24,1400,A,6.74,A,James River Near Scotland
+USGS,06478500,2022-09-25,1380,A,6.69,A,James River Near Scotland
+USGS,06478500,2022-09-26,1350,A,6.63,A,James River Near Scotland
+USGS,06478500,2022-09-27,1320,A,6.59,A,James River Near Scotland
+USGS,06478500,2022-09-28,1310,A,6.57,A,James River Near Scotland
+USGS,06478500,2022-09-29,1270,A,6.48,A,James River Near Scotland
+USGS,06478500,2022-09-30,1220,A,6.37,A,James River Near Scotland
+USGS,06478500,2022-10-01,1190,A,6.32,A,James River Near Scotland
+USGS,06478500,2022-10-02,1150,A,6.24,A,James River Near Scotland
+USGS,06478500,2022-10-03,1130,A,6.2,A,James River Near Scotland
+USGS,06478500,2022-10-04,1140,P,6.22,P,James River Near Scotland
+USGS,06478500,2022-10-05,1130,P,6.2,P,James River Near Scotland
+USGS,06478500,2022-10-06,1100,P,6.14,P,James River Near Scotland
+USGS,06478500,2022-10-07,1060,P,6.08,P,James River Near Scotland
+USGS,06478500,2022-10-08,1020,P,6.01,P,James River Near Scotland
+USGS,06478500,2022-10-09,986,P,5.96,P,James River Near Scotland
+USGS,06478500,2022-10-10,949,P,5.9,P,James River Near Scotland
+USGS,06478500,2022-10-11,896,P,5.81,P,James River Near Scotland
+USGS,06478500,2022-10-12,870,P,5.77,P,James River Near Scotland
+USGS,06478500,2022-10-13,845,P,5.73,P,James River Near Scotland
+USGS,06478500,2022-10-14,802,P,5.66,P,James River Near Scotland
+USGS,06478500,2022-10-15,762,P,5.61,P,James River Near Scotland
+USGS,06478500,2022-10-16,736,P,5.57,P,James River Near Scotland
+USGS,06478500,2022-10-17,692,P,5.51,P,James River Near Scotland
+USGS,06478500,2022-10-18,635,P,5.43,P,James River Near Scotland
+USGS,06478500,2022-10-19,578,P,5.35,P,James River Near Scotland
+USGS,06478500,2022-10-20,534,P,5.29,P,James River Near Scotland
+USGS,06478500,2022-10-21,497,P,5.23,P,James River Near Scotland
+USGS,06478500,2022-10-22,461,P,5.17,P,James River Near Scotland
+USGS,06478500,2022-10-23,422,P,5.11,P,James River Near Scotland
+USGS,06478500,2022-10-24,393,P,5.06,P,James River Near Scotland
+USGS,06478500,2022-10-25,379,P,5.03,P,James River Near Scotland
+USGS,06478500,2022-10-26,361,P,5,P,James River Near Scotland
+USGS,06478500,2022-10-27,339,P,4.96,P,James River Near Scotland
+USGS,06478500,2022-10-28,322,P,4.92,P,James River Near Scotland
+USGS,06478500,2022-10-29,312,P,4.9,P,James River Near Scotland
+USGS,06478500,2022-10-30,306,P,4.89,P,James River Near Scotland
+USGS,06478500,2022-10-31,293,P,4.87,P,James River Near Scotland
+USGS,06478500,2022-11-01,270,P,4.81,P,James River Near Scotland
+USGS,06478500,2022-11-02,246,P,4.76,P,James River Near Scotland
+USGS,06478500,2022-11-03,235,P,4.73,P,James River Near Scotland
+USGS,06478500,2022-11-04,250,P,4.77,P,James River Near Scotland
+USGS,06478500,2022-11-05,243,P,4.76,P,James River Near Scotland
+USGS,06478500,2022-11-06,224,P,4.71,P,James River Near Scotland
+USGS,06478500,2022-11-07,215,P,4.69,P,James River Near Scotland
+USGS,06478500,2022-11-08,195,P,4.63,P,James River Near Scotland
+USGS,06478500,2022-11-09,199,P,4.64,P,James River Near Scotland
+USGS,06478500,2022-11-10,218,P,4.7,P,James River Near Scotland
+USGS,06478500,2022-11-11,NA,P Ice,4.76,P,James River Near Scotland
+USGS,06478500,2022-11-12,NA,P Ice,4.53,P,James River Near Scotland
+USGS,06478500,2022-11-13,NA,P Ice,4.62,P,James River Near Scotland
+USGS,06478500,2022-11-14,NA,P Ice,4.6,P,James River Near Scotland
+USGS,06478500,2022-11-15,NA,P Ice,4.54,P,James River Near Scotland
+USGS,06478500,2022-11-16,NA,P Ice,4.39,P,James River Near Scotland
+USGS,06478500,2022-11-17,NA,P Ice,4.65,P,James River Near Scotland
+USGS,06478500,2022-11-18,NA,P Ice,4.47,P,James River Near Scotland
+USGS,06478500,2022-11-19,NA,P Ice,4.66,P,James River Near Scotland
+USGS,06478500,2022-11-20,NA,P Ice,4.82,P,James River Near Scotland
+USGS,06478500,2022-11-21,NA,P Ice,4.77,P,James River Near Scotland
+USGS,06478500,2022-11-22,NA,P Ice,4.69,P,James River Near Scotland
+USGS,06478500,2022-11-23,NA,P Ice,4.66,P,James River Near Scotland
+USGS,06478500,2022-11-24,NA,P Ice,4.68,P,James River Near Scotland
+USGS,06478500,2022-11-25,NA,P Ice,4.7,P,James River Near Scotland
+USGS,06478500,2022-11-26,NA,P Ice,4.76,P,James River Near Scotland
+USGS,06478500,2022-11-27,NA,P Ice,4.78,P,James River Near Scotland
+USGS,06478500,2022-11-28,NA,P Ice,4.77,P,James River Near Scotland
+USGS,06478500,2022-11-29,NA,P Ice,4.73,P,James River Near Scotland
+USGS,06478500,2022-11-30,NA,P Ice,5.13,P,James River Near Scotland
+USGS,06478500,2022-12-01,NA,P Ice,4.53,P,James River Near Scotland
+USGS,06478500,2022-12-02,NA,P Ice,4.57,P,James River Near Scotland
+USGS,06478500,2022-12-03,NA,P Ice,4.44,P,James River Near Scotland
+USGS,06478500,2022-12-04,NA,P Ice,4.62,P,James River Near Scotland
+USGS,06478500,2022-12-05,NA,P Ice,4.6,P,James River Near Scotland
+USGS,06478500,2022-12-06,NA,P Ice,4.55,P,James River Near Scotland
+USGS,06478500,2022-12-07,NA,P Ice,4.57,P,James River Near Scotland
+USGS,06478500,2022-12-08,NA,P Ice,4.59,P,James River Near Scotland
+USGS,06478500,2022-12-09,NA,P Ice,4.62,P,James River Near Scotland
+USGS,06478500,2022-12-10,NA,P Ice,4.6,P,James River Near Scotland
+USGS,06478500,2022-12-11,NA,P Ice,4.57,P,James River Near Scotland
+USGS,06478500,2022-12-12,NA,P Ice,4.56,P,James River Near Scotland
+USGS,06478500,2022-12-13,NA,P Ice,4.57,P,James River Near Scotland
+USGS,06478500,2022-12-14,NA,P Ice,4.6,P,James River Near Scotland
+USGS,06478500,2022-12-15,NA,P Ice,4.52,P,James River Near Scotland
+USGS,06478500,2022-12-16,NA,P Ice,4.29,P,James River Near Scotland
+USGS,06478500,2022-12-17,NA,P Ice,4.27,P,James River Near Scotland
+USGS,06478500,2022-12-18,NA,P Ice,4.52,P,James River Near Scotland
+USGS,06478500,2022-12-19,NA,P Ice,4.6,P,James River Near Scotland
+USGS,06478500,2022-12-20,NA,P Ice,4.52,P,James River Near Scotland
+USGS,06478500,2022-12-21,NA,P Ice,4.42,P,James River Near Scotland
+USGS,06478500,2022-12-22,NA,P Ice,4.37,P,James River Near Scotland
+USGS,06478500,2022-12-23,NA,P Ice,4.39,P,James River Near Scotland
+USGS,06478500,2022-12-24,NA,P Ice,4.35,P,James River Near Scotland
+USGS,06478500,2022-12-25,NA,P Ice,4.39,P,James River Near Scotland
+USGS,06478500,2022-12-26,NA,P Ice,4.42,P,James River Near Scotland
+USGS,06478500,2022-12-27,NA,P Ice,4.35,P,James River Near Scotland
+USGS,06478500,2022-12-28,NA,P Ice,4.27,P,James River Near Scotland
+USGS,06478500,2022-12-29,NA,P Ice,4.25,P,James River Near Scotland
+USGS,06478500,2022-12-30,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2022-12-31,NA,P Ice,4.22,P,James River Near Scotland
+USGS,06478500,2023-01-01,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2023-01-02,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2023-01-03,NA,P Ice,4.27,P,James River Near Scotland
+USGS,06478500,2023-01-04,NA,P Ice,4.31,P,James River Near Scotland
+USGS,06478500,2023-01-05,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-06,NA,P Ice,4.25,P,James River Near Scotland
+USGS,06478500,2023-01-07,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-08,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-09,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-10,NA,P Ice,4.25,P,James River Near Scotland
+USGS,06478500,2023-01-11,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-12,NA,P Ice,4.27,P,James River Near Scotland
+USGS,06478500,2023-01-13,NA,P Ice,4.26,P,James River Near Scotland
+USGS,06478500,2023-01-14,NA,P Ice,4.25,P,James River Near Scotland
+USGS,06478500,2023-01-15,NA,P Ice,4.24,P,James River Near Scotland
+USGS,06478500,2023-01-16,NA,P Ice,4.24,P,James River Near Scotland
+USGS,06478500,2023-01-17,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2023-01-18,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2023-01-19,NA,P Ice,4.23,P,James River Near Scotland
+USGS,06478500,2023-01-20,NA,P Ice,4.21,P,James River Near Scotland
+USGS,06478500,2023-01-21,NA,P Ice,4.2,P,James River Near Scotland
+USGS,06478500,2023-01-22,NA,P Ice,4.19,P,James River Near Scotland
+USGS,06478500,2023-01-23,NA,P Ice,4.19,P,James River Near Scotland
+USGS,06478500,2023-01-24,NA,P Ice,4.19,P,James River Near Scotland
+USGS,06478500,2023-01-25,NA,P Ice,4.2,P,James River Near Scotland
+USGS,06478500,2023-01-26,NA,P Ice,4.21,P,James River Near Scotland
+USGS,06478500,2023-01-27,NA,P Ice,4.21,P,James River Near Scotland
+USGS,06478500,2023-01-28,NA,P Ice,4.2,P,James River Near Scotland
+USGS,06478500,2023-01-29,NA,P Ice,4.19,P,James River Near Scotland
+USGS,06478500,2023-01-30,NA,P Ice,4.2,P,James River Near Scotland
+USGS,06478500,2023-01-31,NA,P Ice,4.21,P,James River Near Scotland

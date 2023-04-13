@@ -8,6 +8,7 @@ library(janitor)
 library(readxl)
 library(ggplot2)
 library(ggbreak)
+library(brms)
 
 # load data
 
@@ -118,6 +119,13 @@ mean(abs_mvmt$total_movement)
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 4.5, height = 3,
        units = "in")
 
+## flow data ##
+scotland_change <- read_csv("environmental_data/scotland.csv") %>% 
+  mutate(change_flow_24=Flow-lag(Flow),
+         change_flow_48=Flow-lag(Flow,n=2),
+         date_prev=Date) %>% 
+  distinct(date_prev,change_flow_24,change_flow_48, Flow)
+
 ## Cumulative movement ##
 
 cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(transmitter_id, date) %>% 
@@ -127,17 +135,39 @@ cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %
   replace_na(list(total_movement=0)) %>% 
   mutate(cumulative_movement=cumsum(total_movement)) %>% 
   mutate(cumulative_movement_s=cumulative_movement/max(cumulative_movement),
-         max_cumulative_mvmt=max(cumulative_movement))
+         max_cumulative_mvmt=max(cumulative_movement)) %>% 
+  group_by(transmitter_id, date) %>%
+  summarize(total_movement = as.integer(sum(total_movement))) %>% 
+  mutate(day_interval=date-lag(date),
+         interval = as.numeric(day_interval/86400),
+         date_prev=lag(date),
+         movement_day = as.integer(total_movement/interval) %>% 
+  left_join(scotland_change) %>% 
+  ungroup() %>% 
+  mutate(flow_s = scale(Flow),
+         change_flow_24_s = scale(change_flow_24),
+         change_flow_48_s = scale(change_flow_48))
 
 data=cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
 ggplot(data=data,aes(x=date, y=cumulative_movement_s))+
   geom_line(aes(group=transmitter_id))
 
 
-
 #### Movement Model ####
 
+ggplot(cumulative_abs_movement, aes(x=flow_s,y=total_movement/interval))+
+  geom_point() 
 
+
+
+flow_model <- brm(total_movement ~ change_flow_24_s + (1|transmitter_id) + offset(log(interval)),
+    family = poisson(link = "log"),
+    prior = c(prior(normal(2, 5), class = "Intercept"),
+              prior(normal(0, 10), class = "b")),
+    data = cumulative_abs_movement,
+    chains=1, iter=2000)
+
+plot(conditional_effects(flow_model),points = T)
 
 ### Plot of all fish data ####
 
