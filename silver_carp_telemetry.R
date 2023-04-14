@@ -119,55 +119,179 @@ mean(abs_mvmt$total_movement)
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 4.5, height = 3,
        units = "in")
 
-## flow data ##
+# James River Flow Data
+
 scotland_change <- read_csv("environmental_data/scotland.csv") %>% 
   mutate(change_flow_24=Flow-lag(Flow),
          change_flow_48=Flow-lag(Flow,n=2),
          date_prev=Date) %>% 
   distinct(date_prev,change_flow_24,change_flow_48, Flow)
 
+# James River Temperature Data
+
+temp <- read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>% 
+  mutate(date_prev=as.Date(date_time_gmt_05_00),
+         week=week(date_prev)) %>% 
+  group_by(week) %>% 
+  summarize(mean_temp=mean(temp_f,na.rm=TRUE))
+
+# James River Dissolved Oxygen Data
+
+do <- read_csv("environmental_data/JamesRiverDOsensor.csv") %>% clean_names() %>% 
+  mutate(date_prev=as.Date(timestamp_utc),
+         week=week(date_prev)) %>% 
+  group_by(week) %>% 
+  summarize(mean_do=mean(dissolved_oxygen, na.rm=TRUE))
+
 ## Cumulative movement ##
 
 cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(transmitter_id, date) %>% 
   group_by(transmitter_id) %>% 
-  mutate(total_movement = abs(rkm - lag(rkm,1))) %>% 
+  mutate(total_movement = abs(rkm - lag(rkm,1))) %>% #i'm not sure this is right
   group_by(transmitter_id)%>% 
   replace_na(list(total_movement=0)) %>% 
   mutate(cumulative_movement=cumsum(total_movement)) %>% 
   mutate(cumulative_movement_s=cumulative_movement/max(cumulative_movement),
          max_cumulative_mvmt=max(cumulative_movement)) %>% 
   group_by(transmitter_id, date) %>%
-  summarize(total_movement = as.integer(sum(total_movement))) %>% 
+  summarize(total_movement = as.integer(sum(total_movement))) %>%
   mutate(day_interval=date-lag(date),
          interval = as.numeric(day_interval/86400),
          date_prev=lag(date),
-         movement_day = as.integer(total_movement/interval) %>% 
+         daily_movement = as.integer(total_movement/interval)) %>% 
   left_join(scotland_change) %>% 
-  ungroup() %>% 
+  ungroup() %>%
   mutate(flow_s = scale(Flow),
          change_flow_24_s = scale(change_flow_24),
-         change_flow_48_s = scale(change_flow_48))
+         change_flow_48_s = scale(change_flow_48),
+         week=week(date_prev))
 
-data=cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
-ggplot(data=data,aes(x=date, y=cumulative_movement_s))+
+
+
+mover_data=cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
+ggplot(data=mover_data,aes(x=date, y=cumulative_movement_s))+
   geom_line(aes(group=transmitter_id))
 
 
 #### Movement Model ####
 
-ggplot(cumulative_abs_movement, aes(x=flow_s,y=total_movement/interval))+
+ggplot(mover_data, aes(x=date,y=change_flow_24))+
   geom_point() 
 
-
+max_movement = cumulative_abs_movement %>% 
+  group_by(transmitter_id) %>% 
+  filter(daily_movement == max(daily_movement, na.rm = T)) %>% 
+  distinct(daily_movement, transmitter_id,
+           .keep_all = T) %>% 
+  mutate(move_no_move=case_when(total_movement==0~0,
+                                total_movement>0~1),
+         year=as.factor(year(date))) %>% 
+  left_join(temp)
 
 flow_model <- brm(total_movement ~ change_flow_24_s + (1|transmitter_id) + offset(log(interval)),
     family = poisson(link = "log"),
-    prior = c(prior(normal(2, 5), class = "Intercept"),
-              prior(normal(0, 10), class = "b")),
-    data = cumulative_abs_movement,
-    chains=1, iter=2000)
+    prior = c(prior(normal(0, 1), class = "Intercept"),
+              prior(normal(0, 1), class = "b")),
+    data = max_movement,
+    chains=1, iter=1000)
 
-plot(conditional_effects(flow_model),points = T)
+flow_model_conds = plot(conditional_effects(flow_model),points = T)
+
+flow_model_conds$change_flow_24_s + 
+  scale_y_log10()
+
+flow_model_binom <- brm(move_no_move ~ change_flow_24_s,
+                  family = bernoulli(link="logit"),
+                  prior = c(prior(normal(-1, 1), class = "Intercept"),
+                            prior(normal(0, 1), class = "b")),
+                  data = max_movement,
+                  chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom),points = T)
+
+flow_model_binom2 <- brm(move_no_move ~ change_flow_24_s + Flow,
+                        family = bernoulli(link="logit"),
+                        prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                  prior(normal(0, 1), class = "b")),
+                        data = max_movement,
+                        chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom2),points = T)
+
+flow_model_binom3 <- brm(move_no_move ~ change_flow_48_s,
+                        family = bernoulli(link="logit"),
+                        prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                  prior(normal(0, 1), class = "b")),
+                        data = max_movement,
+                        chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom3),points = T)
+
+flow_model_binom4 <- brm(move_no_move ~ change_flow_48_s + Flow,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom4),points = T)
+
+flow_model_binom5 <- brm(move_no_move ~ Flow,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom5),points = T)
+
+flow_model_binom6 <- brm(move_no_move ~ mean_temp,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom6),points = T)
+
+flow_model_binom7 <- brm(move_no_move ~ mean_temp + Flow,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=1, iter=1000)
+
+plot(conditional_effects(flow_model_binom7),points = T)
+
+waic(flow_model_binom5,
+     flow_model_binom4,
+     flow_model_binom3,
+     flow_model_binom2,
+     flow_model_binom,
+     flow_model_binom6,
+     flow_model_binom7)
+
+binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20)) %>% 
+  add_epred_draws(flow_model_binom5)
+
+binom5_medians = binom5_conds %>% 
+  group_by(Flow) %>% 
+  median_qi(.epred)
+  
+
+binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move))
+  
+
+binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
+
 
 ### Plot of all fish data ####
 
