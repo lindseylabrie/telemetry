@@ -12,6 +12,11 @@ library(brms)
 
 # load data
 
+silver_carp_tags <- read_excel("tracking_data/silver_carp_release_points.xlsx")
+
+range(silver_carp_tags$length_mm)
+range(silver_carp_tags$weight_g)
+
 all_data <-read_csv("all_data.csv")
 
 active_tracking_individuals <- read_excel("tracking_data/active_tracking_points.xlsx") %>% 
@@ -46,7 +51,6 @@ All_Individuals <- rkm_tracker_date %>%
   ggtitle("Telemetered Silver Carp Movement Over Time")
 ggsave(All_Individuals, file = "plots/AllIndividuals.png", dpi = 750, width = 5, height = 4,
        units = "in")
-
 
 
 # Detections per day for all tags, with axis break
@@ -137,11 +141,11 @@ temp <- read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>%
 
 # James River Dissolved Oxygen Data
 
-do <- read_csv("environmental_data/JamesRiverDOsensor.csv") %>% clean_names() %>% 
-  mutate(date_prev=as.Date(timestamp_utc),
-         week=week(date_prev)) %>% 
-  group_by(week) %>% 
-  summarize(mean_do=mean(dissolved_oxygen, na.rm=TRUE))
+do <- read_csv("do.csv")
+
+do %>% ggplot(aes(x=week, y=mean_do))+
+  geom_point()+
+  geom_smooth()
 
 ## Cumulative movement ##
 
@@ -173,6 +177,7 @@ ggplot(data=mover_data,aes(x=date, y=cumulative_movement_s))+
   geom_line(aes(group=transmitter_id))
 
 
+
 #### Movement Model ####
 
 ggplot(mover_data, aes(x=date,y=change_flow_24))+
@@ -186,91 +191,213 @@ max_movement = cumulative_abs_movement %>%
   mutate(move_no_move=case_when(total_movement==0~0,
                                 total_movement>0~1),
          year=as.factor(year(date))) %>% 
-  left_join(temp)
+  left_join(temp) %>% 
+  left_join(do)
 
-flow_model <- brm(total_movement ~ change_flow_24_s + (1|transmitter_id) + offset(log(interval)),
-    family = poisson(link = "log"),
-    prior = c(prior(normal(0, 1), class = "Intercept"),
-              prior(normal(0, 1), class = "b")),
-    data = max_movement,
-    chains=1, iter=1000)
+
+# don't need this model anymore.# # # # # # # # # # # #
+# flow_model <- brm(total_movement ~ change_flow_24_s + (1|transmitter_id) + offset(log(interval)),
+#     family = poisson(link = "log"),
+#     prior = c(prior(normal(0, 1), class = "Intercept"),
+#               prior(normal(0, 1), class = "b")),
+#     data = max_movement,
+#     chains=4, iter=2000)
 
 flow_model_conds = plot(conditional_effects(flow_model),points = T)
 
 flow_model_conds$change_flow_24_s + 
   scale_y_log10()
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+# flow change over 24 hours
 flow_model_binom <- brm(move_no_move ~ change_flow_24_s,
                   family = bernoulli(link="logit"),
                   prior = c(prior(normal(-1, 1), class = "Intercept"),
                             prior(normal(0, 1), class = "b")),
                   data = max_movement,
-                  chains=1, iter=1000)
+                  chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom),points = T)
 
+# flow change over 24 hours plus flow
 flow_model_binom2 <- brm(move_no_move ~ change_flow_24_s + Flow,
                         family = bernoulli(link="logit"),
                         prior = c(prior(normal(-1, 1), class = "Intercept"),
                                   prior(normal(0, 1), class = "b")),
                         data = max_movement,
-                        chains=1, iter=1000)
+                        chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom2),points = T)
 
-flow_model_binom3 <- brm(move_no_move ~ change_flow_48_s,
+# flow change over 24 hours plus flow plus mean weekly temp
+flow_model_binom3 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom3),points = T)
+
+# flow change over 24 hours plus flow plus mean weekly DO
+flow_model_binom4 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_do,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom4),points = T)
+
+# flow change over 24 hours plus flow plus mean weekly temp plus mean weekly DO
+flow_model_binom5 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom5),points = T)
+
+# flow change over 48 hours
+flow_model_binom6 <- brm(move_no_move ~ change_flow_48_s,
                         family = bernoulli(link="logit"),
                         prior = c(prior(normal(-1, 1), class = "Intercept"),
                                   prior(normal(0, 1), class = "b")),
                         data = max_movement,
-                        chains=1, iter=1000)
-
-plot(conditional_effects(flow_model_binom3),points = T)
-
-flow_model_binom4 <- brm(move_no_move ~ change_flow_48_s + Flow,
-                         family = bernoulli(link="logit"),
-                         prior = c(prior(normal(-1, 1), class = "Intercept"),
-                                   prior(normal(0, 1), class = "b")),
-                         data = max_movement,
-                         chains=1, iter=1000)
-
-plot(conditional_effects(flow_model_binom4),points = T)
-
-flow_model_binom5 <- brm(move_no_move ~ Flow,
-                         family = bernoulli(link="logit"),
-                         prior = c(prior(normal(-1, 1), class = "Intercept"),
-                                   prior(normal(0, 1), class = "b")),
-                         data = max_movement,
-                         chains=1, iter=1000)
-
-plot(conditional_effects(flow_model_binom5),points = T)
-
-flow_model_binom6 <- brm(move_no_move ~ mean_temp,
-                         family = bernoulli(link="logit"),
-                         prior = c(prior(normal(-1, 1), class = "Intercept"),
-                                   prior(normal(0, 1), class = "b")),
-                         data = max_movement,
-                         chains=1, iter=1000)
+                        chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom6),points = T)
 
-flow_model_binom7 <- brm(move_no_move ~ mean_temp + Flow,
+# flow change over 48 hours plus flow
+flow_model_binom7 <- brm(move_no_move ~ change_flow_48_s + Flow,
                          family = bernoulli(link="logit"),
                          prior = c(prior(normal(-1, 1), class = "Intercept"),
                                    prior(normal(0, 1), class = "b")),
                          data = max_movement,
-                         chains=1, iter=1000)
+                         chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom7),points = T)
 
-waic(flow_model_binom5,
-     flow_model_binom4,
-     flow_model_binom3,
-     flow_model_binom2,
-     flow_model_binom,
-     flow_model_binom6,
-     flow_model_binom7)
+# flow change over 48 hours plus flow plus mean weekly temp
+flow_model_binom8 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
 
+plot(conditional_effects(flow_model_binom8),points = T)
+
+# flow change over 48 hours plus flow plus mean weekly DO
+flow_model_binom9 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_do,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom9),points = T)
+
+# flow change over 48 hours plus flow plus mean weekly temp plus mean weekly DO
+flow_model_binom10 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp + mean_do,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom10),points = T)
+
+# just flow
+flow_model_binom11 <- brm(move_no_move ~ Flow,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom11),points = T)
+
+# flow plus average weekly temp
+flow_model_binom12 <- brm(move_no_move ~ Flow + mean_temp,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                    prior(normal(0, 1), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom12),points = T)
+
+# flow plus average weekly DO
+flow_model_binom13 <- brm(move_no_move ~ Flow + mean_do,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                    prior(normal(0, 1), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom13),points = T)
+
+# flow plus average weekly DO and average weekly temperature
+flow_model_binom14 <- brm(move_no_move ~ Flow + mean_do + mean_temp,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                    prior(normal(0, 1), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom14),points = T)
+
+# just mean weekly temperature
+flow_model_binom15 <- brm(move_no_move ~ mean_temp,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                   prior(normal(0, 1), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom15),points = T)
+
+# just mean weekly DO
+flow_model_binom16 <- brm(move_no_move ~ mean_do,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                    prior(normal(0, 1), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom16),points = T)
+
+# mean weekly temperature and DO
+flow_model_binom17 <- brm(move_no_move ~ mean_temp + mean_do,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 1), class = "Intercept"),
+                                    prior(normal(0, 1), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom17),points = T)
+
+waic(flow_model_binom,
+     flow_model_binom2,
+     flow_model_binom3,
+     flow_model_binom4,
+     flow_model_binom5,
+     flow_model_binom6,
+     flow_model_binom7,
+     flow_model_binom8,
+     flow_model_binom9,
+     flow_model_binom10,
+     flow_model_binom11,
+     flow_model_binom12,
+     flow_model_binom13,
+     flow_model_binom14,
+     flow_model_binom15,
+     flow_model_binom16,
+     flow_model_binom17)
+
+# make sure you update this with the name of the model (since you added temp and do to models)
 binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20)) %>% 
   add_epred_draws(flow_model_binom5)
 
