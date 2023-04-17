@@ -110,7 +110,7 @@ TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),
   geom_point() +
   labs(x="",
        y="Minimum Total Distance Traveled (rkm)",
-       title = "Minimum Silver Carp Movement per Individual")+
+       title = "Silver Carp Movement by Individual")+
   # geom_hline(data=abs_mvmt,aes(yintercept=mean(total_movement)), color="purple")+
   theme_bw()+
   theme(
@@ -119,8 +119,9 @@ TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),
     axis.ticks = element_blank())
 
 mean(abs_mvmt$total_movement)
+min(abs_mvmt$total_movement)
 
-ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 4.5, height = 3,
+ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 7, height = 6,
        units = "in")
 
 # James River Flow Data
@@ -138,6 +139,15 @@ temp <- read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>%
          week=week(date_prev)) %>% 
   group_by(week) %>% 
   summarize(mean_temp=mean(temp_f,na.rm=TRUE))
+
+temp_long <-read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>% 
+  mutate(date_prev=as.Date(date_time_gmt_05_00))
+
+ggplot(temp_long, aes(x=date_prev, y=temp_f))+
+  geom_smooth()+
+  labs(title="James River Temperature",
+       x="Date",
+       y="Temperature in Farenheit")
 
 # James River Dissolved Oxygen Data
 
