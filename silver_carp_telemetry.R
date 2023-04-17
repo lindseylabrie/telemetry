@@ -495,6 +495,35 @@ lower_extreme_shapes <- binom5_medians %>%
 ggsave(lower_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Lower.jpg", dpi = 750, width = 7, height = 6,
        units = "in")
 
+# upper extereme values for change in flow
+binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
+                      change_flow_24_s = 2,
+                      mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
+                      mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
+  add_epred_draws(flow_model_binom5)
+
+binom5_medians = binom5_conds %>% 
+  group_by(Flow) %>% 
+  median_qi(.epred)
+
+
+upper_extreme <- binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move))
+ggsave(upper_extreme,file="plots/MeanPosteriorsUpper.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+
+upper_extreme_shapes <- binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
+
+ggsave(upper_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Upper.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
 
 
 ### Plot of all fish data ####
