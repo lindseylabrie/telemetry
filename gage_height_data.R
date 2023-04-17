@@ -139,7 +139,8 @@ DischargeScotland <- ggplot(data=Scotland, aes(x=Date, y=Flow, color=name,group=
   labs(color="Gage Station",
        title = "James River Discharge at Scotland, SD",
        x="June 2021 - Jan 2023",
-       y="Mean Daily Discharge, CFS")
+       y="Mean Daily Discharge, CFS")+
+  theme(legend.position = "none")
 ggsave(DischargeScotland, file="plots/DischargeScotland.jpg", dpi = 750, width = 7, height = 6,
        units = "in")
 

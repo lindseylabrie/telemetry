@@ -141,27 +141,49 @@ temp <- read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>%
   summarize(mean_temp=mean(temp_f,na.rm=TRUE))
 
 temp_long <-read_excel("Hwy_50_Temp_10_12_22.xlsx") %>% clean_names() %>% 
-  mutate(date_prev=as.Date(date_time_gmt_05_00))
+  mutate(date_prev=as.Date(date_time_gmt_05_00)) %>% 
+  mutate(temp_c=(temp_f-32)*.5556)
 
-ggplot(temp_long, aes(x=date_prev, y=temp_f))+
+James_Temp_Plot <- ggplot(temp_long, aes(x=date_prev, y=temp_c))+
   geom_smooth()+
   labs(title="James River Temperature",
        x="Date",
-       y="Temperature in Farenheit")
+       y="Temperature in Celsius")
+
+ggsave(James_Temp_Plot,file="plots/JamesTemp.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
 
 # James River Dissolved Oxygen Data
 
-do <- read_csv("do.csv")
+DO <- read_csv("environmental_data/JamesRiverDOsensor.csv") %>% clean_names() %>% 
+  filter(!is.na(dissolved_oxygen)) %>% 
+  mutate(date=as.Date(timestamp_utc)) %>% 
+  group_by(date) %>% 
+  summarize(mean_do=mean(dissolved_oxygen))
+
+DO_Plot <- ggplot(DO, aes(x=date, y=mean_do))+
+  geom_smooth()+
+  labs(title="James River Dissolved Oxygen",
+       x="October 2021-August 2022",
+       y="Dissolved Oxygen (percent)")
+
+ggsave(DO_Plot,file="plots/JamesDO.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+
+do <- read_csv("do.csv") 
 
 do %>% ggplot(aes(x=week, y=mean_do))+
   geom_point()+
   geom_smooth()
 
+
 ## Cumulative movement ##
 
 cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(transmitter_id, date) %>% 
   group_by(transmitter_id) %>% 
-  mutate(total_movement = abs(rkm - lag(rkm,1))) %>% #i'm not sure this is right
+  mutate(total_movement = abs(rkm - lag(rkm,1))) %>%
   group_by(transmitter_id)%>% 
   replace_na(list(total_movement=0)) %>% 
   mutate(cumulative_movement=cumsum(total_movement)) %>% 
@@ -183,8 +205,13 @@ cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %
 
 
 mover_data=cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
-ggplot(data=mover_data,aes(x=date, y=cumulative_movement_s))+
-  geom_line(aes(group=transmitter_id))
+Mover_Plot <- ggplot(data=mover_data,aes(x=date, y=cumulative_movement_s))+
+  geom_line(aes(group=transmitter_id))+
+  labs(x="Date",
+       y="Proportion of cumulative movement for each individual",
+       title="Cumulative movement of Silver Carp individuals over time")
+ggsave(Mover_Plot,file="plots/MoverPlot.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
 
 
 
@@ -407,8 +434,12 @@ waic(flow_model_binom,
      flow_model_binom16,
      flow_model_binom17)
 
-# make sure you update this with the name of the model (since you added temp and do to models)
-binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20)) %>% 
+# this model has change in flow over 24h, flow, mean temp, mean DO
+# mean values for all parameters
+binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
+                      change_flow_24_s = 0, # change this to -2 and 2 and save plots of each
+                      mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
+                      mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
   add_epred_draws(flow_model_binom5)
 
 binom5_medians = binom5_conds %>% 
@@ -416,18 +447,54 @@ binom5_medians = binom5_conds %>%
   median_qi(.epred)
   
 
-binom5_medians %>% 
+Mean_output <- binom5_medians %>% 
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move))
-  
 
-binom5_medians %>% 
+ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+mean_posterior_with_distances <- binom5_medians %>% 
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
+
+ggsave(mean_posterior_with_distances,file="plots/MeanPosteriorsDistanceBubbles.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+# lower extereme values for change in flow
+binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
+                      change_flow_24_s = -2, # change this to -2 and 2 and save plots of each
+                      mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
+                      mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
+  add_epred_draws(flow_model_binom5)
+
+binom5_medians = binom5_conds %>% 
+  group_by(Flow) %>% 
+  median_qi(.epred)
+
+
+lower_extreme <- binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move))
+ggsave(lower_extreme,file="plots/MeanPosteriorsLower.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
+
+lower_extreme_shapes <- binom5_medians %>% 
+  ggplot(aes(x = Flow, y = .epred)) + 
+  geom_line() +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
+  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
+
+ggsave(lower_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Lower.jpg", dpi = 750, width = 7, height = 6,
+       units = "in")
+
 
 
 ### Plot of all fish data ####
