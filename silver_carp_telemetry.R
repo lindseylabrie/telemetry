@@ -255,6 +255,9 @@ flow_model_binom <- brm(move_no_move ~ change_flow_24_s,
                   chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom),points = T)
+pp_check(flow_model_binom)
+bayes_R2(flow_model_binom)
+summary(flow_model_binom)
 
 # flow change over 24 hours plus flow
 flow_model_binom2 <- brm(move_no_move ~ change_flow_24_s + Flow,
@@ -265,6 +268,9 @@ flow_model_binom2 <- brm(move_no_move ~ change_flow_24_s + Flow,
                         chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom2),points = T)
+pp_check(flow_model_binom2)
+bayes_R2(flow_model_binom2)
+summary(flow_model_binom2)
 
 # flow change over 24 hours plus flow plus mean weekly temp
 flow_model_binom3 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp,
@@ -275,6 +281,9 @@ flow_model_binom3 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom3),points = T)
+pp_check(flow_model_binom3)
+bayes_R2(flow_model_binom3)
+summary(flow_model_binom3)
 
 # flow change over 24 hours plus flow plus mean weekly DO
 flow_model_binom4 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_do,
@@ -285,8 +294,12 @@ flow_model_binom4 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_do,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom4),points = T)
+pp_check(flow_model_binom4)
+bayes_R2(flow_model_binom4)
+summary(flow_model_binom4)
 
 # flow change over 24 hours plus flow plus mean weekly temp plus mean weekly DO
+get_prior(data= max_movement, move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do)
 flow_model_binom5 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do,
                          family = bernoulli(link="logit"),
                          prior = c(prior(normal(-1, 1), class = "Intercept"),
@@ -295,6 +308,24 @@ flow_model_binom5 <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + me
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom5),points = T)
+pp_check(flow_model_binom5)
+bayes_R2(flow_model_binom5)
+summary(flow_model_binom5)
+
+# model 5 sensitivity analysis: 
+flow_model_binom5s <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do,
+                         family = bernoulli(link="logit"),
+                         prior = c(prior(normal(-1, 2), class = "Intercept"),
+                                   prior(normal(0, 2), class = "b")),
+                         data = max_movement,
+                         chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom5s),points = T)
+pp_check(flow_model_binom5s)
+bayes_R2(flow_model_binom5s)
+summary(flow_model_binom5s)
+
+
 
 # flow change over 48 hours
 flow_model_binom6 <- brm(move_no_move ~ change_flow_48_s,
@@ -305,6 +336,9 @@ flow_model_binom6 <- brm(move_no_move ~ change_flow_48_s,
                         chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom6),points = T)
+pp_check(flow_model_binom6)
+bayes_R2(flow_model_binom6)
+summary(flow_model_binom6)
 
 # flow change over 48 hours plus flow
 flow_model_binom7 <- brm(move_no_move ~ change_flow_48_s + Flow,
@@ -315,6 +349,9 @@ flow_model_binom7 <- brm(move_no_move ~ change_flow_48_s + Flow,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom7),points = T)
+pp_check(flow_model_binom7)
+bayes_R2(flow_model_binom7)
+summary(flow_model_binom7)
 
 # flow change over 48 hours plus flow plus mean weekly temp
 flow_model_binom8 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp,
@@ -325,6 +362,9 @@ flow_model_binom8 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom8),points = T)
+pp_check(flow_model_binom8)
+bayes_R2(flow_model_binom8)
+summary(flow_model_binom8)
 
 # flow change over 48 hours plus flow plus mean weekly DO
 flow_model_binom9 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_do,
@@ -335,6 +375,9 @@ flow_model_binom9 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_do,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom9),points = T)
+pp_check(flow_model_binom9)
+bayes_R2(flow_model_binom9)
+summary(flow_model_binom9)
 
 # flow change over 48 hours plus flow plus mean weekly temp plus mean weekly DO
 flow_model_binom10 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp + mean_do,
@@ -345,6 +388,9 @@ flow_model_binom10 <- brm(move_no_move ~ change_flow_48_s + Flow + mean_temp + m
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom10),points = T)
+pp_check(flow_model_binom10)
+bayes_R2(flow_model_binom10)
+summary(flow_model_binom10)
 
 # just flow
 flow_model_binom11 <- brm(move_no_move ~ Flow,
@@ -355,6 +401,9 @@ flow_model_binom11 <- brm(move_no_move ~ Flow,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom11),points = T)
+pp_check(flow_model_binom11)
+bayes_R2(flow_model_binom11)
+summary(flow_model_binom11)
 
 # flow plus average weekly temp
 flow_model_binom12 <- brm(move_no_move ~ Flow + mean_temp,
@@ -365,6 +414,9 @@ flow_model_binom12 <- brm(move_no_move ~ Flow + mean_temp,
                           chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom12),points = T)
+pp_check(flow_model_binom12)
+bayes_R2(flow_model_binom12)
+summary(flow_model_binom12)
 
 # flow plus average weekly DO
 flow_model_binom13 <- brm(move_no_move ~ Flow + mean_do,
@@ -375,6 +427,9 @@ flow_model_binom13 <- brm(move_no_move ~ Flow + mean_do,
                           chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom13),points = T)
+pp_check(flow_model_binom13)
+bayes_R2(flow_model_binom13)
+summary(flow_model_binom13)
 
 # flow plus average weekly DO and average weekly temperature
 flow_model_binom14 <- brm(move_no_move ~ Flow + mean_do + mean_temp,
@@ -385,6 +440,9 @@ flow_model_binom14 <- brm(move_no_move ~ Flow + mean_do + mean_temp,
                           chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom14),points = T)
+pp_check(flow_model_binom14)
+bayes_R2(flow_model_binom14)
+summary(flow_model_binom14)
 
 # just mean weekly temperature
 flow_model_binom15 <- brm(move_no_move ~ mean_temp,
@@ -395,6 +453,9 @@ flow_model_binom15 <- brm(move_no_move ~ mean_temp,
                          chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom15),points = T)
+pp_check(flow_model_binom15)
+bayes_R2(flow_model_binom15)
+summary(flow_model_binom15)
 
 # just mean weekly DO
 flow_model_binom16 <- brm(move_no_move ~ mean_do,
@@ -405,6 +466,9 @@ flow_model_binom16 <- brm(move_no_move ~ mean_do,
                           chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom16),points = T)
+pp_check(flow_model_binom16)
+bayes_R2(flow_model_binom16)
+summary(flow_model_binom16)
 
 # mean weekly temperature and DO
 flow_model_binom17 <- brm(move_no_move ~ mean_temp + mean_do,
@@ -415,6 +479,9 @@ flow_model_binom17 <- brm(move_no_move ~ mean_temp + mean_do,
                           chains=4, iter=2000)
 
 plot(conditional_effects(flow_model_binom17),points = T)
+pp_check(flow_model_binom17)
+bayes_R2(flow_model_binom17)
+summary(flow_model_binom17)
 
 waic(flow_model_binom,
      flow_model_binom2,
@@ -446,14 +513,14 @@ binom5_medians = binom5_conds %>%
   group_by(Flow) %>% 
   median_qi(.epred)
   
-
 Mean_output <- binom5_medians %>% 
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move))
+  geom_point(data = max_movement, aes(y = move_no_move))+
+  labs(y="Predicted Probability of Movement")
 
-ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 7, height = 6,
+ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 3, height = 3,
        units = "in")
 
 mean_posterior_with_distances <- binom5_medians %>% 
@@ -481,8 +548,10 @@ lower_extreme <- binom5_medians %>%
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move))
-ggsave(lower_extreme,file="plots/MeanPosteriorsLower.jpg", dpi = 750, width = 7, height = 6,
+  geom_point(data = max_movement, aes(y = move_no_move))+
+  labs(y="Predicted Probability of Movement")
+
+ggsave(lower_extreme,file="plots/MeanPosteriorsLower.jpg", dpi = 750, width = 3, height = 3,
        units = "in")
 
 
@@ -511,8 +580,10 @@ upper_extreme <- binom5_medians %>%
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move))
-ggsave(upper_extreme,file="plots/MeanPosteriorsUpper.jpg", dpi = 750, width = 7, height = 6,
+  geom_point(data = max_movement, aes(y = move_no_move))+
+  labs(y="Predicted Probability of Movement")
+
+ggsave(upper_extreme,file="plots/MeanPosteriorsUpper.jpg", dpi = 750, width = 3, height = 3,
        units = "in")
 
 
