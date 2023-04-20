@@ -135,13 +135,12 @@ All <- bind_rows(Huron, Yankton, Scotland, Mitchell)
 # Scotland data
 DischargeScotland <- ggplot(data=Scotland, aes(x=Date, y=Flow, color=name,group=name))+
   geom_line() +
-  theme_minimal()+
   labs(color="Gage Station",
        title = "James River Discharge at Scotland, SD",
        x="June 2021 - Jan 2023",
        y="Mean Daily Discharge, CFS")+
   theme(legend.position = "none")
-ggsave(DischargeScotland, file="plots/DischargeScotland.jpg", dpi = 750, width = 7, height = 6,
+ggsave(DischargeScotland, file="plots/DischargeScotland.jpg", dpi = 750, width = 4, height = 4,
        units = "in")
 
 GageHeightScotland <- ggplot(data=Scotland, aes(x=Date, y=GH, color=name,group=name))+
@@ -152,7 +151,7 @@ GageHeightScotland <- ggplot(data=Scotland, aes(x=Date, y=GH, color=name,group=n
        x="June 2021 - Jan 2022",
        y="Mean Daily Gage Height, ft")+
   theme(legend.position = "none")
-ggsave(GageHeightScotland, file="plots/GageHeightScotland.jpg", dpi = 750, width = 7, height = 6,
+ggsave(GageHeightScotland, file="plots/GageHeightScotland.jpg", dpi = 750, width = 4, height = 4,
        units = "in")
 
 write_csv(Scotland, "environmental_data/scotland.csv")

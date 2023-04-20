@@ -109,10 +109,9 @@ abs_mvmt <-rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(trans
 TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
   geom_point() +
   labs(x="",
-       y="Minimum Total Distance Traveled (rkm)",
+       y="Total Distance Traveled (rkm)",
        title = "Silver Carp Movement by Individual")+
   # geom_hline(data=abs_mvmt,aes(yintercept=mean(total_movement)), color="purple")+
-  theme_bw()+
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(),
@@ -121,7 +120,7 @@ TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),
 mean(abs_mvmt$total_movement)
 min(abs_mvmt$total_movement)
 
-ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 7, height = 6,
+ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 6, height = 5,
        units = "in")
 
 # James River Flow Data
@@ -150,7 +149,7 @@ James_Temp_Plot <- ggplot(temp_long, aes(x=date_prev, y=temp_c))+
        x="Date",
        y="Temperature in Celsius")
 
-ggsave(James_Temp_Plot,file="plots/JamesTemp.jpg", dpi = 750, width = 7, height = 6,
+ggsave(James_Temp_Plot,file="plots/JamesTemp.jpg", dpi = 750, width = 4, height = 4,
        units = "in")
 
 
@@ -168,7 +167,7 @@ DO_Plot <- ggplot(DO, aes(x=date, y=mean_do))+
        x="October 2021-August 2022",
        y="Dissolved Oxygen (percent)")
 
-ggsave(DO_Plot,file="plots/JamesDO.jpg", dpi = 750, width = 7, height = 6,
+ggsave(DO_Plot,file="plots/JamesDO.jpg", dpi = 750, width = 4, height = 4,
        units = "in")
 
 
@@ -311,21 +310,6 @@ plot(conditional_effects(flow_model_binom5),points = T)
 pp_check(flow_model_binom5)
 bayes_R2(flow_model_binom5)
 summary(flow_model_binom5)
-
-# model 5 sensitivity analysis: 
-flow_model_binom5s <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do,
-                         family = bernoulli(link="logit"),
-                         prior = c(prior(normal(-1, 2), class = "Intercept"),
-                                   prior(normal(0, 2), class = "b")),
-                         data = max_movement,
-                         chains=4, iter=2000)
-
-plot(conditional_effects(flow_model_binom5s),points = T)
-pp_check(flow_model_binom5s)
-bayes_R2(flow_model_binom5s)
-summary(flow_model_binom5s)
-
-
 
 # flow change over 48 hours
 flow_model_binom6 <- brm(move_no_move ~ change_flow_48_s,
@@ -504,7 +488,7 @@ waic(flow_model_binom,
 # this model has change in flow over 24h, flow, mean temp, mean DO
 # mean values for all parameters
 binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
-                      change_flow_24_s = 0, # change this to -2 and 2 and save plots of each
+                      change_flow_24_s = 0, 
                       mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
                       mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
   add_epred_draws(flow_model_binom5)
@@ -523,16 +507,20 @@ Mean_output <- binom5_medians %>%
 ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 3, height = 3,
        units = "in")
 
+
 mean_posterior_with_distances <- binom5_medians %>% 
   ggplot(aes(x = Flow, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
+  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))+
+  labs(y="Predicted Probability of Movement")+
+  scale_color_discrete(name="Total Movement")
+       
 
-ggsave(mean_posterior_with_distances,file="plots/MeanPosteriorsDistanceBubbles.jpg", dpi = 750, width = 7, height = 6,
+ggsave(mean_posterior_with_distances,file="plots/MeanPosteriorsDistanceBubbles.jpg", dpi = 750, width = 5, height = 4,
        units = "in")
 
-# lower extereme values for change in flow
+# lower extreme values for change in flow
 binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
                       change_flow_24_s = -2, # change this to -2 and 2 and save plots of each
                       mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
@@ -595,6 +583,19 @@ upper_extreme_shapes <- binom5_medians %>%
 
 ggsave(upper_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Upper.jpg", dpi = 750, width = 7, height = 6,
        units = "in")
+
+# model 5 sensitivity analysis: 
+flow_model_binom5s <- brm(move_no_move ~ change_flow_24_s + Flow + mean_temp + mean_do,
+                          family = bernoulli(link="logit"),
+                          prior = c(prior(normal(-1, 2), class = "Intercept"),
+                                    prior(normal(0, 2), class = "b")),
+                          data = max_movement,
+                          chains=4, iter=2000)
+
+plot(conditional_effects(flow_model_binom5s),points = T)
+pp_check(flow_model_binom5s)
+bayes_R2(flow_model_binom5s)
+summary(flow_model_binom5s)
 
 
 ### Plot of all fish data ####
