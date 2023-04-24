@@ -118,7 +118,7 @@ TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),
     axis.ticks = element_blank())
 
 mean(abs_mvmt$total_movement)
-min(abs_mvmt$total_movement)
+max(abs_mvmt$total_movement)
 
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 6, height = 5,
        units = "in")
@@ -514,74 +514,10 @@ mean_posterior_with_distances <- binom5_medians %>%
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))+
   labs(y="Predicted Probability of Movement")+
-  scale_color_discrete(name="Total Movement")
+  scale_x_log10()
        
 
-ggsave(mean_posterior_with_distances,file="plots/MeanPosteriorsDistanceBubbles.jpg", dpi = 750, width = 5, height = 4,
-       units = "in")
-
-# lower extreme values for change in flow
-binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
-                      change_flow_24_s = -2, # change this to -2 and 2 and save plots of each
-                      mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
-                      mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
-  add_epred_draws(flow_model_binom5)
-
-binom5_medians = binom5_conds %>% 
-  group_by(Flow) %>% 
-  median_qi(.epred)
-
-
-lower_extreme <- binom5_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
-  geom_line() +
-  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move))+
-  labs(y="Predicted Probability of Movement")
-
-ggsave(lower_extreme,file="plots/MeanPosteriorsLower.jpg", dpi = 750, width = 3, height = 3,
-       units = "in")
-
-
-lower_extreme_shapes <- binom5_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
-  geom_line() +
-  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
-
-ggsave(lower_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Lower.jpg", dpi = 750, width = 7, height = 6,
-       units = "in")
-
-# upper extereme values for change in flow
-binom5_conds = tibble(Flow = seq(min(flow_model_binom5$data$Flow), max(flow_model_binom5$data$Flow), length.out = 20),
-                      change_flow_24_s = 2,
-                      mean_temp = mean(flow_model_binom5$data$mean_temp), # temp and do are at their mean values
-                      mean_do = mean(flow_model_binom5$data$mean_do)) %>% 
-  add_epred_draws(flow_model_binom5)
-
-binom5_medians = binom5_conds %>% 
-  group_by(Flow) %>% 
-  median_qi(.epred)
-
-
-upper_extreme <- binom5_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
-  geom_line() +
-  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move))+
-  labs(y="Predicted Probability of Movement")
-
-ggsave(upper_extreme,file="plots/MeanPosteriorsUpper.jpg", dpi = 750, width = 3, height = 3,
-       units = "in")
-
-
-upper_extreme_shapes <- binom5_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
-  geom_line() +
-  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
-  geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))
-
-ggsave(upper_extreme_shapes,file="plots/MeanPosteriorsDistanceBubbles_Upper.jpg", dpi = 750, width = 7, height = 6,
+ggsave(mean_posterior_with_distances,file="plots/MeanPosteriorsDistanceBubbles.jpg", dpi = 750, width = 7, height = 4,
        units = "in")
 
 # model 5 sensitivity analysis: 
