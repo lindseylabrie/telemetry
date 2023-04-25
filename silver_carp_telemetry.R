@@ -105,6 +105,9 @@ abs_mvmt <-rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(trans
   group_by(transmitter_id) %>% 
   summarise(total_movement=sum(total_movement, na.rm = T))
 
+sum(abs_mvmt$total_movement)
+
+
 
 TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
   geom_point() +
