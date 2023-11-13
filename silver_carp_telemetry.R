@@ -82,6 +82,7 @@ max_dist <- rkm_tracker_date %>%
   mutate(distance_max = max_rkm - min_rkm)
 
 mean(max_dist$distance_max)
+median(max_dist$distance_max)
 
 MaxDistancePlot <- ggplot(max_dist, aes(x = reorder(as.factor(transmitter_id), -distance_max), y = distance_max )) + 
   geom_point() +
@@ -107,7 +108,7 @@ abs_mvmt <-rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(trans
   summarise(total_movement=sum(total_movement, na.rm = T))
 
 sum(abs_mvmt$total_movement)
-
+mean(abs_mvmt$total_movement)
 
 
 TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
@@ -126,6 +127,26 @@ max(abs_mvmt$total_movement)
 
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 6, height = 5,
        units = "in")
+
+## median distance moved not including zero
+max_dist_nozero <-abs_mvmt %>% filter(total_movement > 1)
+
+
+ggplot(max_dist_nozero, aes(x = reorder(as.factor(transmitter_id), -total_movement), y = total_movement )) + 
+  geom_point() +
+  labs(x="",
+       y="Maximum Total Distance Traveled (rkm)",
+       title = "Maximum Silver Carp Movement per Individual")+
+  geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
+  theme_bw()+
+  theme(
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(),
+    axis.ticks = element_blank())
+
+mean(max_dist_nozero$total_movement)
+
+
 
 # James River Flow Data
 
