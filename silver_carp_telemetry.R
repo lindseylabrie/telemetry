@@ -9,6 +9,7 @@ library(readxl)
 library(ggplot2)
 library(ggbreak)
 library(brms)
+library(tidybayes)
 
 # load data
 
@@ -43,9 +44,9 @@ All_Individuals <- rkm_tracker_date %>%
   ggplot(aes(color=as.character(color), group=transmitter_id,x=date, y=distance))+
   geom_line(alpha=0.8)+
   geom_point(shape=20, size=0.5, alpha=0.8) +
-  labs(y = "Minimum Distance Traveled, rkm",
+  labs(y = "Distance Traveled, rkm",
        x = "") +
-  theme_classic()+
+  theme_linedraw()+
   theme(legend.position="none")+
   ylim(-475,200)+
   ggtitle("Telemetered Silver Carp Movement Over Time")
@@ -516,7 +517,8 @@ mean_posterior_with_distances <- binom5_medians %>%
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))+
-  labs(y="Predicted Probability of Movement")+
+  labs(y="Probability of Movement",
+       x="Flow in CFS")+
   scale_x_log10()
        
 
