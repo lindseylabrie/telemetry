@@ -128,7 +128,7 @@ max(abs_mvmt$total_movement)
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 6, height = 5,
        units = "in")
 
-## median distance moved not including zero
+## mean total distance moved, not including zeros
 max_dist_nozero <-abs_mvmt %>% filter(total_movement > 1)
 
 
@@ -145,8 +145,7 @@ ggplot(max_dist_nozero, aes(x = reorder(as.factor(transmitter_id), -total_moveme
     axis.ticks = element_blank())
 
 mean(max_dist_nozero$total_movement)
-
-
+# n = 35 fish
 
 # James River Flow Data
 
@@ -210,8 +209,8 @@ cumulative_abs_movement <- rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %
   mutate(total_movement = abs(rkm - lag(rkm,1))) %>%
   group_by(transmitter_id)%>% 
   replace_na(list(total_movement=0)) %>% 
-  mutate(cumulative_movement=cumsum(total_movement)) %>% 
-  mutate(cumulative_movement_s=cumulative_movement/max(cumulative_movement),
+  mutate(cumulative_movement=cumsum(total_movement),
+         cumulative_movement_s=cumulative_movement/max(cumulative_movement),
          max_cumulative_mvmt=max(cumulative_movement)) %>% 
   group_by(transmitter_id, date) %>%
   summarize(total_movement = as.integer(sum(total_movement))) %>%
