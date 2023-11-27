@@ -226,14 +226,14 @@ write.csv(rkm_tracker_date, "rkm_tracker_date.csv")
 
 #### Combining release location and detections ####
 
-silver_carp_tags <- read_excel("tracking_data/silver_carp_release_points.xlsx")
+silver_carp_tags <- read_excel("data/tracking_data/silver_carp_release_points.xlsx")
 silver_carp_tags
 
 range(silver_carp_tags$length_mm)
 range(silver_carp_tags$weight_g)
 
-all_data <-read_csv("all_data.csv")
-mo_river <-read_csv("receiver_data/mo_river_detections.csv") %>% mutate(date=dmy(date))
+all_data <-read_csv("data/all_data.csv")
+mo_river <-read_csv("data/receiver_data/mo_river_detections.csv") %>% mutate(date=dmy(date))
 
 combined_data <- bind_rows(all_data,mo_river,silver_carp_release_points)
 
