@@ -1,4 +1,7 @@
-# Telemetry
-A place to upload and analyze my silver carp telemetry data from the James River, SD, as well as USFWS silver carp datapoints and any of my fish they've detected in the Missouri, Vermillion, or Big Sioux Rivers in SD.
+## Silver Carp Telemetry in the James River, SD 
 
-Passive telemetry data collected using 21 Vemco Vr2W and Vr2Tx stationary receivers. A total of 50 VR16 transponding tags were implanted in 50 Silver Carp in the James River in early June 2021. USFWS tagged 80 silver carp in the Big Sioux and Vermillion Rivers in late May/early June.
+# This repository contains silver carp telemetry data from the James River, SD from June 2021 to October 2022. This research is part of a master's thesis research project out of the University of South Dakota under the advisorship of Drs. Wesner and Britten.
+
+# Passive telemetry data was collected using 21 Vemco Vr2W and Vr2Tx stationary receivers. A total of 50, V16 transponding tags were implanted in 50 Silver Carp in the James River in early June 2021. 
+
+# Please contact the corresponding author (L. LaBrie) at llabrie@uark.edu with any questions.
