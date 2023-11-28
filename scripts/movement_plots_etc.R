@@ -89,14 +89,19 @@ abs_mvmt <-rkm_tracker_date %>% mutate(abs_dist=abs(distance)) %>% arrange(trans
   group_by(transmitter_id) %>% 
   mutate(total_movement = abs(rkm - lag(rkm,1))) %>% 
   group_by(transmitter_id) %>% 
-  summarise(total_movement=sum(total_movement, na.rm = T))
+  summarise(total_movement=sum(total_movement, na.rm = T)) 
+
+write.csv(abs_mvmt,"data/abs_mvmt.csv")
 # need to remove active tracking fish
 
-sum(abs_mvmt$total_movement)
-mean(abs_mvmt$total_movement)
+no_active <- read_csv("data/no_active.csv")
+
+ 
+sum(no_active$total_movement)
+mean(no_active$total_movement)
 
 
-TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
+TotalMovementPlot <- ggplot(no_active, aes(x = reorder(as.factor(transmitter_id),-total_movement), y = total_movement )) + 
   geom_point() +
   labs(x="",
        y="Total Distance Traveled (rkm)",
@@ -107,8 +112,8 @@ TotalMovementPlot <- ggplot(abs_mvmt, aes(x = reorder(as.factor(transmitter_id),
     axis.text.y = element_text(),
     axis.ticks = element_blank())
 
-mean(abs_mvmt$total_movement)
-max(abs_mvmt$total_movement)
+mean(no_active$total_movement)
+max(no_active$total_movement)
 
 ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 6, height = 5,
        units = "in")
@@ -117,19 +122,19 @@ ggsave(TotalMovementPlot,file="plots/TotalMovementPlot.jpg", dpi = 750, width = 
 max_dist_nozero <-abs_mvmt %>% filter(total_movement > 1)
 
 
-ggplot(max_dist_nozero, aes(x = reorder(as.factor(transmitter_id), -total_movement), y = total_movement )) + 
+ggplot(no_active, aes(x = reorder(as.factor(transmitter_id), -total_movement), y = total_movement )) + 
   geom_point() +
   labs(x="",
        y="Maximum Total Distance Traveled (rkm)",
        title = "Maximum Silver Carp Movement per Individual")+
-  geom_hline(data=max_dist,aes(yintercept=mean(distance_max)), color="purple")+
+  geom_hline(data=no_active,aes(yintercept=mean(no_active$total_movement)), color="purple")+
   theme_bw()+
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_text(),
     axis.ticks = element_blank())
 
-mean(max_dist_nozero$total_movement)
+mean(no_active$total_movement)
 # n = 31 fish
 
 
@@ -137,7 +142,7 @@ mean(max_dist_nozero$total_movement)
 
 cumulative_abs_movement <- read_csv("data/cumulative_abs_movement.csv")
 
-mover_data=cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
+mover_data <- cumulative_abs_movement %>% filter(max_cumulative_mvmt>50)
 Mover_Plot <- ggplot(data=mover_data,aes(x=date, y=cumulative_movement_s))+
   geom_line(aes(group=transmitter_id))+
   labs(x="Date",
