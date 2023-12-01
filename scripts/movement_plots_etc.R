@@ -135,7 +135,7 @@ ggplot(no_active, aes(x = reorder(as.factor(transmitter_id), -total_movement), y
     axis.ticks = element_blank())
 
 mean(no_active$total_movement)
-# n = 31 fish
+# n = 35 fish
 
 
 ## Cumulative Movement Plot ##

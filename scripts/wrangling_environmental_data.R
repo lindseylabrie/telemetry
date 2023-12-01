@@ -18,7 +18,19 @@ scotland_change <- read_csv("data/environmental_data/gage_heights/scotland.csv")
   mutate(change_flow_24=Flow-lag(Flow),
          change_flow_48=Flow-lag(Flow,n=2),
          date_prev=Date) %>% 
-  distinct(date_prev,change_flow_24,change_flow_48, Flow)
+  distinct(date_prev,change_flow_24,change_flow_48, Flow) %>% 
+  mutate(m3s=Flow*0.028316832) %>% na.omit()
+
+
+
+scotland_flow <- ggplot(scotland_change, aes(x=date_prev, y=m3s))+
+  geom_line(col="blue2")+
+  labs(title="James River Flow at Scotland, SD",
+       x="Date",
+       y="Mean daily discharge in m^3/s")
+ggsave(scotland_flow,file="plots/ScotlandFlowMetric.jpg", dpi = 750, width = 5, height = 4,
+       units = "in")
+  
 
 # James River Temperature Data
 

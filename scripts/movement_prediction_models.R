@@ -291,15 +291,18 @@ waic(flow_model_binom,
 # model 11 ONLY instantaneous discharge (flow)
 
 
-binom11_conds = tibble(Flow = seq(min(flow_model_binom11$data$Flow), max(flow_model_binom11$data$Flow))) %>% add_epred_draws(flow_model_binom11)
+binom11_conds <- tibble(Flow = seq(min(flow_model_binom11$data$Flow), max(flow_model_binom11$data$Flow))) %>% add_epred_draws(flow_model_binom11)
 
 
-binom11_medians = binom11_conds %>% 
+binom11_medians <- binom11_conds %>% 
   group_by(Flow) %>% 
   median_qi(.epred)
 
-Mean_output <- binom11_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
+binom11_medians_metric <- binom11_medians %>% 
+  mutate(m3s=binom11_medians$Flow*0.028316832)
+
+Mean_output <- binom11_medians_metric %>% 
+  ggplot(aes(x = m3s, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move))+
@@ -309,13 +312,13 @@ ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 3, height
        units = "in")
 
 
-mean_posterior_with_distances <- binom11_medians %>% 
-  ggplot(aes(x = Flow, y = .epred)) + 
+mean_posterior_with_distances <- binom11_medians_metric %>% 
+  ggplot(aes(x = m3_s, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))+
   labs(y="Probability of Movement",
-       x="Flow in CFS")+
+       x="Flow in m^3/s")+
   scale_x_log10()
 
 
