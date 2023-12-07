@@ -290,8 +290,12 @@ waic(flow_model_binom,
 ### UPDATE: Model 11 is the best ###
 # model 11 ONLY instantaneous discharge (flow)
 
+max_movement <- read_csv("data/max_movement.csv") %>% 
+  mutate(m3s=Flow*0.028316832)
 
 binom11_conds <- tibble(Flow = seq(min(flow_model_binom11$data$Flow), max(flow_model_binom11$data$Flow))) %>% add_epred_draws(flow_model_binom11)
+
+sum(max_movement$total_movement>50)
 
 
 binom11_medians <- binom11_conds %>% 
@@ -313,7 +317,7 @@ ggsave(Mean_output,file="plots/MeanPosteriors.jpg", dpi = 750, width = 3, height
 
 
 mean_posterior_with_distances <- binom11_medians_metric %>% 
-  ggplot(aes(x = m3_s, y = .epred)) + 
+  ggplot(aes(x = m3s, y = .epred)) + 
   geom_line() +
   geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.2) + 
   geom_point(data = max_movement, aes(y = move_no_move, size = total_movement))+
